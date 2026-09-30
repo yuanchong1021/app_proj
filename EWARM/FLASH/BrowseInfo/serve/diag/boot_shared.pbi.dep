@@ -1,0 +1,7 @@
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\BrowseInfo\serve\diag\boot_shared.pbi: \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\serve\diag\boot_shared.c \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\serve\diag\boot_app_if.h \
+  D:\soft\IAR\arm\inc\c\stdint.h D:\soft\IAR\arm\inc\c\ycheck.h \
+  D:\soft\IAR\arm\inc\c\yvals.h D:\soft\IAR\arm\inc\c\DLib_Defaults.h \
+  D:\soft\IAR\arm\inc\c\DLib_Config_Normal.h \
+  D:\soft\IAR\arm\inc\c\DLib_Product.h

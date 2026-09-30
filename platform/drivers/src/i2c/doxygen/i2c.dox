@@ -1,0 +1,6 @@
+/** 
+@defgroup i2c Low Power Inter-Integrated Circuit (I2C)
+
+@details The I2C is a low power Inter-Integrated Circuit (I2C) module that supports an efficient
+interface to an I2C bus as a master and/or a slave.
+*/

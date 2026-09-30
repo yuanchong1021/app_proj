@@ -1,0 +1,2792 @@
+###############################################################################
+#
+# IAR ELF Linker V9.32.1.338/W64 for ARM                  15/Sep/2026  13:41:43
+# Copyright 2007-2022 IAR Systems AB.
+#
+#    Output file  =
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Exe\Instrument.out
+#    Map file     =
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\List\Instrument.map
+#    Command line =
+#        -f
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Exe\Instrument.out.rsp
+#        (D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\adc_config.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\adc\adc_driver.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\gauges\ambient.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\diag\app_info.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\ui\backlight.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\diag\boot_shared.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\ui\buzzer.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\can\can_app.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\can_config.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\can\can_rx_parse.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\can\can_tx_build.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\clock_config.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\clock\YTM32B1Mx\clock_YTM32B1Mx.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\gauges\cng.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\gauges\coolant.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\dma_config.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\dma\dma_driver.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\dma\dma_hw_access.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\dma\dma_irq.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\flash_config.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\flash\flash_driver.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\middleware\utility_flash_ecc_fault\flash_ecc_fault.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\flexcan\flexcan_driver.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\flexcan\flexcan_hw_access.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\flexcan\flexcan_irq.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\gauges\fuel.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\hal\hal_adc.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\hal\hal_backlight.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\hal\hal_buzzer.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\hal\hal_can.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\hal\hal_eeprom_bl24c08f.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\hal\hal_gpio.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\hal\hal_lcd.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\hal\hal_lowpower.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\hal\hal_nvm.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\hal\hal_rtc_ds1307.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\hal\hal_tick.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\input\hw_input.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\i2c_config.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\i2c\i2c_driver.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\i2c\i2c_irq.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\interrupt_config.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\interrupt\interrupt_manager.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\ui\lcd_ui.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\ui\led_ind.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\power\lowpower.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\lptmr_config.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\lptmr\lptmr_driver.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\lptmr\lptmr_hw_access.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\main.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\gauges\meter_display.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\mpwm\mpwm_common.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\mpwm_config.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\mpwm\mpwm_pwm_driver.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\nvm\nvm_storage.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\gauges\odo.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\nvm\odo_log.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\rtos\osif\osif_baremetal.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\pin_mux.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\pins\pins_driver.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\pins\pins_port_hw_access.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\power_config.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\power\power_manager.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\power\YTM32B1Mx\power_manager_YTM32B1Mx.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\middleware\utility_print\printf\printf.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\power\pwr_mgr.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\input\radio_input.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\RamInit0.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\RamInit1.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\RamInit2.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\gauges\rpm.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\input\rtc_input.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\sc5037\sc5037.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\sc5037\sc5037_hal_stm32.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\sheduler\scheduler.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\soc\soc_uart.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\gauges\speed.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\spi_config.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\spi\spi_hw_access.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\spi\spi_irq.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\spi\spi_master_driver.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\spi\spi_shared_function.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\spi\spi_slave_driver.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\startup.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\system\sys_mgr.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\devices\YTM32B1MC0\startup\system_YTM32B1MC0.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\gauges\tpms_data.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\uart_config.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\uart\uart_driver.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\uart\uart_hw_access.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\uart\uart_irq.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\diag\uds_did.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\diag\uds_svc.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\diag\uds_tp.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\utility_flash_ecc_fault_config.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\utility_print_config.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\vector.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\vector_table_copy.o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\power\voltage.o
+#        --no_out_extension -o
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Exe\Instrument.out
+#        --map
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\List\Instrument.map
+#        --config
+#        D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM/../board/yt_linker.icf
+#        --semihosting --entry Reset_Handler --vfe --text_out locale
+#        --cpu=Cortex-M33.no_dsp.no_se --fpu=None)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+__CPP_Runtime   = 1
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because --advanced_heap
+was not specified and the application did not appear to
+be primarily optimized for speed.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+define block isr_vector with alignment = 4 { section .isr_vector };
+define block IVT_block
+   with fixed order, alignment = 4 {
+      section IVT_start_section, section isr_vector_region_start_section,
+      block isr_vector, section isr_vector_region_end_section,
+      section IVT_end_section };
+"IVT_IVT":
+       place in [from 0x8000 to 0x83ff] { block IVT_block };
+define block rodata { section .rodata, section .rodata* };
+define block text with end alignment = 4 { section .text, section .text* };
+define block TEXT_block
+   with fixed order, end alignment = 4 {
+      section TEXT_start_section, section rodata_region_start_section,
+      block rodata, section rodata_region_end_section,
+      section text_region_start_section, block text,
+      section text_region_end_section, section TEXT_end_section };
+"TEXT_TEXT":
+       place in [from 0x8400 to 0x3'ffff] { block TEXT_block };
+define block ARM.exidx
+   with end alignment = 4 { section .ARM.exidx, section .ARM.exidx* };
+define block ARM_block
+   with fixed order, end alignment = 4 {
+      section ARM_start_section, section ARM.exidx_region_start_section,
+      block ARM.exidx, section ARM.exidx_region_end_section,
+      section ARM_end_section };
+"TEXT_ARM":
+       place in [from 0x8400 to 0x3'ffff] { block ARM_block };
+define block code_ram_rom with end alignment = 4 { section .code_ram_init };
+define block CODE_RAM_rom_block
+   with fixed order, alignment = 4, end alignment = 4 {
+      section CODE_RAM_rom_start_section, block code_ram_rom,
+      section CODE_RAM_rom_end_section };
+"TEXT_CODE_RAM_rom":
+       place in [from 0x8400 to 0x3'ffff] { block CODE_RAM_rom_block };
+define block data_rom
+   with end alignment = 4 { section .data_init, section .data_init* };
+define block DATA_RAM_rom_block
+   with fixed order, alignment = 4, end alignment = 4 {
+      section DATA_RAM_rom_start_section, block data_rom,
+      section DATA_RAM_rom_end_section };
+"TEXT_DATA_RAM_rom":
+       place in [from 0x8400 to 0x3'ffff] { block DATA_RAM_rom_block };
+define block SharedSegment_rom { section .SharedSegment_init };
+define block SharedSegment_rom_block
+   with fixed order {
+      section SharedSegment_rom_start_section, block SharedSegment_rom,
+      section SharedSegment_rom_end_section };
+"TEXT_SharedSegment_rom":
+       place in [from 0x8400 to 0x3'ffff] { block SharedSegment_rom_block };
+define block IVT_RAM_empty_block with size = 1K { };
+define block IVT_RAM_block
+   with fixed order, alignment = 1K {
+      section IVT_RAM_start_section, section IVT_RAM_region_start_section,
+      block IVT_RAM_empty_block, section IVT_RAM_region_end_section,
+      section IVT_RAM_end_section };
+"IVT_RAM_IVT_RAM":
+       place in [from 0x2000'0000 to 0x2000'03ff] { block IVT_RAM_block };
+define block code_ram with end alignment = 4 { section .code_ram };
+define block CODE_RAM_block
+   with fixed order, alignment = 4, end alignment = 4 {
+      section CODE_RAM_start_section, section code_ram_region_start_section,
+      block code_ram, section code_ram_region_end_section,
+      section CODE_RAM_end_section };
+"RAM_CODE_RAM":
+       place in [from 0x2000'0400 to 0x2000'7bf7] { block CODE_RAM_block };
+define block data with end alignment = 4 { section .data, section .data* };
+define block DATA_RAM_block
+   with fixed order, alignment = 4, end alignment = 4 {
+      section DATA_RAM_start_section, section data_region_start_section,
+      block data, section data_region_end_section,
+      section DATA_RAM_end_section };
+"RAM_DATA_RAM":
+       place in [from 0x2000'0400 to 0x2000'7bf7] { block DATA_RAM_block };
+define block bss with end alignment = 4 { section .bss, section .bss* };
+define block BSS_block
+   with fixed order, end alignment = 4 {
+      section BSS_start_section, section bss_region_start_section, block bss,
+      section bss_region_end_section, section BSS_end_section };
+"RAM_BSS":
+       place in [from 0x2000'0400 to 0x2000'7bf7] { block BSS_block };
+define block SharedSegment { section .SharedSegment };
+define block SharedSegment_block
+   with fixed order {
+      section SharedSegment_start_section,
+      section SharedSegment_region_start_section, block SharedSegment,
+      section SharedSegment_region_end_section,
+      section SharedSegment_end_section };
+"SharedSegment_SharedSegment":
+       place in [from 0x2000'7bf8 to 0x2000'7bff] { block SharedSegment_block };
+define block STACK_empty_block with size = 1K { };
+define block STACK_block
+   with fixed order, alignment = 8 {
+      section STACK_start_section, section STACK_region_start_section,
+      block STACK_empty_block, section STACK_region_end_section,
+      section STACK_end_section };
+"STACK_STACK":
+       place in [from 0x2000'7c00 to 0x2000'7fff] { block STACK_block };
+do not initialize {
+   section .isr_vector, section .rodata, section .rodata*, section .text,
+   section .text*, section .ARM.exidx, section .ARM.exidx*, section .code_ram,
+   section .data, section .data*, section .SharedSegment, section .bss,
+   section .bss* };
+initialize manually with packing = none {
+   section .code_ram, section .data, section .data*, section .SharedSegment };
+keep { section .isr_vector };
+keep { section .SharedSegment };
+
+No sections matched the following patterns:
+
+  section .ARM.exidx   in block ARM.exidx
+  section .ARM.exidx*  in block ARM.exidx
+
+
+  Section                 Kind         Address    Size  Object
+  -------                 ----         -------    ----  ------
+"IVT_IVT":                                       0x2b8
+  IVT_block                             0x8000   0x2b8  <Block>
+    IVT_start_section     uninit        0x8000     0x0  <internal module>
+    isr_vector_region_start_section
+                          uninit        0x8000     0x0  <internal module>
+    isr_vector                          0x8000   0x2b8  <Block>
+      .isr_vector         ro code       0x8000   0x2b8  vector.o [7]
+    isr_vector_region_end_section
+                          uninit        0x82b8     0x0  <internal module>
+    IVT_end_section       uninit        0x82b8     0x0  <internal module>
+                                      - 0x82b8   0x2b8
+
+Absolute sections:                                0x70
+  .rodata                 const         0x8400    0x70  app_info.o [29]
+                                      - 0x8470    0x70
+
+"TEXT_TEXT":                                    0xf9a0
+  TEXT_block                            0x8470  0xf9a0  <Block>
+    TEXT_start_section    uninit        0x8470     0x0  <internal module>
+    rodata_region_start_section
+                          uninit        0x8470     0x0  <internal module>
+    rodata                              0x8470   0xd98  <Block>
+      .rodata             const         0x8470    0x28  adc_config.o [7]
+      .rodata             const         0x8498     0x4  adc_driver.o [13]
+      .rodata             const         0x849c    0x70  ambient.o [2]
+      .rodata             const         0x850c    0x38  can_config.o [7]
+      .rodata             const         0x8544    0x18  clock_config.o [7]
+      .rodata             const         0x855c    0x10  clock_config.o [7]
+      .rodata             const         0x856c    0x58  clock_YTM32B1Mx.o [14]
+      .rodata             const         0x85c4    0x1c  cng.o [2]
+      .rodata             const         0x85e0     0xc  dma_config.o [7]
+      .rodata             const         0x85ec     0xc  dma_config.o [7]
+      .rodata             const         0x85f8     0xc  dma_config.o [7]
+      .rodata             const         0x8604     0xc  dma_config.o [7]
+      .rodata             const         0x8610     0xc  dma_config.o [7]
+      .rodata             const         0x861c     0x4  dma_driver.o [15]
+      .rodata             const         0x8620     0x8  dma_driver.o [15]
+      .rodata             const         0x8628     0x4  flash_driver.o [16]
+      .rodata             const         0x862c     0x8  flexcan_driver.o [17]
+      .rodata             const         0x8634     0x4  flexcan_driver.o [17]
+      .rodata             const         0x8638     0x4  flexcan_driver.o [17]
+      .rodata             const         0x863c     0x4  flexcan_driver.o [17]
+      .rodata             const         0x8640    0x10  flexcan_driver.o [17]
+      .rodata             const         0x8650    0x44  flexcan_hw_access.o [17]
+      .rodata             const         0x8694     0x8  flexcan_hw_access.o [17]
+      .rodata             const         0x869c     0x8  flexcan_hw_access.o [17]
+      .rodata             const         0x86a4    0x24  fuel.o [2]
+      .rodata             const         0x86c8    0xec  fuel.o [2]
+      .rodata             const         0x87b4     0xc  hal_can.o [9]
+      .rodata             const         0x87c0     0xc  hal_can.o [9]
+      .rodata             const         0x87cc   0x108  hal_gpio.o [9]
+      .rodata             const         0x88d4    0x30  hal_lowpower.o [9]
+      .rodata             const         0x8904    0x14  hal_lowpower.o [9]
+      .rodata             const         0x8918     0x8  hal_rtc_ds1307.o [9]
+      .rodata             const         0x8920    0x18  i2c_config.o [7]
+      .rodata             const         0x8938     0x8  i2c_driver.o [18]
+      .rodata             const         0x8940     0x4  i2c_driver.o [18]
+      .rodata             const         0x8944     0x4  i2c_driver.o [18]
+      .rodata             const         0x8948    0x20  lcd_ui.o [6]
+      .rodata             const         0x8968    0x10  lptmr_config.o [7]
+      .rodata             const         0x8978     0x4  lptmr_driver.o [20]
+      .rodata             const         0x897c    0x9c  meter_display.o [2]
+      .rodata             const         0x8a18   0x1a4  meter_display.o [2]
+      .rodata             const         0x8bbc    0x40  odo_log.o [31]
+      .rodata             const         0x8bfc     0xc  odo_log.o [31]
+      .rodata             const         0x8c08   0x428  pin_mux.o [7]
+      .rodata             const         0x9030    0x30  RamInit1.o [7]
+      .rodata             const         0x9060     0xc  RamInit1.o [7]
+      .rodata             const         0x906c     0xc  scheduler.o [4]
+      .rodata             const         0x9078     0x8  scheduler.o [4]
+      .rodata             const         0x9080     0x8  scheduler.o [4]
+      .rodata             const         0x9088     0x8  scheduler.o [4]
+      .rodata             const         0x9090     0x8  scheduler.o [4]
+      .rodata             const         0x9098     0x8  scheduler.o [4]
+      .rodata             const         0x90a0     0xc  scheduler.o [4]
+      .rodata             const         0x90ac     0x8  scheduler.o [4]
+      .rodata             const         0x90b4     0x4  scheduler.o [4]
+      .rodata             const         0x90b8     0x4  scheduler.o [4]
+      .rodata             const         0x90bc     0x8  scheduler.o [4]
+      .rodata             const         0x90c4     0x8  scheduler.o [4]
+      .rodata             const         0x90cc     0x4  scheduler.o [4]
+      .rodata             const         0x90d0     0x8  scheduler.o [4]
+      .rodata             const         0x90d8     0x8  scheduler.o [4]
+      .rodata             const         0x90e0     0xc  scheduler.o [4]
+      .rodata             const         0x90ec     0x8  scheduler.o [4]
+      .rodata             const         0x90f4     0xc  scheduler.o [4]
+      .rodata             const         0x9100     0x4  scheduler.o [4]
+      .rodata             const         0x9104     0x8  scheduler.o [4]
+      .rodata             const         0x910c     0x8  scheduler.o [4]
+      .rodata             const         0x9114     0xc  scheduler.o [4]
+      .rodata             const         0x9120     0x4  scheduler.o [4]
+      .rodata             const         0x9124     0xc  scheduler.o [4]
+      .rodata             const         0x9130    0x1c  spi_config.o [7]
+      .rodata             const         0x914c    0x20  spi_hw_access.o [25]
+      .rodata             const         0x916c     0x4  spi_shared_function.o [25]
+      .rodata             const         0x9170     0xc  uart_config.o [7]
+      .rodata             const         0x917c     0xc  uart_config.o [7]
+      .rodata             const         0x9188     0xc  uart_driver.o [26]
+      .rodata             const         0x9194     0x8  uart_driver.o [26]
+      .rodata             const         0x919c     0x4  uart_driver.o [26]
+      .rodata             const         0x91a0    0x30  uds_did.o [29]
+      .rodata             const         0x91d0     0x4  uds_svc.o [29]
+      .rodata             const         0x91d4    0x20  uds_svc.o [29]
+      .rodata             const         0x91f4     0x8  utility_flash_ecc_fault_config.o [7]
+      .rodata             const         0x91fc     0x4  vector_table_copy.o [7]
+      .rodata             const         0x9200     0x2  dma_driver.o [15]
+      .rodata             const         0x9202     0x2  flexcan_driver.o [17]
+      .rodata             const         0x9204     0x2  i2c_driver.o [18]
+      .rodata             const         0x9206     0x1  adc_driver.o [13]
+      .rodata             const         0x9207     0x1  dma_config.o [7]
+    rodata_region_end_section
+                          uninit        0x9208     0x0  <internal module>
+    text_region_start_section
+                          uninit        0x9208     0x0  <internal module>
+    text                                0x9208  0xec08  <Block>
+      .text               ro code       0x9208   0x518  adc_driver.o [13]
+      .text               ro code       0x9720   0x8a2  clock_YTM32B1Mx.o [14]
+      .text               ro code       0x9fc2     0x2  RamInit2.o [7]
+      .text               ro code       0x9fc4    0xd6  interrupt_manager.o [19]
+      .text               ro code       0xa09c   0x158  ambient.o [2]
+      .text               ro code       0xa1f4   0x1b8  hal_adc.o [9]
+      .text               ro code       0xa3ac    0x66  ABImemset.o [34]
+      .text               ro code       0xa414   0x920  dma_driver.o [15]
+      .text               ro code       0xad34   0x420  dma_hw_access.o [15]
+      .text               ro code       0xb154   0x28c  buzzer.o [6]
+      .text               ro code       0xb3e0    0x3e  hal_buzzer.o [9]
+      .text               ro code       0xb420   0x6b4  mpwm_pwm_driver.o [21]
+      .text               ro code       0xbad4   0x13c  mpwm_common.o [21]
+      .text               ro code       0xbc10   0x2aa  can_app.o [28]
+      .text               ro code       0xbebc   0x434  hal_can.o [9]
+      .text               ro code       0xc2f0  0x10b0  flexcan_driver.o [17]
+      .text               ro code       0xd3a0   0x18e  can_rx_parse.o [28]
+      .text               ro code       0xd52e   0x21c  can_tx_build.o [28]
+      .text               ro code       0xd74c   0x694  uds_tp.o [29]
+      .text               ro code       0xdde0    0xa6  ABImemcpy.o [34]
+      .text               ro code       0xde88   0x9d8  flexcan_hw_access.o [17]
+      .text               ro code       0xe860   0x120  osif_baremetal.o [27]
+      .text               ro code       0xe980   0x564  fuel.o [2]
+      .text               ro code       0xeee4   0xae4  uds_svc.o [29]
+      .text               ro code       0xf9c8    0x58  hal_tick.o [9]
+      .text               ro code       0xfa20   0x3d4  lowpower.o [3]
+      .text               ro code       0xfdf4    0x5e  uds_did.o [29]
+      .text               ro code       0xfe54   0x1fa  voltage.o [3]
+      .text               ro code     0x1'004e    0x3e  nvm_storage.o [31]
+      .text               ro code     0x1'008c    0x68  system_YTM32B1MC0.o [12]
+      .text               ro code     0x1'00f4   0x340  lptmr_driver.o [20]
+      .text               ro code     0x1'0434    0x3c  hal_backlight.o [9]
+      .text               ro code     0x1'0470   0x280  meter_display.o [2]
+      .text               ro code     0x1'06f0   0x510  hal_lowpower.o [9]
+      .text               ro code     0x1'0c00   0x2cc  pwr_mgr.o [3]
+      .text               ro code     0x1'0ecc   0x4a0  radio_input.o [30]
+      .text               ro code     0x1'136c    0x98  soc_uart.o [32]
+      .text               ro code     0x1'1404   0x104  rtc_input.o [30]
+      .text               ro code     0x1'1508    0x74  sys_mgr.o [5]
+      Veneer              ro code     0x1'157c     0x8  - Linker created -
+      .text               ro code     0x1'1584   0x3d8  odo_log.o [31]
+      .text               ro code     0x1'195c   0x230  I64DivMod.o [34]
+      .text               ro code     0x1'1b8c    0x22  I64Shl.o [34]
+      .text               ro code     0x1'1bae    0x1e  lptmr_hw_access.o [20]
+      .text               ro code     0x1'1bcc   0x222  sc5037.o [8]
+      .text               ro code     0x1'1dee    0xf8  pins_driver.o [22]
+      .text               ro code     0x1'1ee8    0xb6  sc5037_hal_stm32.o [8]
+      .text               ro code     0x1'1fa0   0xdf4  uart_driver.o [26]
+      .text               ro code     0x1'2d94   0x7a4  spi_master_driver.o [25]
+      .text               ro code     0x1'3538  0x1510  i2c_driver.o [18]
+      .text               ro code     0x1'4a48   0x170  power_manager.o [23]
+      .text               ro code     0x1'4bb8   0x180  odo.o [2]
+      .text               ro code     0x1'4d38   0x228  hal_rtc_ds1307.o [9]
+      .text               ro code     0x1'4f60     0x2  I64DivZer.o [34]
+      .text               ro code     0x1'4f62   0x1d4  pins_port_hw_access.o [22]
+      .text               ro code     0x1'5138   0x11e  uart_hw_access.o [26]
+      .text               ro code     0x1'5258   0x2f8  spi_hw_access.o [25]
+      .text               ro code     0x1'5550     0x6  ABImemclr4.o [34]
+      .text               ro code     0x1'5558   0x23c  spi_shared_function.o [25]
+      .text               ro code     0x1'5794   0x10c  power_manager_YTM32B1Mx.o [24]
+      .text               ro code     0x1'58a0    0x14  memset.o [34]
+      .text               ro code     0x1'58b4    0x32  ABImemset48.o [34]
+      .text               ro code     0x1'58e8   0x1c4  spi_slave_driver.o [25]
+      .text               ro code     0x1'5aac   0x164  cng.o [2]
+      .text               ro code     0x1'5c10   0x14c  coolant.o [2]
+      Veneer              ro code     0x1'5d5c     0x8  - Linker created -
+      .text               ro code     0x1'5d64   0x2c8  flash_driver.o [16]
+      .text               ro code     0x1'602c    0xb8  flash_ecc_fault.o [10]
+      .text               ro code     0x1'60e4    0x2c  hal_gpio.o [9]
+      .text               ro code     0x1'6110   0x178  hw_input.o [30]
+      .text               ro code     0x1'6288   0x70a  lcd_ui.o [6]
+      .text               ro code     0x1'6994   0xa0c  led_ind.o [6]
+      .text               ro code     0x1'73a0   0x1c4  main.o [1]
+      .text               ro code     0x1'7564    0x4c  backlight.o [6]
+      .text               ro code     0x1'75b0    0xc0  speed.o [2]
+      .text               ro code     0x1'7670    0x78  rpm.o [2]
+      .text               ro code     0x1'76e8   0x13a  tpms_data.o [2]
+      .text               ro code     0x1'7824    0x78  scheduler.o [4]
+      .text               ro code     0x1'789c    0x88  RamInit0.o [7]
+      .text               ro code     0x1'7924   0x138  RamInit1.o [7]
+      .text               ro code     0x1'7a5c    0x50  startup.o [7]
+      .text               ro code     0x1'7aac    0x46  vector_table_copy.o [7]
+      .text               ro code     0x1'7af2    0x58  dma_irq.o [15]
+      .text               ro code     0x1'7b4a    0xac  flexcan_irq.o [17]
+      .text               ro code     0x1'7bf6    0x1e  i2c_irq.o [18]
+      .text               ro code     0x1'7c14    0x1e  spi_irq.o [25]
+      .text               ro code     0x1'7c32    0x1e  uart_irq.o [26]
+      .text               ro code     0x1'7c50     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7c58     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7c60     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7c68     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7c70     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7c78     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7c80     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7c88     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7c90     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7c98     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7ca0     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7ca8     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7cb0     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7cb8     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7cc0     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7cc8     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7cd0     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7cd8     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7ce0     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7ce8     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7cf0     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7cf8     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7d00     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7d08     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7d10     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7d18     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7d20     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7d28     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7d30     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7d38     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7d40     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7d48     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7d50     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7d58     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7d60     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7d68     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7d70     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7d78     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7d80     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7d88     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7d90     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7d98     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7da0     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7da8     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7db0     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7db8     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7dc0     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7dc8     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7dd0     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7dd8     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7de0     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7de8     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7df0     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7df8     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7e00     0x8  vector_table_copy.o [7]
+      .text               ro code     0x1'7e08     0x8  vector_table_copy.o [7]
+    text_region_end_section
+                          uninit      0x1'7e10     0x0  <internal module>
+    TEXT_end_section      uninit      0x1'7e10     0x0  <internal module>
+                                    - 0x1'7e10  0xf9a0
+
+"TEXT_ARM":                                        0x0
+  ARM_block                           0x1'7e10     0x0  <Block>
+    ARM_start_section     uninit      0x1'7e10     0x0  <internal module>
+    ARM.exidx_region_start_section
+                          uninit      0x1'7e10     0x0  <internal module>
+    ARM.exidx_region_end_section
+                          uninit      0x1'7e10     0x0  <internal module>
+    ARM_end_section       uninit      0x1'7e10     0x0  <internal module>
+
+"TEXT_CODE_RAM_rom":                             0x1c4
+  CODE_RAM_rom_block                  0x1'7e10   0x1c4  <Block>
+    CODE_RAM_rom_start_section
+                          uninit      0x1'7e10     0x0  <internal module>
+    code_ram_rom                      0x1'7e10   0x1c4  <Block>
+      Initializer bytes   const       0x1'7e10   0x1c4  <for code_ram-1>
+    CODE_RAM_rom_end_section
+                          uninit      0x1'7fd4     0x0  <internal module>
+                                    - 0x1'7fd4   0x1c4
+
+"TEXT_DATA_RAM_rom":                             0x27c
+  DATA_RAM_rom_block                  0x1'7fd4   0x27c  <Block>
+    DATA_RAM_rom_start_section
+                          uninit      0x1'7fd4     0x0  <internal module>
+    data_rom                          0x1'7fd4   0x27c  <Block>
+      Initializer bytes   const       0x1'7fd4   0x27c  <for data-1>
+    DATA_RAM_rom_end_section
+                          uninit      0x1'8250     0x0  <internal module>
+                                    - 0x1'8250   0x27c
+
+"TEXT_SharedSegment_rom":                          0x8
+  SharedSegment_rom_block
+                                      0x1'8250     0x8  <Block>
+    SharedSegment_rom_start_section
+                          uninit      0x1'8250     0x0  <internal module>
+    SharedSegment_rom                 0x1'8250     0x8  <Block>
+      Initializer bytes   const       0x1'8250     0x8  <for SharedSegment-1>
+    SharedSegment_rom_end_section
+                          uninit      0x1'8258     0x0  <internal module>
+                                    - 0x1'8258     0x8
+
+"IVT_RAM_IVT_RAM":                               0x400
+  IVT_RAM_block                    0x2000'0000   0x400  <Block>
+    IVT_RAM_start_section
+                          uninit   0x2000'0000     0x0  <internal module>
+    IVT_RAM_region_start_section
+                          uninit   0x2000'0000     0x0  <internal module>
+    IVT_RAM_empty_block            0x2000'0000   0x400  <Block>
+      IVT_RAM_empty_block
+                          uninit   0x2000'0000   0x400  <Block tail>
+    IVT_RAM_region_end_section
+                          uninit   0x2000'0400     0x0  <internal module>
+    IVT_RAM_end_section   uninit   0x2000'0400     0x0  <internal module>
+                                 - 0x2000'0400   0x400
+
+"RAM_CODE_RAM":                                  0x1c4
+  CODE_RAM_block                   0x2000'0400   0x1c4  <Block>
+    CODE_RAM_start_section
+                          uninit   0x2000'0400     0x0  <internal module>
+    code_ram_region_start_section
+                          uninit   0x2000'0400     0x0  <internal module>
+    code_ram                       0x2000'0400   0x1c4  <Block>
+      code_ram-1                   0x2000'0400   0x1c4  <Init block>
+        Veneer            inited   0x2000'0400     0x8  - Linker created -
+        Veneer            inited   0x2000'0408     0x8  - Linker created -
+        .code_ram         inited   0x2000'0410   0x104  flash_driver.o [16]
+        .code_ram         inited   0x2000'0514    0xb0  odo_log.o [31]
+    code_ram_region_end_section
+                          uninit   0x2000'05c4     0x0  <internal module>
+    CODE_RAM_end_section  uninit   0x2000'05c4     0x0  <internal module>
+                                 - 0x2000'05c4   0x1c4
+
+"RAM_DATA_RAM":                                  0x27c
+  DATA_RAM_block                   0x2000'05c4   0x27c  <Block>
+    DATA_RAM_start_section
+                          uninit   0x2000'05c4     0x0  <internal module>
+    data_region_start_section
+                          uninit   0x2000'05c4     0x0  <internal module>
+    data                           0x2000'05c4   0x27c  <Block>
+      data-1                       0x2000'05c4   0x27b  <Init block>
+        .data             inited   0x2000'05c4    0x28  clock_config.o [7]
+        .data             inited   0x2000'05ec    0x10  clock_config.o [7]
+        .data             inited   0x2000'05fc     0x4  clock_config.o [7]
+        .data             inited   0x2000'0600     0x4  fuel.o [2]
+        .data             inited   0x2000'0604    0x10  hal_adc.o [9]
+        .data             inited   0x2000'0614     0xc  lcd_ui.o [6]
+        .data             inited   0x2000'0620     0x4  mpwm_common.o [21]
+        .data             inited   0x2000'0624    0x10  mpwm_common.o [21]
+        .data             inited   0x2000'0634    0x10  mpwm_common.o [21]
+        .data             inited   0x2000'0644    0x28  mpwm_config.o [7]
+        .data             inited   0x2000'066c     0x8  mpwm_config.o [7]
+        .data             inited   0x2000'0674    0x10  power_config.o [7]
+        .data             inited   0x2000'0684   0x180  scheduler.o [4]
+        .data             inited   0x2000'0804     0xc  spi_shared_function.o [25]
+        .data             inited   0x2000'0810     0x8  spi_shared_function.o [25]
+        .data             inited   0x2000'0818     0x4  system_YTM32B1MC0.o [12]
+        .data             inited   0x2000'081c     0xc  uart_irq.o [26]
+        .data             inited   0x2000'0828     0x2  ambient.o [2]
+        .data             inited   0x2000'082a     0x2  power_config.o [7]
+        .data             inited   0x2000'082c     0x2  power_config.o [7]
+        .data             inited   0x2000'082e     0x2  power_config.o [7]
+        .data             inited   0x2000'0830     0x1  fuel.o [2]
+        .data             inited   0x2000'0831     0x1  fuel.o [2]
+        .data             inited   0x2000'0832     0x1  fuel.o [2]
+        .data             inited   0x2000'0833     0x1  fuel.o [2]
+        .data             inited   0x2000'0834     0x1  hw_input.o [30]
+        .data             inited   0x2000'0835     0x1  lcd_ui.o [6]
+        .data             inited   0x2000'0836     0x1  mpwm_common.o [21]
+        .data             inited   0x2000'0837     0x1  mpwm_common.o [21]
+        .data             inited   0x2000'0838     0x1  osif_baremetal.o [27]
+        .data             inited   0x2000'0839     0x1  pwr_mgr.o [3]
+        .data             inited   0x2000'083a     0x1  pwr_mgr.o [3]
+        .data             inited   0x2000'083b     0x1  soc_uart.o [32]
+        .data             inited   0x2000'083c     0x1  uds_svc.o [29]
+        .data             inited   0x2000'083d     0x1  uds_svc.o [29]
+        .data             inited   0x2000'083e     0x1  uds_svc.o [29]
+    data_region_end_section
+                          uninit   0x2000'0840     0x0  <internal module>
+    DATA_RAM_end_section  uninit   0x2000'0840     0x0  <internal module>
+                                 - 0x2000'0840   0x27c
+
+"RAM_BSS":                                       0xf08
+  BSS_block                        0x2000'0840   0xf08  <Block>
+    BSS_start_section     uninit   0x2000'0840     0x0  <internal module>
+    bss_region_start_section
+                          uninit   0x2000'0840     0x0  <internal module>
+    bss                            0x2000'0840   0xf08  <Block>
+      .bss                uninit   0x2000'0840     0x4  ambient.o [2]
+      .bss                uninit   0x2000'0844     0x4  buzzer.o [6]
+      .bss                uninit   0x2000'0848    0x18  can_app.o [28]
+      .bss                uninit   0x2000'0860     0x8  can_app.o [28]
+      .bss                uninit   0x2000'0868     0x4  can_app.o [28]
+      .bss                uninit   0x2000'086c   0x218  can_config.o [7]
+      .bss                uninit   0x2000'0a84     0x4  clock_config.o [7]
+      .bss                uninit   0x2000'0a88    0x10  clock_YTM32B1Mx.o [14]
+      .bss                uninit   0x2000'0a98     0x4  clock_YTM32B1Mx.o [14]
+      .bss                uninit   0x2000'0a9c     0x4  cng.o [2]
+      .bss                uninit   0x2000'0aa0     0x4  coolant.o [2]
+      .bss                uninit   0x2000'0aa4    0x10  dma_config.o [7]
+      .bss                uninit   0x2000'0ab4    0x10  dma_config.o [7]
+      .bss                uninit   0x2000'0ac4    0x10  dma_config.o [7]
+      .bss                uninit   0x2000'0ad4    0x10  dma_config.o [7]
+      .bss                uninit   0x2000'0ae4     0x4  dma_driver.o [15]
+      .bss                uninit   0x2000'0ae8     0x4  flash_driver.o [16]
+      .bss                uninit   0x2000'0aec     0x4  flash_driver.o [16]
+      .bss                uninit   0x2000'0af0     0x4  flash_ecc_fault.o [10]
+      .bss                uninit   0x2000'0af4     0x8  flexcan_driver.o [17]
+      .bss                uninit   0x2000'0afc     0x4  fuel.o [2]
+      .bss                uninit   0x2000'0b00     0x4  fuel.o [2]
+      .bss                uninit   0x2000'0b04     0x4  fuel.o [2]
+      .bss                uninit   0x2000'0b08     0x4  fuel.o [2]
+      .bss                uninit   0x2000'0b0c    0x10  fuel.o [2]
+      .bss                uninit   0x2000'0b1c     0x4  fuel.o [2]
+      .bss                uninit   0x2000'0b20     0x4  hal_adc.o [9]
+      .bss                uninit   0x2000'0b24     0x4  hal_adc.o [9]
+      .bss                uninit   0x2000'0b28   0x200  hal_can.o [9]
+      .bss                uninit   0x2000'0d28     0x4  hal_can.o [9]
+      .bss                uninit   0x2000'0d2c     0x4  hal_can.o [9]
+      .bss                uninit   0x2000'0d30     0x4  hal_can.o [9]
+      .bss                uninit   0x2000'0d34    0x4c  hal_can.o [9]
+      .bss                uninit   0x2000'0d80    0x4c  hal_can.o [9]
+      .bss                uninit   0x2000'0dcc    0x4c  hal_can.o [9]
+      .bss                uninit   0x2000'0e18     0x4  hal_tick.o [9]
+      .bss                uninit   0x2000'0e1c    0x44  i2c_config.o [7]
+      .bss                uninit   0x2000'0e60     0x8  i2c_driver.o [18]
+      .bss                uninit   0x2000'0e68     0x8  i2c_driver.o [18]
+      .bss                uninit   0x2000'0e70     0x4  interrupt_manager.o [19]
+      .bss                uninit   0x2000'0e74     0x4  led_ind.o [6]
+      .bss                uninit   0x2000'0e78     0x4  led_ind.o [6]
+      .bss                uninit   0x2000'0e7c     0x4  lowpower.o [3]
+      .bss                uninit   0x2000'0e80     0x4  lowpower.o [3]
+      .bss                uninit   0x2000'0e84     0x4  lowpower.o [3]
+      .bss                uninit   0x2000'0e88     0x4  lowpower.o [3]
+      .bss                uninit   0x2000'0e8c     0x4  lowpower.o [3]
+      .bss                uninit   0x2000'0e90     0x4  lptmr_driver.o [20]
+      .bss                uninit   0x2000'0e94    0xec  main.o [1]
+      .bss                uninit   0x2000'0f80     0x4  mpwm_common.o [21]
+      .bss                uninit   0x2000'0f84    0x60  mpwm_config.o [7]
+      .bss                uninit   0x2000'0fe4     0x4  odo.o [2]
+      .bss                uninit   0x2000'0fe8     0x4  odo.o [2]
+      .bss                uninit   0x2000'0fec     0x4  odo.o [2]
+      .bss                uninit   0x2000'0ff0     0x4  odo_log.o [31]
+      .bss                uninit   0x2000'0ff4     0x4  odo_log.o [31]
+      .bss                uninit   0x2000'0ff8     0x4  odo_log.o [31]
+      .bss                uninit   0x2000'0ffc     0x4  odo_log.o [31]
+      .bss                uninit   0x2000'1000     0x4  odo_log.o [31]
+      .bss                uninit   0x2000'1004     0x4  osif_baremetal.o [27]
+      .bss                uninit   0x2000'1008    0x10  power_manager_YTM32B1Mx.o [24]
+      .bss                uninit   0x2000'1018     0x4  pwr_mgr.o [3]
+      .bss                uninit   0x2000'101c     0x4  pwr_mgr.o [3]
+      .bss                uninit   0x2000'1020     0x4  pwr_mgr.o [3]
+      .bss                uninit   0x2000'1024     0x4  pwr_mgr.o [3]
+      .bss                uninit   0x2000'1028    0x44  radio_input.o [30]
+      .bss                uninit   0x2000'106c    0x40  radio_input.o [30]
+      .bss                uninit   0x2000'10ac     0x4  radio_input.o [30]
+      .bss                uninit   0x2000'10b0     0x4  radio_input.o [30]
+      .bss                uninit   0x2000'10b4     0x8  radio_input.o [30]
+      .bss                uninit   0x2000'10bc     0x4  rpm.o [2]
+      .bss                uninit   0x2000'10c0     0x4  rtc_input.o [30]
+      .bss                uninit   0x2000'10c4    0x28  sc5037.o [8]
+      .bss                uninit   0x2000'10ec     0xc  sc5037_hal_stm32.o [8]
+      .bss                uninit   0x2000'10f8     0x8  soc_uart.o [32]
+      .bss                uninit   0x2000'1100     0x4  speed.o [2]
+      .bss                uninit   0x2000'1104    0x34  spi_config.o [7]
+      .bss                uninit   0x2000'1138     0xc  spi_shared_function.o [25]
+      .bss                uninit   0x2000'1144     0x4  sys_mgr.o [5]
+      .bss                uninit   0x2000'1148    0x34  uart_config.o [7]
+      .bss                uninit   0x2000'117c    0x34  uart_config.o [7]
+      .bss                uninit   0x2000'11b0     0xc  uart_driver.o [26]
+      .bss                uninit   0x2000'11bc     0x4  uds_svc.o [29]
+      .bss                uninit   0x2000'11c0     0x4  uds_svc.o [29]
+      .bss                uninit   0x2000'11c4     0x4  uds_svc.o [29]
+      .bss                uninit   0x2000'11c8     0x4  uds_svc.o [29]
+      .bss                uninit   0x2000'11cc     0x4  uds_svc.o [29]
+      .bss                uninit   0x2000'11d0     0x4  uds_svc.o [29]
+      .bss                uninit   0x2000'11d4   0x100  uds_svc.o [29]
+      .bss                uninit   0x2000'12d4   0x200  uds_tp.o [29]
+      .bss                uninit   0x2000'14d4     0x4  uds_tp.o [29]
+      .bss                uninit   0x2000'14d8   0x100  uds_tp.o [29]
+      .bss                uninit   0x2000'15d8     0x4  uds_tp.o [29]
+      .bss                uninit   0x2000'15dc   0x100  uds_tp.o [29]
+      .bss                uninit   0x2000'16dc     0x4  uds_tp.o [29]
+      .bss                uninit   0x2000'16e0     0x4  uds_tp.o [29]
+      .bss                uninit   0x2000'16e4     0x8  utility_flash_ecc_fault_config.o [7]
+      .bss                uninit   0x2000'16ec     0x4  voltage.o [3]
+      .bss                uninit   0x2000'16f0     0x4  voltage.o [3]
+      .bss                uninit   0x2000'16f4     0x2  odo_log.o [31]
+      .bss                uninit   0x2000'16f6     0x2  power_config.o [7]
+      .bss                uninit   0x2000'16f8     0x2  rpm.o [2]
+      .bss                uninit   0x2000'16fa     0x2  speed.o [2]
+      .bss                uninit   0x2000'16fc     0x2  uds_tp.o [29]
+      .bss                uninit   0x2000'16fe     0x2  uds_tp.o [29]
+      .bss                uninit   0x2000'1700     0x2  uds_tp.o [29]
+      .bss                uninit   0x2000'1702     0x2  uds_tp.o [29]
+      .bss                uninit   0x2000'1704     0x1  ambient.o [2]
+      .bss                uninit   0x2000'1705     0x1  buzzer.o [6]
+      .bss                uninit   0x2000'1706     0x1  buzzer.o [6]
+      .bss                uninit   0x2000'1707     0x1  can_app.o [28]
+      .bss                uninit   0x2000'1708     0x1  cng.o [2]
+      .bss                uninit   0x2000'1709     0x1  coolant.o [2]
+      .bss                uninit   0x2000'170a     0x1  fuel.o [2]
+      .bss                uninit   0x2000'170b     0x1  fuel.o [2]
+      .bss                uninit   0x2000'170c     0x1  fuel.o [2]
+      .bss                uninit   0x2000'170d     0x1  hal_adc.o [9]
+      .bss                uninit   0x2000'170e     0x1  hal_adc.o [9]
+      .bss                uninit   0x2000'170f     0x1  hal_can.o [9]
+      .bss                uninit   0x2000'1710     0x1  hal_can.o [9]
+      .bss                uninit   0x2000'1711     0x1  hal_can.o [9]
+      .bss                uninit   0x2000'1712     0x1  hal_can.o [9]
+      .bss                uninit   0x2000'1713     0x1  hal_can.o [9]
+      .bss                uninit   0x2000'1714     0x1  hal_can.o [9]
+      .bss                uninit   0x2000'1715     0x1  hal_lowpower.o [9]
+      .bss                uninit   0x2000'1716     0x1  hal_lowpower.o [9]
+      .bss                uninit   0x2000'1717     0x1  hal_lowpower.o [9]
+      .bss                uninit   0x2000'1718     0x1  led_ind.o [6]
+      .bss                uninit   0x2000'1719     0x1  led_ind.o [6]
+      .bss                uninit   0x2000'171a     0x1  led_ind.o [6]
+      .bss                uninit   0x2000'171b     0x1  lowpower.o [3]
+      .bss                uninit   0x2000'171c     0x1  lowpower.o [3]
+      .bss                uninit   0x2000'171d     0x1  odo.o [2]
+      .bss                uninit   0x2000'171e     0x1  odo.o [2]
+      .bss                uninit   0x2000'171f     0x1  odo.o [2]
+      .bss                uninit   0x2000'1720     0x1  odo_log.o [31]
+      .bss                uninit   0x2000'1721     0x1  odo_log.o [31]
+      .bss                uninit   0x2000'1722     0x1  odo_log.o [31]
+      .bss                uninit   0x2000'1723     0x1  odo_log.o [31]
+      .bss                uninit   0x2000'1724     0x1  odo_log.o [31]
+      .bss                uninit   0x2000'1725     0x1  pwr_mgr.o [3]
+      .bss                uninit   0x2000'1726     0x1  pwr_mgr.o [3]
+      .bss                uninit   0x2000'1727     0x1  pwr_mgr.o [3]
+      .bss                uninit   0x2000'1728     0x1  pwr_mgr.o [3]
+      .bss                uninit   0x2000'1729     0x1  pwr_mgr.o [3]
+      .bss                uninit   0x2000'172a     0x1  radio_input.o [30]
+      .bss                uninit   0x2000'172b     0x1  radio_input.o [30]
+      .bss                uninit   0x2000'172c     0x1  radio_input.o [30]
+      .bss                uninit   0x2000'172d     0x1  radio_input.o [30]
+      .bss                uninit   0x2000'172e     0x1  radio_input.o [30]
+      .bss                uninit   0x2000'172f     0x1  radio_input.o [30]
+      .bss                uninit   0x2000'1730     0x1  radio_input.o [30]
+      .bss                uninit   0x2000'1731     0x1  rtc_input.o [30]
+      .bss                uninit   0x2000'1732     0x1  rtc_input.o [30]
+      .bss                uninit   0x2000'1733     0x1  rtc_input.o [30]
+      .bss                uninit   0x2000'1734     0x1  uds_svc.o [29]
+      .bss                uninit   0x2000'1735     0x1  uds_svc.o [29]
+      .bss                uninit   0x2000'1736     0x1  uds_svc.o [29]
+      .bss                uninit   0x2000'1737     0x1  uds_svc.o [29]
+      .bss                uninit   0x2000'1738     0x1  uds_svc.o [29]
+      .bss                uninit   0x2000'1739     0x1  uds_tp.o [29]
+      .bss                uninit   0x2000'173a     0x1  uds_tp.o [29]
+      .bss                uninit   0x2000'173b     0x1  uds_tp.o [29]
+      .bss                uninit   0x2000'173c     0x1  uds_tp.o [29]
+      .bss                uninit   0x2000'173d     0x1  uds_tp.o [29]
+      .bss                uninit   0x2000'173e     0x1  uds_tp.o [29]
+      .bss                uninit   0x2000'173f     0x1  uds_tp.o [29]
+      .bss                uninit   0x2000'1740     0x1  uds_tp.o [29]
+      .bss                uninit   0x2000'1741     0x1  uds_tp.o [29]
+      .bss                uninit   0x2000'1742     0x1  uds_tp.o [29]
+      .bss                uninit   0x2000'1743     0x1  voltage.o [3]
+      .bss                uninit   0x2000'1744     0x1  voltage.o [3]
+    bss_region_end_section
+                          uninit   0x2000'1748     0x0  <internal module>
+    BSS_end_section       uninit   0x2000'1748     0x0  <internal module>
+                                 - 0x2000'1748   0xf08
+
+"SharedSegment_SharedSegment":                     0x8
+  SharedSegment_block              0x2000'7bf8     0x8  <Block>
+    SharedSegment_start_section
+                          uninit   0x2000'7bf8     0x0  <internal module>
+    SharedSegment_region_start_section
+                          uninit   0x2000'7bf8     0x0  <internal module>
+    SharedSegment                  0x2000'7bf8     0x8  <Block>
+      SharedSegment-1              0x2000'7bf8     0x8  <Init block>
+        .SharedSegment    inited   0x2000'7bf8     0x8  boot_shared.o [29]
+    SharedSegment_region_end_section
+                          uninit   0x2000'7c00     0x0  <internal module>
+    SharedSegment_end_section
+                          uninit   0x2000'7c00     0x0  <internal module>
+                                 - 0x2000'7c00     0x8
+
+"STACK_STACK":                                   0x400
+  STACK_block                      0x2000'7c00   0x400  <Block>
+    STACK_start_section   uninit   0x2000'7c00     0x0  <internal module>
+    STACK_region_start_section
+                          uninit   0x2000'7c00     0x0  <internal module>
+    STACK_empty_block              0x2000'7c00   0x400  <Block>
+      STACK_empty_block   uninit   0x2000'7c00   0x400  <Block tail>
+    STACK_region_end_section
+                          uninit   0x2000'8000     0x0  <internal module>
+    STACK_end_section     uninit   0x2000'8000     0x0  <internal module>
+                                 - 0x2000'8000   0x400
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+       0x82b8       0x83ff     0x148
+     0x1'8258     0x3'ffff  0x2'7da8
+  0x2000'1748  0x2000'7bf7    0x64b0
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                            ro code  rw code  ro data  rw data  ro data
+                                                                           (abs)
+    ------                            -------  -------  -------  -------  -------
+command line/config:
+    <internal module>
+    -----------------------------------------------------------------------------
+    Total:
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app: [1]
+    main.o                                452                        236
+    -----------------------------------------------------------------------------
+    Total:                                452                        236
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\gauges: [2]
+    ambient.o                             344               114        7
+    cng.o                                 356                28        5
+    coolant.o                             332                          5
+    fuel.o                              1'380               280       47
+    meter_display.o                       640               576
+    odo.o                                 384                         15
+    rpm.o                                 120                          6
+    speed.o                               192                          6
+    tpms_data.o                           314
+    -----------------------------------------------------------------------------
+    Total:                              4'062               998       91
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\power: [3]
+    lowpower.o                            980                         22
+    pwr_mgr.o                             716                 2       23
+    voltage.o                             506                         10
+    -----------------------------------------------------------------------------
+    Total:                              2'202                 2       55
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\sheduler: [4]
+    scheduler.o                           120               580      384
+    -----------------------------------------------------------------------------
+    Total:                                120               580      384
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\system: [5]
+    sys_mgr.o                             116                          4
+    -----------------------------------------------------------------------------
+    Total:                                116                          4
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\ui: [6]
+    backlight.o                            76
+    buzzer.o                              652                          6
+    lcd_ui.o                            1'802                45       13
+    led_ind.o                           2'572                         11
+    -----------------------------------------------------------------------------
+    Total:                              5'102                45       30
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board: [7]
+    RamInit0.o                            136
+    RamInit1.o                            312                60
+    RamInit2.o                              2
+    adc_config.o                                             40
+    can_config.o                                             56      536
+    clock_config.o                                          100       64
+    dma_config.o                                             61       64
+    i2c_config.o                                             24       68
+    lptmr_config.o                                           16
+    mpwm_config.o                                            48      144
+    pin_mux.o                                             1'064
+    power_config.o                                           22       24
+    spi_config.o                                             28       52
+    startup.o                              80
+    uart_config.o                                            24      104
+    utility_flash_ecc_fault_config.o                          8        8
+    vector.o                              696
+    vector_table_copy.o                   518                 4
+    -----------------------------------------------------------------------------
+    Total:                              1'744             1'555    1'064
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\sc5037: [8]
+    sc5037.o                              546                         40
+    sc5037_hal_stm32.o                    182                         12
+    -----------------------------------------------------------------------------
+    Total:                                728                         52
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\hal: [9]
+    hal_adc.o                             440                16       26
+    hal_backlight.o                        60
+    hal_buzzer.o                           62
+    hal_can.o                           1'076                24      758
+    hal_gpio.o                             44               264
+    hal_lowpower.o                      1'296                68        3
+    hal_rtc_ds1307.o                      552                 8
+    hal_tick.o                             88                          4
+    -----------------------------------------------------------------------------
+    Total:                              3'618               380      791
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\middleware\utility_flash_ecc_fault: [10]
+    flash_ecc_fault.o                     184                          4
+    -----------------------------------------------------------------------------
+    Total:                                184                          4
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\middleware\utility_print\printf: [11]
+    -----------------------------------------------------------------------------
+    Total:
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\devices\YTM32B1MC0\startup: [12]
+    system_YTM32B1MC0.o                   104                 4        4
+    -----------------------------------------------------------------------------
+    Total:                                104                 4        4
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\adc: [13]
+    adc_driver.o                        1'304                 5
+    -----------------------------------------------------------------------------
+    Total:                              1'304                 5
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\clock\YTM32B1Mx: [14]
+    clock_YTM32B1Mx.o                   2'210                88       20
+    -----------------------------------------------------------------------------
+    Total:                              2'210                88       20
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\dma: [15]
+    dma_driver.o                        2'336                14        4
+    dma_hw_access.o                     1'056
+    dma_irq.o                              88
+    -----------------------------------------------------------------------------
+    Total:                              3'480                14        4
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\flash: [16]
+    flash_driver.o                        712      260      264        8
+    -----------------------------------------------------------------------------
+    Total:                                712      260      264        8
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\flexcan: [17]
+    flexcan_driver.o                    4'272                38        8
+    flexcan_hw_access.o                 2'520                84
+    flexcan_irq.o                         172
+    -----------------------------------------------------------------------------
+    Total:                              6'964               122        8
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\i2c: [18]
+    i2c_driver.o                        5'392                18       16
+    i2c_irq.o                              30
+    -----------------------------------------------------------------------------
+    Total:                              5'422                18       16
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\interrupt: [19]
+    interrupt_manager.o                   214                          4
+    -----------------------------------------------------------------------------
+    Total:                                214                          4
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\lptmr: [20]
+    lptmr_driver.o                        832                 4        4
+    lptmr_hw_access.o                      30
+    -----------------------------------------------------------------------------
+    Total:                                862                 4        4
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\mpwm: [21]
+    mpwm_common.o                         316                38       42
+    mpwm_pwm_driver.o                   1'716
+    -----------------------------------------------------------------------------
+    Total:                              2'032                38       42
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\pins: [22]
+    pins_driver.o                         248
+    pins_port_hw_access.o                 468
+    -----------------------------------------------------------------------------
+    Total:                                716
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\power: [23]
+    power_manager.o                       368
+    -----------------------------------------------------------------------------
+    Total:                                368
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\power\YTM32B1Mx: [24]
+    power_manager_YTM32B1Mx.o             268                         16
+    -----------------------------------------------------------------------------
+    Total:                                268                         16
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\spi: [25]
+    spi_hw_access.o                       760                32
+    spi_irq.o                              30
+    spi_master_driver.o                 1'956
+    spi_shared_function.o                 572                24       32
+    spi_slave_driver.o                    452
+    -----------------------------------------------------------------------------
+    Total:                              3'770                56       32
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\uart: [26]
+    uart_driver.o                       3'572                24       12
+    uart_hw_access.o                      286
+    uart_irq.o                             30                12       12
+    -----------------------------------------------------------------------------
+    Total:                              3'888                36       24
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\rtos\osif: [27]
+    osif_baremetal.o                      288                 1        5
+    -----------------------------------------------------------------------------
+    Total:                                288                 1        5
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\can: [28]
+    can_app.o                             682                         37
+    can_rx_parse.o                        398
+    can_tx_build.o                        540
+    -----------------------------------------------------------------------------
+    Total:                              1'620                         37
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\diag: [29]
+    app_info.o                                                                112
+    boot_shared.o                                             8        8
+    uds_did.o                              94                48
+    uds_svc.o                           2'788                39      288
+    uds_tp.o                            1'684                      1'058
+    -----------------------------------------------------------------------------
+    Total:                              4'566                95    1'354      112
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\input: [30]
+    hw_input.o                            376                 1        1
+    radio_input.o                       1'184                        155
+    rtc_input.o                           260                          7
+    -----------------------------------------------------------------------------
+    Total:                              1'820                 1      163
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\nvm: [31]
+    nvm_storage.o                          62
+    odo_log.o                             984      176      252       27
+    -----------------------------------------------------------------------------
+    Total:                              1'046      176      252       27
+
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\soc: [32]
+    soc_uart.o                            152                 1        9
+    -----------------------------------------------------------------------------
+    Total:                                152                 1        9
+
+m7M_tl.a: [33]
+    -----------------------------------------------------------------------------
+    Total:
+
+rt7M_tl.a: [34]
+    ABImemclr4.o                            6
+    ABImemcpy.o                           166
+    ABImemset.o                           102
+    ABImemset48.o                          50
+    I64DivMod.o                           560
+    I64DivZer.o                             2
+    I64Shl.o                               34
+    memset.o                               20
+    -----------------------------------------------------------------------------
+    Total:                                940
+
+    Gaps                                   30
+    Linker created                         16       16       17    2'048
+---------------------------------------------------------------------------------
+    Grand Total:                       61'120      452    4'576    6'536      112
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+ACMP0_IRQHandler           0x1'7cc9    0x8  Code  Wk  vector_table_copy.o [7]
+ADC0_IRQHandler            0x1'7cc1    0x8  Code  Wk  vector_table_copy.o [7]
+ADC_DRV_ConfigConverter
+                             0x9559   0xa8  Code  Gb  adc_driver.o [13]
+ADC_DRV_ConfigHwCompare
+                             0x9645   0x66  Code  Gb  adc_driver.o [13]
+ADC_DRV_ConfigSequence       0x96ab   0x68  Code  Gb  adc_driver.o [13]
+ADC_DRV_Disable              0x960f   0x20  Code  Gb  adc_driver.o [13]
+ADC_DRV_Enable               0x9601    0xe  Code  Gb  adc_driver.o [13]
+ADC_DRV_Start                0x962f   0x16  Code  Gb  adc_driver.o [13]
+ADC_Disable                  0x9539   0x10  Code  Lc  adc_driver.o [13]
+ADC_Enable                   0x9549   0x10  Code  Lc  adc_driver.o [13]
+ADC_GetConvActiveFlag        0x9209   0x14  Code  Lc  adc_driver.o [13]
+ADC_GetEnableFlag            0x921d   0x14  Code  Lc  adc_driver.o [13]
+ADC_SetAwdEffectiveMode
+                             0x945f   0x1a  Code  Lc  adc_driver.o [13]
+ADC_SetAwdIntEnableFlag
+                             0x9441   0x1e  Code  Lc  adc_driver.o [13]
+ADC_SetClockDivide           0x9231   0x14  Code  Lc  adc_driver.o [13]
+ADC_SetDMAEnableFlag         0x9323   0x1c  Code  Lc  adc_driver.o [13]
+ADC_SetDMAWatermark          0x930f   0x14  Code  Lc  adc_driver.o [13]
+ADC_SetEoSeqIntEnableFlag
+                             0x94ef   0x1e  Code  Lc  adc_driver.o [13]
+ADC_SetEocIntEnableFlag
+                             0x94d1   0x1e  Code  Lc  adc_driver.o [13]
+ADC_SetHwCompareAllEnableFlag
+                             0x9365   0x1e  Code  Lc  adc_driver.o [13]
+ADC_SetHwCompareCompHighValue
+                             0x939f   0x16  Code  Lc  adc_driver.o [13]
+ADC_SetHwCompareCompLowValue
+                             0x93b5   0x12  Code  Lc  adc_driver.o [13]
+ADC_SetHwCompareEnableFlag
+                             0x933f   0x26  Code  Lc  adc_driver.o [13]
+ADC_SetHwCompareRangeEnableFlag
+                             0x9383   0x1c  Code  Lc  adc_driver.o [13]
+ADC_SetLowPowerEnableFlag
+                             0x92c5   0x1e  Code  Lc  adc_driver.o [13]
+ADC_SetOverrunModeFlag       0x926b   0x1e  Code  Lc  adc_driver.o [13]
+ADC_SetOvrIntEnableFlag
+                             0x9479   0x1e  Code  Lc  adc_driver.o [13]
+ADC_SetReadyIntEnableFlag
+                             0x9497   0x1c  Code  Lc  adc_driver.o [13]
+ADC_SetResolution            0x92fb   0x14  Code  Lc  adc_driver.o [13]
+ADC_SetSampEndIntEnableFlag
+                             0x94b3   0x1e  Code  Lc  adc_driver.o [13]
+ADC_SetSampleTime            0x9253   0x18  Code  Lc  adc_driver.o [13]
+ADC_SetSequeceChannel        0x93c7   0x1e  Code  Lc  adc_driver.o [13]
+ADC_SetSequeceTotalChannel
+                             0x93e5   0x16  Code  Lc  adc_driver.o [13]
+ADC_SetSequenceMode          0x93fb   0x46  Code  Lc  adc_driver.o [13]
+ADC_SetStartTime             0x9245    0xe  Code  Lc  adc_driver.o [13]
+ADC_SetTriggerMode           0x92e7   0x14  Code  Lc  adc_driver.o [13]
+ADC_SetTriggerSource         0x92e3    0x4  Code  Lc  adc_driver.o [13]
+ADC_SetWaitEnableFlag        0x92a7   0x1e  Code  Lc  adc_driver.o [13]
+ADC_SetautoOffEnableFlag
+                             0x9289   0x1e  Code  Lc  adc_driver.o [13]
+ADC_Start                    0x952b    0xe  Code  Lc  adc_driver.o [13]
+ADC_Stop                     0x950d   0x1e  Code  Lc  adc_driver.o [13]
+AMBIENT_Init                 0xa09d   0x1a  Code  Gb  ambient.o [2]
+AMBIENT_OhmToTemp            0xa0b7   0xa6  Code  Gb  ambient.o [2]
+AMBIENT_OhmToTemp::tbl       0x849c   0x70  Data  Lc  ambient.o [2]
+AMBIENT_Task                 0xa15d   0x82  Code  Gb  ambient.o [2]
+ARM.exidx_region_end       0x1'7e10         Data  Gb  <internal module>
+ARM.exidx_region_start     0x1'7e10         Data  Gb  <internal module>
+ARM_block$$Base            0x1'7e10          --   Gb  - Linker created -
+ARM_block$$Limit           0x1'7e10          --   Gb  - Linker created -
+ARM_end                    0x1'7e10         Data  Gb  <internal module>
+ARM_start                  0x1'7e10         Data  Gb  <internal module>
+BACKLIGHT_Init             0x1'7565   0x12  Code  Gb  backlight.o [6]
+BACKLIGHT_Task             0x1'7577   0x3a  Code  Gb  backlight.o [6]
+BL_DutyFromPct             0x1'0435   0x18  Code  Lc  hal_backlight.o [9]
+BSS_block$$Base         0x2000'0840          --   Gb  - Linker created -
+BSS_block$$Limit        0x2000'1748          --   Gb  - Linker created -
+BSS_end                 0x2000'1748         Data  Gb  <internal module>
+BSS_start               0x2000'0840         Data  Gb  <internal module>
+BUZZER_Init                  0xb19f   0x2c  Code  Gb  buzzer.o [6]
+BUZZER_Task                  0xb35d   0x84  Code  Gb  buzzer.o [6]
+BUZZER_Trigger               0xb237   0x32  Code  Gb  buzzer.o [6]
+Board_Init                 0x1'745f   0xa0  Code  Lc  main.o [1]
+BusFault_Handler           0x1'7c69    0x8  Code  Wk  vector_table_copy.o [7]
+CAN0_Error_IRQHandler      0x1'7b55    0xa  Code  Gb  flexcan_irq.o [17]
+CAN0_ORed_0_15_MB_IRQHandler
+                           0x1'7b69    0xe  Code  Gb  flexcan_irq.o [17]
+CAN0_ORed_16_31_MB_IRQHandler
+                           0x1'7b77    0xe  Code  Gb  flexcan_irq.o [17]
+CAN0_ORed_32_47_MB_IRQHandler
+                           0x1'7b85    0xe  Code  Gb  flexcan_irq.o [17]
+CAN0_ORed_48_63_MB_IRQHandler
+                           0x1'7b93    0xe  Code  Gb  flexcan_irq.o [17]
+CAN0_ORed_IRQHandler       0x1'7b4b    0xa  Code  Gb  flexcan_irq.o [17]
+CAN0_Wake_Up_IRQHandler
+                           0x1'7b5f    0xa  Code  Gb  flexcan_irq.o [17]
+CAN1_Error_IRQHandler      0x1'7bab    0xa  Code  Gb  flexcan_irq.o [17]
+CAN1_ORed_0_15_MB_IRQHandler
+                           0x1'7bbf    0xe  Code  Gb  flexcan_irq.o [17]
+CAN1_ORed_16_31_MB_IRQHandler
+                           0x1'7bcd    0xe  Code  Gb  flexcan_irq.o [17]
+CAN1_ORed_32_47_MB_IRQHandler
+                           0x1'7bdb    0xe  Code  Gb  flexcan_irq.o [17]
+CAN1_ORed_48_63_MB_IRQHandler
+                           0x1'7be9    0xe  Code  Gb  flexcan_irq.o [17]
+CAN1_ORed_IRQHandler       0x1'7ba1    0xa  Code  Gb  flexcan_irq.o [17]
+CAN1_Wake_Up_IRQHandler
+                           0x1'7bb5    0xa  Code  Gb  flexcan_irq.o [17]
+CAN_BuildTx380               0xd58f   0xc4  Code  Gb  can_tx_build.o [28]
+CAN_BuildTx381               0xd653   0xf8  Code  Gb  can_tx_build.o [28]
+CAN_CheckTimeouts            0xbddd   0xaa  Code  Gb  can_app.o [28]
+CAN_EvalTimeout              0xbd3b   0x8c  Code  Lc  can_app.o [28]
+CAN_GetFuelPercentSignal
+                             0xd52f   0x26  Code  Lc  can_tx_build.o [28]
+CAN_GetSeatbeltSignal        0xd555   0x10  Code  Lc  can_tx_build.o [28]
+CAN_GetTurnSignal            0xd565   0x2a  Code  Lc  can_tx_build.o [28]
+CAN_Init                     0xbc11   0x42  Code  Gb  can_app.o [28]
+CAN_ParseABS                 0xd3a1   0x7c  Code  Gb  can_rx_parse.o [28]
+CAN_ParseCNG                 0xd49d   0x30  Code  Gb  can_rx_parse.o [28]
+CAN_ParseECU302              0xd41d   0x3c  Code  Gb  can_rx_parse.o [28]
+CAN_ParseEMS360              0xd459   0x28  Code  Gb  can_rx_parse.o [28]
+CAN_ParseGPF                 0xd481   0x1c  Code  Gb  can_rx_parse.o [28]
+CAN_ParseTPMS                0xd4cd   0x62  Code  Gb  can_rx_parse.o [28]
+CAN_RxTask                   0xbc53   0xe8  Code  Gb  can_app.o [28]
+CAN_TxTask                   0xbe87   0x34  Code  Gb  can_app.o [28]
+CLOCK_DRV_GetFreq            0x9cf7  0x14e  Code  Gb  clock_YTM32B1Mx.o [14]
+CLOCK_DRV_Init               0x9945   0x22  Code  Gb  clock_YTM32B1Mx.o [14]
+CLOCK_DRV_ResetModule        0x9ce9    0xe  Code  Gb  clock_YTM32B1Mx.o [14]
+CLOCK_GetIpcCtrlReg          0x9c87   0x14  Code  Lc  clock_YTM32B1Mx.o [14]
+CLOCK_SCU_WaitDividerStable
+                             0x9bf9   0x28  Code  Lc  clock_YTM32B1Mx.o [14]
+CLOCK_SYS_ConfigureClkOut
+                             0x9979   0x1a  Code  Lc  clock_YTM32B1Mx.o [14]
+CLOCK_SYS_ConfigureSystemClock
+                             0x9bb9   0x40  Code  Lc  clock_YTM32B1Mx.o [14]
+CLOCK_SYS_DisableClkOut
+                             0x9993    0xe  Code  Lc  clock_YTM32B1Mx.o [14]
+CLOCK_SYS_DisableCmu         0x9967   0x12  Code  Lc  clock_YTM32B1Mx.o [14]
+CLOCK_SYS_GetFreq            0x9fb1    0xa  Code  Gb  clock_YTM32B1Mx.o [14]
+CLOCK_SYS_Init               0x9e45   0x14  Code  Gb  clock_YTM32B1Mx.o [14]
+CLOCK_SYS_SetCmuChannelConfiguration
+                             0x9b79   0x40  Code  Lc  clock_YTM32B1Mx.o [14]
+CLOCK_SYS_SetConfiguration
+                             0x9fbb    0x8  Code  Gb  clock_YTM32B1Mx.o [14]
+CLOCK_SYS_SetDefaultCmuChannelConfiguration
+                             0x9b19   0x60  Code  Lc  clock_YTM32B1Mx.o [14]
+CLOCK_SYS_SetIpcConfiguration
+                             0x9c9b   0x4e  Code  Lc  clock_YTM32B1Mx.o [14]
+CLOCK_SYS_SetScuConfiguration
+                             0x99a1  0x178  Code  Lc  clock_YTM32B1Mx.o [14]
+CLOCK_SYS_UpdateConfiguration
+                             0x9e59  0x11e  Code  Gb  clock_YTM32B1Mx.o [14]
+CLOCK_SYS_WaitFXOSCValid
+                             0x9c21   0x66  Code  Gb  clock_YTM32B1Mx.o [14]
+CNG_Init                   0x1'5aad    0xe  Code  Gb  cng.o [2]
+CNG_PercentToSegments      0x1'5abb   0xa0  Code  Lc  cng.o [2]
+CNG_Task                   0x1'5b5b   0xa8  Code  Gb  cng.o [2]
+CODE_RAM_block$$Base    0x2000'0400          --   Gb  - Linker created -
+CODE_RAM_block$$Limit   0x2000'05c4          --   Gb  - Linker created -
+CODE_RAM_end            0x2000'05c4         Data  Gb  <internal module>
+CODE_RAM_ram_end        0x2000'05c4         Data  Gb  <internal module>
+CODE_RAM_ram_start      0x2000'0400         Data  Gb  <internal module>
+CODE_RAM_rom_block$$Base
+                           0x1'7e10          --   Gb  - Linker created -
+CODE_RAM_rom_block$$Limit
+                           0x1'7fd4          --   Gb  - Linker created -
+CODE_RAM_rom_end           0x1'7fd4         Data  Gb  <internal module>
+CODE_RAM_rom_start         0x1'7e10         Data  Gb  <internal module>
+CODE_RAM_start          0x2000'0400         Data  Gb  <internal module>
+COOLANT_Init               0x1'5c11   0x26  Code  Gb  coolant.o [2]
+COOLANT_RawToTemp          0x1'5c37   0x14  Code  Gb  coolant.o [2]
+COOLANT_Task               0x1'5cad   0xa6  Code  Gb  coolant.o [2]
+COOLANT_TempToSegments     0x1'5c4b   0x62  Code  Lc  coolant.o [2]
+Cluster_Init               0x1'73a1   0xa4  Code  Lc  main.o [1]
+Coolant                 0x2000'0614    0xc  Data  Lc  lcd_ui.o [6]
+CopyLayout                   0x9030   0x30  Data  Gb  RamInit1.o [7]
+DATA_RAM_block$$Base    0x2000'05c4          --   Gb  - Linker created -
+DATA_RAM_block$$Limit   0x2000'0840          --   Gb  - Linker created -
+DATA_RAM_end            0x2000'0840         Data  Gb  <internal module>
+DATA_RAM_ram_end        0x2000'0840         Data  Gb  <internal module>
+DATA_RAM_ram_start      0x2000'05c4         Data  Gb  <internal module>
+DATA_RAM_rom_block$$Base
+                           0x1'7fd4          --   Gb  - Linker created -
+DATA_RAM_rom_block$$Limit
+                           0x1'8250          --   Gb  - Linker created -
+DATA_RAM_rom_end           0x1'8250         Data  Gb  <internal module>
+DATA_RAM_rom_start         0x1'7fd4         Data  Gb  <internal module>
+DATA_RAM_start          0x2000'05c4         Data  Gb  <internal module>
+DMA0_IRQHandler            0x1'7af7    0xa  Code  Gb  dma_irq.o [15]
+DMA1_IRQHandler            0x1'7b01    0xa  Code  Gb  dma_irq.o [15]
+DMA2_IRQHandler            0x1'7b0b    0xa  Code  Gb  dma_irq.o [15]
+DMA3_IRQHandler            0x1'7b15    0xa  Code  Gb  dma_irq.o [15]
+DMAMUX_Init                  0xb139   0x1c  Code  Gb  dma_hw_access.o [15]
+DMAMUX_SetChannelSource
+                             0xa653    0xa  Code  Lc  dma_driver.o [15]
+DMA_CTSClearReg              0xadf1   0x9e  Code  Gb  dma_hw_access.o [15]
+DMA_CTSGetCurrentTriggerCount
+                             0xb107   0x32  Code  Gb  dma_hw_access.o [15]
+DMA_CTSSetAttribute          0xae8f   0x34  Code  Gb  dma_hw_access.o [15]
+DMA_CTSSetChannelLoopLink
+                             0xafb5   0xb2  Code  Gb  dma_hw_access.o [15]
+DMA_CTSSetChannelTriggerLink
+                             0xa595   0x5c  Code  Lc  dma_driver.o [15]
+DMA_CTSSetDestAddr           0xa53b    0xc  Code  Lc  dma_driver.o [15]
+DMA_CTSSetDestLastAdjust
+                             0xa553    0xc  Code  Lc  dma_driver.o [15]
+DMA_CTSSetDestMinorLoopOffsetCmd
+                             0xa4f5   0x3a  Code  Lc  dma_driver.o [15]
+DMA_CTSSetDestOffset         0xa547    0xc  Code  Lc  dma_driver.o [15]
+DMA_CTSSetDisableDmaRequestAfterCTSDoneCmd
+                             0xa5f1   0x36  Code  Lc  dma_driver.o [15]
+DMA_CTSSetEngineStall        0xa47b   0x2c  Code  Lc  dma_driver.o [15]
+DMA_CTSSetMajorCompleteIntCmd
+                             0xa627   0x2c  Code  Lc  dma_driver.o [15]
+DMA_CTSSetNbytes             0xaec3   0x7c  Code  Gb  dma_hw_access.o [15]
+DMA_CTSSetRamReloadCmd       0xa55f   0x36  Code  Lc  dma_driver.o [15]
+DMA_CTSSetRamReloadLink
+                             0xafa9    0xc  Code  Gb  dma_hw_access.o [15]
+DMA_CTSSetSrcAddr            0xa4a7    0xc  Code  Lc  dma_driver.o [15]
+DMA_CTSSetSrcLastAdjust
+                             0xa52f    0xc  Code  Lc  dma_driver.o [15]
+DMA_CTSSetSrcMinorLoopOffsetCmd
+                             0xa4bf   0x36  Code  Lc  dma_driver.o [15]
+DMA_CTSSetSrcOffset          0xa4b3    0xc  Code  Lc  dma_driver.o [15]
+DMA_CTSSetTransferLoopOffset
+                             0xaf3f   0x64  Code  Gb  dma_hw_access.o [15]
+DMA_CTSSetTriggerCount       0xb067   0xa0  Code  Gb  dma_hw_access.o [15]
+DMA_ClearDoneStatusFlag
+                             0xa45b    0xa  Code  Lc  dma_driver.o [15]
+DMA_ClearErrorIntStatusFlag
+                             0xa451    0xa  Code  Lc  dma_driver.o [15]
+DMA_ClearIntStatusFlag       0xa465    0xc  Code  Lc  dma_driver.o [15]
+DMA_DRV_ChannelInit          0xa6cf   0xa2  Code  Gb  dma_driver.o [15]
+DMA_DRV_ClearIntStatus       0xa793   0x2e  Code  Lc  dma_driver.o [15]
+DMA_DRV_ClearStructure       0xad25   0x10  Code  Lc  dma_driver.o [15]
+DMA_DRV_ConfigLoopTransfer
+                             0xaa43   0x3a  Code  Gb  dma_driver.o [15]
+DMA_DRV_ConfigMultiBlockTransfer
+                             0xa9ef   0x54  Code  Gb  dma_driver.o [15]
+DMA_DRV_ConfigSingleBlockTransfer
+                             0xa877  0x178  Code  Gb  dma_driver.o [15]
+DMA_DRV_DisableRequestsOnTransferComplete
+                             0xab91   0x24  Code  Gb  dma_driver.o [15]
+DMA_DRV_ErrorIRQHandler
+                             0xa81b   0x5c  Code  Gb  dma_driver.o [15]
+DMA_DRV_GetDmaRegBaseAddr
+                             0xad0b    0x8  Code  Gb  dma_driver.o [15]
+DMA_DRV_GetIntStatus         0xa7c1   0x20  Code  Lc  dma_driver.o [15]
+DMA_DRV_GetRemainingTriggerIterationsCount
+                             0xab73   0x1e  Code  Gb  dma_driver.o [15]
+DMA_DRV_IRQHandler           0xa7e1   0x3a  Code  Gb  dma_driver.o [15]
+DMA_DRV_Init                 0xa65d   0x72  Code  Gb  dma_driver.o [15]
+DMA_DRV_InstallCallback
+                             0xa771   0x22  Code  Gb  dma_driver.o [15]
+DMA_DRV_PushConfigToReg
+                             0xabb5  0x156  Code  Gb  dma_driver.o [15]
+DMA_DRV_SetChannelRequestAndTrigger
+                             0xaac5   0x20  Code  Gb  dma_driver.o [15]
+DMA_DRV_SetDestAddr          0xab2d   0x24  Code  Gb  dma_driver.o [15]
+DMA_DRV_SetSrcAddr           0xaae5   0x24  Code  Gb  dma_driver.o [15]
+DMA_DRV_SetSrcLastAddrAdjustment
+                             0xab09   0x24  Code  Gb  dma_driver.o [15]
+DMA_DRV_SetTriggerLoopIterationCount
+                             0xab51   0x22  Code  Gb  dma_driver.o [15]
+DMA_DRV_StartChannel         0xaa7d   0x24  Code  Gb  dma_driver.o [15]
+DMA_DRV_StopChannel          0xaaa1   0x24  Code  Gb  dma_driver.o [15]
+DMA_Error_IRQHandler       0x1'7b1f   0x2c  Code  Gb  dma_irq.o [15]
+DMA_GetErrorIntStatusFlag
+                           0x1'7af3    0x4  Code  Lc  dma_irq.o [15]
+DMA_GetIntStatusFlag         0xa471    0xa  Code  Lc  dma_driver.o [15]
+DMA_Init                     0xad35   0x36  Code  Gb  dma_hw_access.o [15]
+DMA_SetDmaRequestCmd         0xad9f   0x52  Code  Gb  dma_hw_access.o [15]
+DMA_SetErrorIntCmd           0xad6b   0x34  Code  Gb  dma_hw_access.o [15]
+DMA_SetHaltOnErrorCmd        0xa415   0x1e  Code  Lc  dma_driver.o [15]
+DMA_SetTransferLoopMappingCmd
+                             0xa433   0x1e  Code  Lc  dma_driver.o [15]
+DebugMon_Handler           0x1'7c81    0x8  Code  Wk  vector_table_copy.o [7]
+DefaultISR                 0x1'7af1    0x2  Code  Gb  vector_table_copy.o [7]
+EFM_Ecc_IRQHandler         0x1'7c99    0x8  Code  Wk  vector_table_copy.o [7]
+EFM_Error_IRQHandler       0x1'6005   0x14  Code  Gb  flash_driver.o [16]
+EFM_IRQHandler             0x1'5ff1   0x14  Code  Gb  flash_driver.o [16]
+EMU0_DB_IRQHandler         0x1'7cd9    0x8  Code  Wk  vector_table_copy.o [7]
+EMU0_SB_IRQHandler         0x1'7cd1    0x8  Code  Wk  vector_table_copy.o [7]
+FLASH_ClearDoneStatusFlag
+                           0x1'5d7f    0x6  Code  Lc  flash_driver.o [16]
+FLASH_ClearReadCollisionFlag
+                           0x1'5d8f    0x6  Code  Lc  flash_driver.o [16]
+FLASH_DRV_GetDoneStatus
+                           0x1'5fad   0x10  Code  Gb  flash_driver.o [16]
+FLASH_DRV_GetReadCollisionFlag
+                           0x1'5fbd   0x10  Code  Gb  flash_driver.o [16]
+FLASH_DoneIRQHandler       0x1'5e4b  0x162  Code  Lc  flash_driver.o [16]
+FLASH_ECC_Fault_Handler
+                           0x1'602d   0x16  Code  Gb  flash_ecc_fault.o [10]
+FLASH_ECC_Fault_Handler_C
+                           0x1'6043   0x72  Code  Gb  flash_ecc_fault.o [10]
+FLASH_ECC_Fault_Init       0x1'60b5   0x1c  Code  Gb  flash_ecc_fault.o [10]
+FLASH_EventCallback        0x1'5dff   0x4c  Code  Lc  flash_driver.o [16]
+FLASH_GetDoneStatus        0x1'5d77    0x8  Code  Lc  flash_driver.o [16]
+FLASH_GetErrorStatus       0x1'5d65   0x12  Code  Lc  flash_driver.o [16]
+FLASH_GetReadCollisionFlag
+                           0x1'5d85    0xa  Code  Lc  flash_driver.o [16]
+FLASH_GetSectorSize        0x1'5d95   0x48  Code  Lc  flash_driver.o [16]
+FLASH_LaunchCommandSequence
+                        0x2000'0411  0x104  Code  Lc  flash_driver.o [16]
+FLASH_ReadCollisionIRQHandler
+                           0x1'5fcd   0x24  Code  Lc  flash_driver.o [16]
+FLASH_StateCalcShiftSum
+                           0x1'5ddd   0x22  Code  Lc  flash_driver.o [16]
+FLEXCAN_ClearBusOffIntStatusFlag
+                             0xe6cb    0xc  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_ClearErrIntStatusFlag
+                             0xe6bd    0xe  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_ClearMsgBuffIntStatusFlag
+                             0xc4ef   0x1a  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_ClearRAM             0xdfcd   0x40  Code  Lc  flexcan_hw_access.o [17]
+FLEXCAN_ClearWAKINT          0xc5b5    0xa  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_CompleteRxMessageFifoData
+                             0xd2c9   0xbe  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_CompleteTransfer
+                             0xd285   0x42  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_ComputeDLCValue
+                             0xdf43   0x18  Code  Lc  flexcan_hw_access.o [17]
+FLEXCAN_ComputeDLCValue::payload_code
+                             0x8650   0x44  Data  Lc  flexcan_hw_access.o [17]
+FLEXCAN_ComputePayloadSize
+                             0xdf5b   0x4c  Code  Lc  flexcan_hw_access.o [17]
+FLEXCAN_DRV_ConfigRxMb       0xcaa9   0xaa  Code  Gb  flexcan_driver.o [17]
+FLEXCAN_DRV_ConfigTxMb       0xc9d9   0x66  Code  Gb  flexcan_driver.o [17]
+FLEXCAN_DRV_Deinit           0xcba1  0x138  Code  Gb  flexcan_driver.o [17]
+FLEXCAN_DRV_GetTransferStatus
+                             0xd0b1   0x2c  Code  Gb  flexcan_driver.o [17]
+FLEXCAN_DRV_Init             0xc7cf  0x20a  Code  Gb  flexcan_driver.o [17]
+FLEXCAN_DRV_InstallEventCallback
+                             0xd387   0x12  Code  Gb  flexcan_driver.o [17]
+FLEXCAN_DRV_Receive          0xcb5d   0x3c  Code  Gb  flexcan_driver.o [17]
+FLEXCAN_DRV_Send             0xca45   0x5e  Code  Gb  flexcan_driver.o [17]
+FLEXCAN_DRV_SetRxIndividualMask
+                             0xc5fb  0x154  Code  Gb  flexcan_driver.o [17]
+FLEXCAN_DRV_SetRxMaskType
+                             0xc5bf   0x3c  Code  Gb  flexcan_driver.o [17]
+FLEXCAN_Disable              0xe061   0x1c  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_Enable               0xe04d   0x14  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_EnableIRQs           0xc74f   0x80  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_EnableRxFifo         0xe409   0x70  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_EnterFreezeMode
+                             0xe5fb   0xc2  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_Error_IRQHandler
+                             0xcfe3   0x7e  Code  Gb  flexcan_driver.o [17]
+FLEXCAN_ExitFreezeMode       0xe5df   0x1c  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_GetFreezeMode        0xc435    0xa  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_GetFreezeMode        0xde93    0xa  Code  Lc  flexcan_hw_access.o [17]
+FLEXCAN_GetMaxMbNum          0xdfa7   0x26  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_GetMaxMbNum::flexcanBase
+                             0x8694    0x8  Data  Lc  flexcan_hw_access.o [17]
+FLEXCAN_GetMaxMbNum::maxMbNum
+                             0x869c    0x8  Data  Lc  flexcan_hw_access.o [17]
+FLEXCAN_GetMaxMsgBuffNum
+                             0xc4b3    0x8  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_GetMsgBuff           0xe33d   0xc2  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_GetMsgBuffIntStatusFlag
+                             0xc4bb   0x34  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_GetMsgBuffRegion
+                             0xe00d   0x40  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_GetNoOfIndividualMBsRxFIFO
+                             0xc523   0x12  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_GetPayloadSize       0xe839   0x28  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_GetRxFifoIdFormat
+                             0xc483   0x30  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_GetRxFifoMask        0xdec7   0x7c  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_GetWAKINT            0xc5ad    0x8  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_IRQHandler           0xceb5  0x12e  Code  Gb  flexcan_driver.o [17]
+FLEXCAN_IRQHandlerRxFIFO
+                             0xccdd   0xb0  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_IRQHandlerRxMB       0xcd8d   0xa8  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_Init                 0xe07d   0x46  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_InstanceHasFD        0xc581   0x16  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_InstanceHasFD::fdInstances
+                             0x9202    0x2  Data  Lc  flexcan_driver.o [17]
+FLEXCAN_IsEnabled            0xc2fb    0xc  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_IsFDEnabled          0xc46b    0xa  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_IsFDEnabled          0xde9d    0xa  Code  Lc  flexcan_hw_access.o [17]
+FLEXCAN_IsOutOfRangeMbIdx
+                             0xe7cf   0x3a  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_IsRxFifoEnabled
+                             0xc479    0xa  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_IsRxFifoEnabled
+                             0xdea7    0xa  Code  Lc  flexcan_hw_access.o [17]
+FLEXCAN_LockRxMsgBuff        0xe3ff    0xa  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_ORed_IRQHandler
+                             0xce35   0x80  Code  Gb  flexcan_driver.o [17]
+FLEXCAN_ReadRxFifo           0xe6fd   0x70  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_SelectClock          0xc307    0xc  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_SetErrIntCmd         0xe577   0x68  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_SetExtendedTimeSegments
+                             0xc37f   0x5a  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_SetFDEnabled         0xc43f   0x2c  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_SetFDTimeSegments
+                             0xc3d9   0x5c  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_SetMaxMsgBuffNum
+                             0xe479   0xa6  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_SetMsgBuffIntCmd
+                             0xe51f   0x58  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_SetOperationMode
+                             0xe76d   0x62  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_SetPayloadSize       0xe809   0x30  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_SetRxFifoDMA         0xc597   0x16  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_SetRxIndividualExtMask
+                             0xc547    0xe  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_SetRxIndividualMask
+                             0xc375    0xa  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_SetRxIndividualStdMask
+                             0xc535   0x12  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_SetRxMaskType        0xc509   0x1a  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_SetRxMsgBuff         0xe27f   0xbe  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_SetSelfReception
+                             0xc56b   0x16  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_SetSelfReception
+                             0xdeb1   0x16  Code  Lc  flexcan_hw_access.o [17]
+FLEXCAN_SetStuffBitCount
+                             0xc555   0x16  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_SetTimeSegments
+                             0xc313   0x62  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_SetTxMsgBuff         0xe0c5  0x1ba  Code  Gb  flexcan_hw_access.o [17]
+FLEXCAN_StartRxMessageBufferData
+                             0xd1c9   0xb8  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_StartSendData        0xd0e5   0xde  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_UnlockRxMsgBuff
+                             0xc475    0x4  Code  Lc  flexcan_driver.o [17]
+FLEXCAN_WakeUpHandler        0xd069   0x42  Code  Gb  flexcan_driver.o [17]
+FUEL_GetPercent              0xee7f    0x6  Code  Gb  fuel.o [2]
+FUEL_GetSensorFault          0xee85   0x1a  Code  Gb  fuel.o [2]
+FUEL_Init                    0xe981   0xae  Code  Gb  fuel.o [2]
+FUEL_Task                    0xed83   0xfc  Code  Gb  fuel.o [2]
+GPIOA_IRQHandler           0x1'7d09    0x8  Code  Wk  vector_table_copy.o [7]
+GPIOB_IRQHandler           0x1'7d11    0x8  Code  Wk  vector_table_copy.o [7]
+GPIOC_IRQHandler           0x1'0bf1    0x8  Code  Gb  hal_lowpower.o [9]
+GPIOD_IRQHandler           0x1'0bf9    0x8  Code  Gb  hal_lowpower.o [9]
+GPIOE_IRQHandler           0x1'7d19    0x8  Code  Wk  vector_table_copy.o [7]
+HAL_ADC_Init                 0xa289   0x40  Code  Gb  hal_adc.o [9]
+HAL_ADC_IsReady              0xa383    0x6  Code  Gb  hal_adc.o [9]
+HAL_ADC_ReadOhms             0xa2c9   0x54  Code  Gb  hal_adc.o [9]
+HAL_ADC_ReadTempRaw          0xa31d   0x18  Code  Gb  hal_adc.o [9]
+HAL_ADC_ReadVbatMv           0xa335   0x4e  Code  Gb  hal_adc.o [9]
+HAL_BACKLIGHT_Set          0x1'044d   0x24  Code  Gb  hal_backlight.o [9]
+HAL_Buzzer_Off               0xb401   0x1e  Code  Gb  hal_buzzer.o [9]
+HAL_Buzzer_On                0xb3e1   0x20  Code  Gb  hal_buzzer.o [9]
+HAL_CAN_RxPop                0xc141   0x80  Code  Gb  hal_can.o [9]
+HAL_CAN_RxRecover            0xbfaf   0xb4  Code  Gb  hal_can.o [9]
+HAL_CAN_Send                 0xc1c1   0x78  Code  Gb  hal_can.o [9]
+HAL_CAN_SendUds              0xc239   0x78  Code  Gb  hal_can.o [9]
+HAL_GPIO_ReadPin           0x1'60e5   0x26  Code  Gb  hal_gpio.o [9]
+HAL_GetTickMs                0xf9eb    0x6  Code  Gb  hal_tick.o [9]
+HAL_LP_EnterLowPower       0x1'0abb    0x8  Code  Gb  hal_lowpower.o [9]
+HAL_LP_GetWakeSource       0x1'0ac3   0x18  Code  Gb  hal_lowpower.o [9]
+HAL_LP_Init                0x1'0a23   0x76  Code  Gb  hal_lowpower.o [9]
+HAL_LP_OnGpioIrq           0x1'0b01   0x8a  Code  Gb  hal_lowpower.o [9]
+HAL_LP_PrepareSleep        0x1'0a99   0x22  Code  Gb  hal_lowpower.o [9]
+HAL_LP_ResumeFromSleep     0x1'0adb   0x26  Code  Gb  hal_lowpower.o [9]
+HAL_RTC_Init               0x1'4e0b   0xae  Code  Gb  hal_rtc_ds1307.o [9]
+HAL_RTC_ReadTime           0x1'4ebd   0x52  Code  Gb  hal_rtc_ds1307.o [9]
+HAL_RTC_WriteTime          0x1'4f0f   0x52  Code  Gb  hal_rtc_ds1307.o [9]
+HAL_Tick_Init                0xf9db   0x10  Code  Gb  hal_tick.o [9]
+HAL_Tick_Resume              0xfa0b   0x16  Code  Gb  hal_tick.o [9]
+HAL_Tick_Suspend             0xf9f5   0x16  Code  Gb  hal_tick.o [9]
+HCU_IRQHandler             0x1'7e09    0x8  Code  Wk  vector_table_copy.o [7]
+HW_Init                    0x1'614d    0x2  Code  Gb  hw_input.o [30]
+HW_ReadBatOn               0x1'6111   0x36  Code  Lc  hw_input.o [30]
+HW_ReadBatOn::s_bat_on  0x2000'0834    0x1  Data  Lc  hw_input.o [30]
+HW_SampleTask              0x1'614f  0x13a  Code  Gb  hw_input.o [30]
+Hal_CAN_RxEventCall          0xc063   0xde  Code  Gb  hal_can.o [9]
+Hal_SetCanMailbox            0xbefd   0xb2  Code  Gb  hal_can.o [9]
+HardFault_Handler          0x1'7c59    0x8  Code  Wk  vector_table_copy.o [7]
+I2C0_Master_IRQHandler     0x1'7bf7    0xa  Code  Gb  i2c_irq.o [18]
+I2C0_Slave_IRQHandler      0x1'7c01    0xa  Code  Gb  i2c_irq.o [18]
+I2C1_Master_IRQHandler     0x1'7c0b    0xa  Code  Gb  i2c_irq.o [18]
+I2C_Clear_MasterArbitrationLostEvent
+                           0x1'3601    0x6  Code  Lc  i2c_driver.o [18]
+I2C_Clear_MasterFIFOErrorEvent
+                           0x1'35f1    0x8  Code  Lc  i2c_driver.o [18]
+I2C_Clear_MasterLineLowTimeoutEvent
+                           0x1'35f9    0x8  Code  Lc  i2c_driver.o [18]
+I2C_Clear_MasterNACKDetectEvent
+                           0x1'3607    0x6  Code  Lc  i2c_driver.o [18]
+I2C_Clear_SlaveBitErrorEvent
+                           0x1'3849    0x8  Code  Lc  i2c_driver.o [18]
+I2C_Clear_SlaveFIFOErrorEvent
+                           0x1'383f    0xa  Code  Lc  i2c_driver.o [18]
+I2C_Clear_SlaveRepeatedStartEvent
+                           0x1'3859    0x8  Code  Lc  i2c_driver.o [18]
+I2C_Clear_SlaveSTOPDetectEvent
+                           0x1'3851    0x8  Code  Lc  i2c_driver.o [18]
+I2C_Cmd_MasterTransmit     0x1'3773    0xc  Code  Lc  i2c_driver.o [18]
+I2C_DRV_ConfigureDmaTransfer
+                           0x1'3c05   0x64  Code  Lc  i2c_driver.o [18]
+I2C_DRV_MasterCmdQueueEmpty
+                           0x1'392f   0x12  Code  Lc  i2c_driver.o [18]
+I2C_DRV_MasterCompletDMATransfer
+                           0x1'3ddd   0x80  Code  Lc  i2c_driver.o [18]
+I2C_DRV_MasterDeinit       0x1'42fd   0x2e  Code  Gb  i2c_driver.o [18]
+I2C_DRV_MasterEndTransfer
+                           0x1'3af3   0x7e  Code  Lc  i2c_driver.o [18]
+I2C_DRV_MasterHandleReceiveDataReadyEvent
+                           0x1'402b   0x82  Code  Lc  i2c_driver.o [18]
+I2C_DRV_MasterHandleTransmitDataRequest
+                           0x1'3fbd   0x6e  Code  Lc  i2c_driver.o [18]
+I2C_DRV_MasterIRQHandler
+                           0x1'4731  0x198  Code  Gb  i2c_driver.o [18]
+I2C_DRV_MasterInit         0x1'41c3  0x13a  Code  Gb  i2c_driver.o [18]
+I2C_DRV_MasterQueueCmd     0x1'394b   0x48  Code  Lc  i2c_driver.o [18]
+I2C_DRV_MasterQueueData
+                           0x1'3a9f   0x54  Code  Lc  i2c_driver.o [18]
+I2C_DRV_MasterReceiveData
+                           0x1'45fd   0xc2  Code  Gb  i2c_driver.o [18]
+I2C_DRV_MasterReceiveDataBlocking
+                           0x1'46bf   0x5e  Code  Gb  i2c_driver.o [18]
+I2C_DRV_MasterReinit       0x1'3e6b   0x68  Code  Lc  i2c_driver.o [18]
+I2C_DRV_MasterResetQueue
+                           0x1'3941    0xa  Code  Lc  i2c_driver.o [18]
+I2C_DRV_MasterSendAddress
+                           0x1'39ef   0xb0  Code  Lc  i2c_driver.o [18]
+I2C_DRV_MasterSendData     0x1'44fd   0xae  Code  Gb  i2c_driver.o [18]
+I2C_DRV_MasterSendDataBlocking
+                           0x1'45ab   0x52  Code  Gb  i2c_driver.o [18]
+I2C_DRV_MasterSendQueuedCmd
+                           0x1'3993   0x5c  Code  Lc  i2c_driver.o [18]
+I2C_DRV_MasterSetBaudRate
+                           0x1'432b  0x1c0  Code  Gb  i2c_driver.o [18]
+I2C_DRV_MasterSetOperatingMode
+                           0x1'3bc3   0x42  Code  Lc  i2c_driver.o [18]
+I2C_DRV_MasterSetSlaveAddr
+                           0x1'44eb    0xe  Code  Gb  i2c_driver.o [18]
+I2C_DRV_MasterStartDmaTransfer
+                           0x1'3c69   0xde  Code  Lc  i2c_driver.o [18]
+I2C_DRV_MasterWaitTransferEnd
+                           0x1'3ed3   0xea  Code  Lc  i2c_driver.o [18]
+I2C_DRV_SlaveEndTransfer
+                           0x1'3b71   0x52  Code  Lc  i2c_driver.o [18]
+I2C_DRV_SlaveEndTransferHandler
+                           0x1'48cd   0x3e  Code  Lc  i2c_driver.o [18]
+I2C_DRV_SlaveHandleAddressValidEvent
+                           0x1'40ad   0x7e  Code  Lc  i2c_driver.o [18]
+I2C_DRV_SlaveHandleReceiveDataEvent
+                           0x1'417d   0x46  Code  Lc  i2c_driver.o [18]
+I2C_DRV_SlaveHandleTransmitDataEvent
+                           0x1'412b   0x52  Code  Lc  i2c_driver.o [18]
+I2C_DRV_SlaveIRQHandler
+                           0x1'490b  0x12a  Code  Gb  i2c_driver.o [18]
+I2C_DRV_SlaveStartDmaTransfer
+                           0x1'3d47   0x92  Code  Lc  i2c_driver.o [18]
+I2C_Get_MasterArbitrationLostEvent
+                           0x1'35b5   0x14  Code  Lc  i2c_driver.o [18]
+I2C_Get_MasterBusBusyEvent
+                           0x1'35dd   0x14  Code  Lc  i2c_driver.o [18]
+I2C_Get_MasterFIFOErrorEvent
+                           0x1'3597   0x14  Code  Lc  i2c_driver.o [18]
+I2C_Get_MasterLineLowTimeoutEvent
+                           0x1'35ab    0xa  Code  Lc  i2c_driver.o [18]
+I2C_Get_MasterNACKDetectEvent
+                           0x1'35c9   0x14  Code  Lc  i2c_driver.o [18]
+I2C_Get_MasterPrescaler
+                           0x1'368b    0xa  Code  Lc  i2c_driver.o [18]
+I2C_Get_MasterReceiveDataReadyEvent
+                           0x1'3585    0x8  Code  Lc  i2c_driver.o [18]
+I2C_Get_MasterRxData       0x1'377f    0xa  Code  Lc  i2c_driver.o [18]
+I2C_Get_MasterRxFIFOCount
+                           0x1'375f    0xa  Code  Lc  i2c_driver.o [18]
+I2C_Get_MasterRxFIFOSize
+                           0x1'3539   0x10  Code  Lc  i2c_driver.o [18]
+I2C_Get_MasterRxFIFOWatermark
+                           0x1'3743    0xa  Code  Lc  i2c_driver.o [18]
+I2C_Get_MasterTimeoutPeriod
+                           0x1'38fb    0xc  Code  Lc  i2c_driver.o [18]
+I2C_Get_MasterTransmitDataRequestEvent
+                           0x1'358d    0xa  Code  Lc  i2c_driver.o [18]
+I2C_Get_MasterTxFIFOCount
+                           0x1'3769    0xa  Code  Lc  i2c_driver.o [18]
+I2C_Get_MasterTxFIFOSize
+                           0x1'3549   0x10  Code  Lc  i2c_driver.o [18]
+I2C_Get_SlaveAddressValidEvent
+                           0x1'37fd   0x16  Code  Lc  i2c_driver.o [18]
+I2C_Get_SlaveBitErrorEvent
+                           0x1'37bb   0x16  Code  Lc  i2c_driver.o [18]
+I2C_Get_SlaveData          0x1'38d9    0xc  Code  Lc  i2c_driver.o [18]
+I2C_Get_SlaveFIFOErrorEvent
+                           0x1'37a5   0x16  Code  Lc  i2c_driver.o [18]
+I2C_Get_SlaveInt           0x1'3879   0x10  Code  Lc  i2c_driver.o [18]
+I2C_Get_SlaveReceiveDataEvent
+                           0x1'3813   0x16  Code  Lc  i2c_driver.o [18]
+I2C_Get_SlaveReceivedAddr
+                           0x1'38c5    0xc  Code  Lc  i2c_driver.o [18]
+I2C_Get_SlaveRepeatedStartEvent
+                           0x1'37e7   0x16  Code  Lc  i2c_driver.o [18]
+I2C_Get_SlaveSTOPDetectEvent
+                           0x1'37d1   0x16  Code  Lc  i2c_driver.o [18]
+I2C_Get_SlaveTransmitDataEvent
+                           0x1'3829   0x16  Code  Lc  i2c_driver.o [18]
+I2C_Init                   0x1'3e5d    0xe  Code  Lc  i2c_driver.o [18]
+I2C_MasterConfig0            0x8920   0x18  Data  Gb  i2c_config.o [7]
+I2C_MasterConfig0_State
+                        0x2000'0e1c   0x44  Data  Gb  i2c_config.o [7]
+I2C_Reset_MasterRxFIFOCmd
+                           0x1'3559    0xa  Code  Lc  i2c_driver.o [18]
+I2C_Reset_MasterTxFIFOCmd
+                           0x1'3563    0xa  Code  Lc  i2c_driver.o [18]
+I2C_Set_MasterClockHighPeriod
+                           0x1'3695   0x14  Code  Lc  i2c_driver.o [18]
+I2C_Set_MasterClockHighPeriodHS
+                           0x1'3709   0x14  Code  Lc  i2c_driver.o [18]
+I2C_Set_MasterClockLowPeriod
+                           0x1'36cf   0x14  Code  Lc  i2c_driver.o [18]
+I2C_Set_MasterClockLowPeriodHS
+                           0x1'371d   0x14  Code  Lc  i2c_driver.o [18]
+I2C_Set_MasterDataValidDelay
+                           0x1'36a9   0x14  Code  Lc  i2c_driver.o [18]
+I2C_Set_MasterDataValidDelayHS
+                           0x1'36e3   0x14  Code  Lc  i2c_driver.o [18]
+I2C_Set_MasterEnable       0x1'356d   0x18  Code  Lc  i2c_driver.o [18]
+I2C_Set_MasterInt          0x1'3641   0x14  Code  Lc  i2c_driver.o [18]
+I2C_Set_MasterLineLowDetect
+                           0x1'391d   0x12  Code  Lc  i2c_driver.o [18]
+I2C_Set_MasterLineLowTimeoutPeriod
+                           0x1'3907   0x16  Code  Lc  i2c_driver.o [18]
+I2C_Set_MasterNACKConfig
+                           0x1'3665   0x14  Code  Lc  i2c_driver.o [18]
+I2C_Set_MasterPinConfig
+                           0x1'3655   0x10  Code  Lc  i2c_driver.o [18]
+I2C_Set_MasterPrescaler
+                           0x1'3679   0x12  Code  Lc  i2c_driver.o [18]
+I2C_Set_MasterRxDMA        0x1'360d   0x1a  Code  Lc  i2c_driver.o [18]
+I2C_Set_MasterRxFIFOWatermark
+                           0x1'3731   0x12  Code  Lc  i2c_driver.o [18]
+I2C_Set_MasterSetupHoldDelay
+                           0x1'36bd   0x12  Code  Lc  i2c_driver.o [18]
+I2C_Set_MasterSetupHoldDelayHS
+                           0x1'36f7   0x12  Code  Lc  i2c_driver.o [18]
+I2C_Set_MasterTimeoutPeriod
+                           0x1'38e5   0x16  Code  Lc  i2c_driver.o [18]
+I2C_Set_MasterTxDMA        0x1'3627   0x1a  Code  Lc  i2c_driver.o [18]
+I2C_Set_MasterTxFIFOWatermark
+                           0x1'374d   0x12  Code  Lc  i2c_driver.o [18]
+I2C_Set_SlaveEnable        0x1'3789   0x1c  Code  Lc  i2c_driver.o [18]
+I2C_Set_SlaveInt           0x1'3861   0x18  Code  Lc  i2c_driver.o [18]
+I2C_Set_SlaveRxDMA         0x1'3889   0x1e  Code  Lc  i2c_driver.o [18]
+I2C_Set_SlaveTxDMA         0x1'38a7   0x1e  Code  Lc  i2c_driver.o [18]
+I2C_Transmit_SlaveData     0x1'38d1    0x8  Code  Lc  i2c_driver.o [18]
+INT_SYS_ClearPending         0xa091    0xa  Code  Gb  interrupt_manager.o [19]
+INT_SYS_DisableIRQ           0xa04d    0xa  Code  Gb  interrupt_manager.o [19]
+INT_SYS_DisableIRQGlobal
+                             0xa06f    0xc  Code  Gb  interrupt_manager.o [19]
+INT_SYS_EnableIRQ            0xa043    0xa  Code  Gb  interrupt_manager.o [19]
+INT_SYS_EnableIRQGlobal
+                             0xa057   0x18  Code  Gb  interrupt_manager.o [19]
+INT_SYS_InstallHandler       0xa021   0x22  Code  Gb  interrupt_manager.o [19]
+IPC_ResetModule              0x9745   0x12  Code  Lc  clock_YTM32B1Mx.o [14]
+IPC_SetClockMode             0x9757   0x1a  Code  Lc  clock_YTM32B1Mx.o [14]
+IPC_SetPeripheralClockControl
+                             0x9721   0x24  Code  Lc  clock_YTM32B1Mx.o [14]
+IVT_RAM_block$$Base     0x2000'0000          --   Gb  - Linker created -
+IVT_RAM_block$$Limit    0x2000'0400          --   Gb  - Linker created -
+IVT_RAM_empty_block$$Base
+                        0x2000'0000          --   Gb  - Linker created -
+IVT_RAM_empty_block$$Limit
+                        0x2000'0400          --   Gb  - Linker created -
+IVT_RAM_end             0x2000'0400         Data  Gb  <internal module>
+IVT_RAM_memory_end {Abs}
+                        0x2000'03ff         Data  Gb  <internal module>
+IVT_RAM_memory_start {Abs}
+                        0x2000'0000         Data  Gb  <internal module>
+IVT_RAM_region_end      0x2000'0400         Data  Gb  <internal module>
+IVT_RAM_region_start    0x2000'0000         Data  Gb  <internal module>
+IVT_RAM_start           0x2000'0000         Data  Gb  <internal module>
+IVT_block$$Base              0x8000          --   Gb  - Linker created -
+IVT_block$$Limit             0x82b8          --   Gb  - Linker created -
+IVT_end                      0x82b8         Data  Gb  <internal module>
+IVT_memory_end {Abs}         0x83ff         Data  Gb  <internal module>
+IVT_memory_start {Abs}       0x8000         Data  Gb  <internal module>
+IVT_start                    0x8000         Data  Gb  <internal module>
+IsPOR                      0x1'7925   0x10  Code  Lc  RamInit1.o [7]
+LCD_Init                   0x1'6289    0x8  Code  Gb  lcd_ui.o [6]
+LCD_Task                   0x1'6291   0x58  Code  Gb  lcd_ui.o [6]
+LCD_UpdateAmbientTemp      0x1'6991    0x2  Code  Gb  lcd_ui.o [6]
+LCD_UpdateClock            0x1'62e9   0xa8  Code  Gb  lcd_ui.o [6]
+LCD_UpdateCoolant          0x1'6691   0x76  Code  Gb  lcd_ui.o [6]
+LCD_UpdateFuel             0x1'65ed   0xa4  Code  Gb  lcd_ui.o [6]
+LCD_UpdateOdometer         0x1'6867   0xae  Code  Gb  lcd_ui.o [6]
+LCD_UpdateRadio            0x1'63e9  0x184  Code  Gb  lcd_ui.o [6]
+LCD_UpdateRpm              0x1'6391   0x58  Code  Gb  lcd_ui.o [6]
+LCD_UpdateSpeed            0x1'656d   0x80  Code  Gb  lcd_ui.o [6]
+LCD_UpdateTpms             0x1'6707  0x160  Code  Gb  lcd_ui.o [6]
+LCD_UpdateVolume           0x1'692d   0x64  Code  Gb  lcd_ui.o [6]
+LED_ApplySelfCheckPattern
+                           0x1'69d7   0x28  Code  Lc  led_ind.o [6]
+LED_DriveAll               0x1'6e13  0x58e  Code  Gb  led_ind.o [6]
+LED_Init                   0x1'6995   0x42  Code  Gb  led_ind.o [6]
+LED_SelfCheck              0x1'69ff   0x12  Code  Gb  led_ind.o [6]
+LED_Task                   0x1'6a11  0x10e  Code  Gb  led_ind.o [6]
+LED_UpdateAbs              0x1'6c75   0x1c  Code  Lc  led_ind.o [6]
+LED_UpdateCharger          0x1'6cd1   0x72  Code  Lc  led_ind.o [6]
+LED_UpdateCngFault         0x1'6b73   0x24  Code  Lc  led_ind.o [6]
+LED_UpdateCngWarn          0x1'6b41   0x32  Code  Lc  led_ind.o [6]
+LED_UpdateEbd              0x1'6d5f   0x1c  Code  Lc  led_ind.o [6]
+LED_UpdateEngineFault      0x1'6d43   0x1c  Code  Lc  led_ind.o [6]
+LED_UpdateEps              0x1'6c19   0x14  Code  Lc  led_ind.o [6]
+LED_UpdateFuelLow          0x1'6b1f   0x22  Code  Lc  led_ind.o [6]
+LED_UpdateGasLeak          0x1'6dd1   0x42  Code  Lc  led_ind.o [6]
+LED_UpdateGpf              0x1'6b97   0x82  Code  Lc  led_ind.o [6]
+LED_UpdateOilPress         0x1'6d7b   0x42  Code  Lc  led_ind.o [6]
+LED_UpdateSeatbelt         0x1'6c91   0x24  Code  Lc  led_ind.o [6]
+LED_UpdateTpms             0x1'6c2d   0x48  Code  Lc  led_ind.o [6]
+LED_UpdateWaterTemp        0x1'6cb5   0x1c  Code  Lc  led_ind.o [6]
+LPM_BatteryLow               0xfb03   0x20  Code  Lc  lowpower.o [3]
+LPM_CanBusIdle               0xfa83   0x26  Code  Lc  lowpower.o [3]
+LPM_DoPreSleep               0xfbfb   0x26  Code  Lc  lowpower.o [3]
+LPM_DoWakeup                 0xfc59   0x76  Code  Lc  lowpower.o [3]
+LPM_Inhibit                  0xfd11   0x12  Code  Gb  lowpower.o [3]
+LPM_Init                     0xfccf   0x42  Code  Gb  lowpower.o [3]
+LPM_LastCanRxMs              0xfa21   0x62  Code  Lc  lowpower.o [3]
+LPM_ResetCanTimeouts         0xfaa9   0x5a  Code  Lc  lowpower.o [3]
+LPM_SleepAllowed             0xfb23   0xd8  Code  Lc  lowpower.o [3]
+LPM_SleepAndWait             0xfc21   0x38  Code  Lc  lowpower.o [3]
+LPM_Task                     0xfd23   0xb2  Code  Gb  lowpower.o [3]
+LPTMR_Config                 0x8968   0x10  Data  Gb  lptmr_config.o [7]
+MPWM0_Ch0_IRQHandler       0x1'7dc1    0x8  Code  Wk  vector_table_copy.o [7]
+MPWM0_Ch0_Ovf_IRQHandler
+                           0x1'7d81    0x8  Code  Wk  vector_table_copy.o [7]
+MPWM0_Ch1_IRQHandler       0x1'7dc9    0x8  Code  Wk  vector_table_copy.o [7]
+MPWM0_Ch1_Ovf_IRQHandler
+                           0x1'7d89    0x8  Code  Wk  vector_table_copy.o [7]
+MPWM0_Ch2_IRQHandler       0x1'7dd1    0x8  Code  Wk  vector_table_copy.o [7]
+MPWM0_Ch2_Ovf_IRQHandler
+                           0x1'7d91    0x8  Code  Wk  vector_table_copy.o [7]
+MPWM0_Ch3_IRQHandler       0x1'7dd9    0x8  Code  Wk  vector_table_copy.o [7]
+MPWM0_Ch3_Ovf_IRQHandler
+                           0x1'7d99    0x8  Code  Wk  vector_table_copy.o [7]
+MPWM0_Ch4_IRQHandler       0x1'7de1    0x8  Code  Wk  vector_table_copy.o [7]
+MPWM0_Ch4_Ovf_IRQHandler
+                           0x1'7da1    0x8  Code  Wk  vector_table_copy.o [7]
+MPWM0_Ch5_IRQHandler       0x1'7de9    0x8  Code  Wk  vector_table_copy.o [7]
+MPWM0_Ch5_Ovf_IRQHandler
+                           0x1'7da9    0x8  Code  Wk  vector_table_copy.o [7]
+MPWM0_Ch6_IRQHandler       0x1'7df1    0x8  Code  Wk  vector_table_copy.o [7]
+MPWM0_Ch6_Ovf_IRQHandler
+                           0x1'7db1    0x8  Code  Wk  vector_table_copy.o [7]
+MPWM0_Ch7_IRQHandler       0x1'7df9    0x8  Code  Wk  vector_table_copy.o [7]
+MPWM0_Ch7_Ovf_IRQHandler
+                           0x1'7db9    0x8  Code  Wk  vector_table_copy.o [7]
+MPWM_ClearLdok               0xb4f3    0xa  Code  Lc  mpwm_pwm_driver.o [21]
+MPWM_DRV_CalculateCompareValue
+                             0xb8d7   0xca  Code  Gb  mpwm_pwm_driver.o [21]
+MPWM_DRV_ConvertFreqToPeriodTicks
+                             0xbbdf   0x16  Code  Gb  mpwm_common.o [21]
+MPWM_DRV_DisableCounter
+                             0xbbbd   0x12  Code  Gb  mpwm_common.o [21]
+MPWM_DRV_EnableCounter       0xbbab   0x12  Code  Gb  mpwm_common.o [21]
+MPWM_DRV_GetFrequency        0xbbcf   0x10  Code  Gb  mpwm_common.o [21]
+MPWM_DRV_Init                0xbaf3   0x80  Code  Gb  mpwm_common.o [21]
+MPWM_DRV_InitPwm             0xb60b  0x2cc  Code  Gb  mpwm_pwm_driver.o [21]
+MPWM_DRV_SetClkSrc           0xbb73   0x38  Code  Gb  mpwm_common.o [21]
+MPWM_DRV_SetLdok             0xbbf5    0xc  Code  Gb  mpwm_common.o [21]
+MPWM_DRV_UpdateChannelDutyCycle
+                             0xb9a1   0x7a  Code  Gb  mpwm_pwm_driver.o [21]
+MPWM_DRV_UpdateChannelPeriodAndDutyCycle
+                             0xba1b   0xa8  Code  Gb  mpwm_pwm_driver.o [21]
+MPWM_DisableCounter          0xbadd    0xa  Code  Lc  mpwm_common.o [21]
+MPWM_EnableCounter           0xbad5    0x8  Code  Lc  mpwm_common.o [21]
+MPWM_PWM_Config0        0x2000'066c    0x8  Data  Gb  mpwm_config.o [7]
+MPWM_PWM_Config0ChConfig
+                        0x2000'0644   0x28  Data  Gb  mpwm_config.o [7]
+MPWM_Reset                   0xbae7    0xc  Code  Lc  mpwm_common.o [21]
+MPWM_SetChannelCompare       0xb601    0xa  Code  Lc  mpwm_pwm_driver.o [21]
+MPWM_SetChannelIntEnState
+                             0xb447   0x26  Code  Lc  mpwm_pwm_driver.o [21]
+MPWM_SetChannelMode          0xb5bf   0x38  Code  Lc  mpwm_pwm_driver.o [21]
+MPWM_SetChannelPeriod        0xb5f7    0xa  Code  Lc  mpwm_pwm_driver.o [21]
+MPWM_SetChannelTofIntEnState
+                             0xb421   0x26  Code  Lc  mpwm_pwm_driver.o [21]
+MPWM_SetClkPrs               0xb585   0x3a  Code  Lc  mpwm_pwm_driver.o [21]
+MPWM_SetCmpOutputTrigEnState
+                             0xb4fd   0x44  Code  Lc  mpwm_pwm_driver.o [21]
+MPWM_SetDebugMode            0xb4af   0x44  Code  Lc  mpwm_pwm_driver.o [21]
+MPWM_SetOutputInit           0xb46d    0x4  Code  Lc  mpwm_pwm_driver.o [21]
+MPWM_SetPerOutputTrigEnState
+                             0xb541   0x44  Code  Lc  mpwm_pwm_driver.o [21]
+MPWM_SetPolarity             0xb471    0x4  Code  Lc  mpwm_pwm_driver.o [21]
+MPWM_SetReloadSrc            0xb475   0x3a  Code  Lc  mpwm_pwm_driver.o [21]
+MPWM_State0             0x2000'0f84   0x60  Data  Gb  mpwm_config.o [7]
+MasterRxBuf             0x2000'10ec    0xc  Data  Gb  sc5037_hal_stm32.o [8]
+MemManage_Handler          0x1'7c61    0x8  Code  Wk  vector_table_copy.o [7]
+Meter_ClearAll             0x1'0539    0x8  Code  Gb  meter_display.o [2]
+Meter_Init                 0x1'0525   0x14  Code  Gb  meter_display.o [2]
+Meter_Refresh              0x1'06e1    0x8  Code  Gb  meter_display.o [2]
+Meter_SetDigit             0x1'055d   0x8c  Code  Gb  meter_display.o [2]
+Meter_SetIcon              0x1'0541   0x1c  Code  Gb  meter_display.o [2]
+Meter_SetNumberField       0x1'05e9   0xf8  Code  Gb  meter_display.o [2]
+NMI_Handler                0x1'7c51    0x8  Code  Wk  vector_table_copy.o [7]
+NVM_Init                   0x1'004f    0x8  Code  Gb  nvm_storage.o [31]
+NVM_LoadOdometer           0x1'0057   0x26  Code  Gb  nvm_storage.o [31]
+NVM_SaveOdometer           0x1'007d   0x10  Code  Gb  nvm_storage.o [31]
+ODO_Accumulate             0x1'4c13   0x7a  Code  Lc  odo.o [2]
+ODO_DoClearTotal           0x1'4bc1   0x26  Code  Lc  odo.o [2]
+ODO_Init                   0x1'4be7   0x2c  Code  Gb  odo.o [2]
+ODO_RequestClearTotal      0x1'4bb9    0x8  Code  Gb  odo.o [2]
+ODO_Task                   0x1'4c8d   0x8c  Code  Gb  odo.o [2]
+OSIF_SemaCreate              0xe969   0x14  Code  Gb  osif_baremetal.o [27]
+OSIF_SemaDestroy             0xe97d    0x4  Code  Gb  osif_baremetal.o [27]
+OSIF_SemaPost                0xe945   0x24  Code  Gb  osif_baremetal.o [27]
+OSIF_SemaWait                0xe8d9   0x6c  Code  Gb  osif_baremetal.o [27]
+OdoLog_Init                0x1'174f   0xe0  Code  Gb  odo_log.o [31]
+OdoLog_Read                0x1'182f   0x2c  Code  Gb  odo_log.o [31]
+OdoLog_Write               0x1'185b   0xb8  Code  Gb  odo_log.o [31]
+PCU_IRQHandler             0x1'7c91    0x8  Code  Wk  vector_table_copy.o [7]
+PINS_ClearPinIntFlagCmd
+                           0x1'1e5b    0xa  Code  Lc  pins_driver.o [22]
+PINS_ClearPortIntFlagCmd
+                           0x1'1e69    0x8  Code  Lc  pins_driver.o [22]
+PINS_ConfigDigitalFilter
+                           0x1'4f93   0x20  Code  Lc  pins_port_hw_access.o [22]
+PINS_DRV_ClearPinIntFlagCmd
+                           0x1'1ea5    0x8  Code  Gb  pins_driver.o [22]
+PINS_DRV_ClearPortIntFlagCmd
+                           0x1'1eb5    0x8  Code  Gb  pins_driver.o [22]
+PINS_DRV_GetPortIntFlag
+                           0x1'1ead    0x8  Code  Gb  pins_driver.o [22]
+PINS_DRV_Init              0x1'1e71   0x20  Code  Gb  pins_driver.o [22]
+PINS_DRV_ReadPin           0x1'1ed1   0x16  Code  Gb  pins_driver.o [22]
+PINS_DRV_SetMuxModeSel     0x1'1e91    0xa  Code  Gb  pins_driver.o [22]
+PINS_DRV_SetPinDirection
+                           0x1'1ebd    0xa  Code  Gb  pins_driver.o [22]
+PINS_DRV_SetPinIntSel      0x1'1e9b    0xa  Code  Gb  pins_driver.o [22]
+PINS_DRV_WritePin          0x1'1ec7    0xa  Code  Gb  pins_driver.o [22]
+PINS_GPIO_ClearPins        0x1'1e0b    0x4  Code  Lc  pins_driver.o [22]
+PINS_GPIO_ClearPins        0x1'4f67    0x4  Code  Lc  pins_port_hw_access.o [22]
+PINS_GPIO_ClearPins        0x1'1eed    0x4  Code  Lc  sc5037_hal_stm32.o [8]
+PINS_GPIO_ReadPins         0x1'1e37    0x6  Code  Lc  pins_driver.o [22]
+PINS_GPIO_SetPinDirection
+                           0x1'1def   0x18  Code  Lc  pins_driver.o [22]
+PINS_GPIO_SetPins          0x1'1e07    0x4  Code  Lc  pins_driver.o [22]
+PINS_GPIO_SetPins          0x1'4f63    0x4  Code  Lc  pins_port_hw_access.o [22]
+PINS_GPIO_SetPins          0x1'1ee9    0x4  Code  Lc  sc5037_hal_stm32.o [8]
+PINS_GPIO_WritePin         0x1'1e0f   0x28  Code  Lc  pins_driver.o [22]
+PINS_GPIO_WritePin         0x1'4f6b   0x28  Code  Lc  pins_port_hw_access.o [22]
+PINS_GPIO_WritePin         0x1'1ef1   0x28  Code  Lc  sc5037_hal_stm32.o [8]
+PINS_GetPortIntFlag        0x1'1e65    0x4  Code  Lc  pins_driver.o [22]
+PINS_Init                  0x1'4fb3  0x16c  Code  Gb  pins_port_hw_access.o [22]
+PINS_SetMuxModeSel         0x1'511f   0x18  Code  Gb  pins_port_hw_access.o [22]
+PINS_SetPinIntSel          0x1'1e3d   0x1e  Code  Lc  pins_driver.o [22]
+POWER_SYS_CallbacksManagement
+                           0x1'4a73   0xa8  Code  Lc  power_manager.o [23]
+POWER_SYS_DoInit           0x1'5795    0x4  Code  Gb  power_manager_YTM32B1Mx.o [24]
+POWER_SYS_DoSetMode        0x1'5799    0xe  Code  Gb  power_manager_YTM32B1Mx.o [24]
+POWER_SYS_Init             0x1'4a49   0x2a  Code  Gb  power_manager.o [23]
+POWER_SYS_SetMode          0x1'4b1b   0x9a  Code  Gb  power_manager.o [23]
+POWER_SYS_SwitchToLowPowerMode
+                           0x1'57a9   0xd6  Code  Lc  power_manager_YTM32B1Mx.o [24]
+PWR_AmpDelayPoll           0x1'0c69   0x38  Code  Lc  pwr_mgr.o [3]
+PWR_Init                   0x1'0c01   0x68  Code  Gb  pwr_mgr.o [3]
+PWR_Task                   0x1'0ca1  0x1f4  Code  Gb  pwr_mgr.o [3]
+PendSV_Handler             0x1'7c89    0x8  Code  Wk  vector_table_copy.o [7]
+RADIO_Init                 0x1'12a3   0x62  Code  Gb  radio_input.o [30]
+RADIO_Task                 0x1'1305   0x34  Code  Gb  radio_input.o [30]
+RAM_memory_end {Abs}    0x2000'7bf7         Data  Gb  <internal module>
+RAM_memory_start {Abs}  0x2000'0400         Data  Gb  <internal module>
+RPM_Init                   0x1'7671   0x14  Code  Gb  rpm.o [2]
+RPM_Task                   0x1'7685   0x5a  Code  Gb  rpm.o [2]
+RTC_Init                   0x1'1473   0x3e  Code  Gb  rtc_input.o [30]
+RTC_SetTime                0x1'14b9   0x40  Code  Gb  rtc_input.o [30]
+RTC_Task                   0x1'14b1    0x8  Code  Gb  rtc_input.o [30]
+RamInit0                   0x1'789d         Code  Wk  RamInit0.o [7]
+RamInit1                   0x1'7935  0x11a  Code  Gb  RamInit1.o [7]
+RamInit2                     0x9fc3    0x2  Code  Wk  RamInit2.o [7]
+Reset_Handler              0x1'7a5d         Code  Wk  startup.o [7]
+RxFifoOcuppiedLastMsgBuff
+                             0xc2f1    0xa  Code  Lc  flexcan_driver.o [17]
+RxFifoOcuppiedLastMsgBuff
+                             0xde89    0xa  Code  Lc  flexcan_hw_access.o [17]
+SC5037_ClearBuffer         0x1'1cd5   0x10  Code  Gb  sc5037.o [8]
+SC5037_DisplayOff          0x1'1cc1    0xa  Code  Gb  sc5037.o [8]
+SC5037_Flush               0x1'1d7d   0x72  Code  Gb  sc5037.o [8]
+SC5037_GetSegment          0x1'1d27   0x28  Code  Gb  sc5037.o [8]
+SC5037_HAL_A0              0x1'1f4d   0x1a  Code  Gb  sc5037_hal_stm32.o [8]
+SC5037_HAL_CS              0x1'1f19   0x1a  Code  Gb  sc5037_hal_stm32.o [8]
+SC5037_HAL_Delay_Ms        0x1'1f89   0x16  Code  Gb  sc5037_hal_stm32.o [8]
+SC5037_HAL_RST             0x1'1f33   0x1a  Code  Gb  sc5037_hal_stm32.o [8]
+SC5037_HAL_SPI_Write       0x1'1f67   0x16  Code  Gb  sc5037_hal_stm32.o [8]
+SC5037_HardwareReset       0x1'1c25   0x2e  Code  Gb  sc5037.o [8]
+SC5037_Init                0x1'1c53   0x6e  Code  Gb  sc5037.o [8]
+SC5037_SetFullWindow       0x1'1d55   0x28  Code  Lc  sc5037.o [8]
+SC5037_SetSegment          0x1'1ce5   0x42  Code  Gb  sc5037.o [8]
+SC5037_Sleep               0x1'1ccb    0xa  Code  Gb  sc5037.o [8]
+SC5037_WriteCmd            0x1'1bcd   0x2c  Code  Gb  sc5037.o [8]
+SC5037_WriteData           0x1'1bf9   0x2c  Code  Gb  sc5037.o [8]
+SCU_EnableFirc               0x988d   0x1c  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_EnableFxosc              0x9803   0x1c  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_FircDeepSleepEnable
+                             0x98a9   0x1e  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_GetDividerStable         0x98d1   0x12  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_GetFXOSCValid            0x98c7    0xa  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_GetFastBusClkDiv         0x97a3    0xa  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_GetSlowBusClkDiv         0x97bf    0x8  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_GetSysClkDiv             0x9785    0xa  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_GetSysClkSrc             0x97d9    0x8  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_IRQHandler             0x1'7d01    0x8  Code  Wk  vector_table_copy.o [7]
+SCU_SetClkOutDiv             0x97f3   0x10  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_SetClkOutSrc             0x97e1   0x12  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_SetCmuChCompHigh         0x992d    0xc  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_SetCmuChCompLow          0x9939    0xc  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_SetCmuChEnable           0x98e3   0x22  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_SetCmuChResetEnable
+                             0x9905   0x28  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_SetFastBusClkDiv         0x978f   0x14  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_SetFxoscBypassMode       0x981f   0x1e  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_SetFxoscGain             0x983d   0x14  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_SetSlowBusClkDiv         0x97ad   0x12  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_SetSysClkDiv             0x9771   0x14  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_SetSysClkSrc             0x97c7   0x12  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_SircDeepSleepEnable
+                             0x9851   0x1e  Code  Lc  clock_YTM32B1Mx.o [14]
+SCU_SircStandbyEnable        0x986f   0x1e  Code  Lc  clock_YTM32B1Mx.o [14]
+SOC_UART_Init              0x1'13a5    0x8  Code  Gb  soc_uart.o [32]
+SOC_UART_NotifyMcuReady
+                           0x1'13ad    0xc  Code  Gb  soc_uart.o [32]
+SOC_UART_NotifyTurnSignal
+                           0x1'13b9   0x44  Code  Gb  soc_uart.o [32]
+SPEED_Init                 0x1'75b1   0x14  Code  Gb  speed.o [2]
+SPEED_Task                 0x1'75c5   0xa4  Code  Gb  speed.o [2]
+SPI0_IRQHandler            0x1'7c15    0xa  Code  Gb  spi_irq.o [25]
+SPI1_IRQHandler            0x1'7c1f    0xa  Code  Gb  spi_irq.o [25]
+SPI2_IRQHandler            0x1'7c29    0xa  Code  Gb  spi_irq.o [25]
+SPI_ClearContBit           0x1'2e41    0xa  Code  Lc  spi_master_driver.o [25]
+SPI_ClearContBit           0x1'55a9    0xa  Code  Lc  spi_shared_function.o [25]
+SPI_ClearContCBit          0x1'55b3    0xa  Code  Lc  spi_shared_function.o [25]
+SPI_ClearRxmaskBit         0x1'2e2d    0xa  Code  Lc  spi_master_driver.o [25]
+SPI_ClearStatusFlag        0x1'52d5   0x22  Code  Gb  spi_hw_access.o [25]
+SPI_DRV_DisableTEIEInterrupts
+                           0x1'575d   0x2e  Code  Gb  spi_shared_function.o [25]
+SPI_DRV_FillupTxBuffer     0x1'55e3   0xe4  Code  Gb  spi_shared_function.o [25]
+SPI_DRV_IRQHandler         0x1'55bd   0x26  Code  Gb  spi_shared_function.o [25]
+SPI_DRV_MasterAbortTransfer
+                           0x1'3139   0x2a  Code  Gb  spi_master_driver.o [25]
+SPI_DRV_MasterCompleteDMATransfer
+                           0x1'3409   0x40  Code  Lc  spi_master_driver.o [25]
+SPI_DRV_MasterCompleteRX
+                           0x1'3449   0x1a  Code  Lc  spi_master_driver.o [25]
+SPI_DRV_MasterCompleteTransfer
+                           0x1'338b   0x7e  Code  Lc  spi_master_driver.o [25]
+SPI_DRV_MasterConfigureBus
+                           0x1'2f21  0x144  Code  Gb  spi_master_driver.o [25]
+SPI_DRV_MasterDeinit       0x1'2ee9   0x38  Code  Gb  spi_master_driver.o [25]
+SPI_DRV_MasterIRQHandler
+                           0x1'3463   0xc4  Code  Gb  spi_master_driver.o [25]
+SPI_DRV_MasterInit         0x1'2e6f   0x7a  Code  Gb  spi_master_driver.o [25]
+SPI_DRV_MasterStartTransfer
+                           0x1'3163  0x228  Code  Lc  spi_master_driver.o [25]
+SPI_DRV_MasterTransferBlocking
+                           0x1'3065   0xd4  Code  Gb  spi_master_driver.o [25]
+SPI_DRV_ReadRXBuffer       0x1'56c7   0x96  Code  Gb  spi_shared_function.o [25]
+SPI_DRV_SlaveAbortTransfer
+                           0x1'5a33   0x72  Code  Gb  spi_slave_driver.o [25]
+SPI_DRV_SlaveIRQHandler
+                           0x1'594b   0xe8  Code  Gb  spi_slave_driver.o [25]
+SPI_Disable                0x1'527b   0x1e  Code  Gb  spi_hw_access.o [25]
+SPI_Enable                 0x1'2d95    0xa  Code  Lc  spi_master_driver.o [25]
+SPI_GetFifoSizes           0x1'2d9f   0x14  Code  Lc  spi_master_driver.o [25]
+SPI_GetStatusFlag          0x1'2dcb    0xa  Code  Lc  spi_master_driver.o [25]
+SPI_GetStatusFlag          0x1'58e9    0xa  Code  Lc  spi_slave_driver.o [25]
+SPI_Init                   0x1'5275    0x6  Code  Gb  spi_hw_access.o [25]
+SPI_IsMaster               0x1'5559    0xa  Code  Lc  spi_shared_function.o [25]
+SPI_ReadData               0x1'558b    0x4  Code  Lc  spi_shared_function.o [25]
+SPI_ReadRxCount            0x1'5597    0x8  Code  Lc  spi_shared_function.o [25]
+SPI_ReadTxCount            0x1'558f    0x8  Code  Lc  spi_shared_function.o [25]
+SPI_SetBaudRate            0x1'5357  0x122  Code  Gb  spi_hw_access.o [25]
+SPI_SetBaudRateDivisor     0x1'547d   0x12  Code  Gb  spi_hw_access.o [25]
+SPI_SetContBit             0x1'2e4b    0xa  Code  Lc  spi_master_driver.o [25]
+SPI_SetDelay               0x1'5259   0x1c  Code  Lc  spi_hw_access.o [25]
+SPI_SetFlushFifoCmd        0x1'52ab   0x2a  Code  Gb  spi_hw_access.o [25]
+SPI_SetIntMode             0x1'2dd5   0x24  Code  Lc  spi_master_driver.o [25]
+SPI_SetIntMode             0x1'5563   0x24  Code  Lc  spi_shared_function.o [25]
+SPI_SetIntMode             0x1'58f3   0x24  Code  Lc  spi_slave_driver.o [25]
+SPI_SetMasterSlaveMode     0x1'5299   0x12  Code  Gb  spi_hw_access.o [25]
+SPI_SetPcsPolarityMode     0x1'52f7   0x26  Code  Gb  spi_hw_access.o [25]
+SPI_SetPinConfigMode       0x1'531d   0x2e  Code  Gb  spi_hw_access.o [25]
+SPI_SetRxDmaCmd            0x1'2e13   0x1a  Code  Lc  spi_master_driver.o [25]
+SPI_SetRxDmaCmd            0x1'5931   0x1a  Code  Lc  spi_slave_driver.o [25]
+SPI_SetRxWatermarks        0x1'2db3    0xc  Code  Lc  spi_master_driver.o [25]
+SPI_SetRxmskBit            0x1'2e37    0xa  Code  Lc  spi_master_driver.o [25]
+SPI_SetSamplingPoint       0x1'2e55   0x1a  Code  Lc  spi_master_driver.o [25]
+SPI_SetTxCommandReg        0x1'548f   0xc2  Code  Gb  spi_hw_access.o [25]
+SPI_SetTxDmaCmd            0x1'2df9   0x1a  Code  Lc  spi_master_driver.o [25]
+SPI_SetTxDmaCmd            0x1'5917   0x1a  Code  Lc  spi_slave_driver.o [25]
+SPI_SetTxWatermarks        0x1'2dbf    0xc  Code  Lc  spi_master_driver.o [25]
+SPI_SetTxmskBit            0x1'559f    0xa  Code  Lc  spi_shared_function.o [25]
+SPI_WriteData              0x1'5587    0x4  Code  Lc  spi_shared_function.o [25]
+STACK_block$$Base       0x2000'7c00          --   Gb  - Linker created -
+STACK_block$$Limit      0x2000'8000          --   Gb  - Linker created -
+STACK_empty_block$$Base
+                        0x2000'7c00          --   Gb  - Linker created -
+STACK_empty_block$$Limit
+                        0x2000'8000          --   Gb  - Linker created -
+STACK_end               0x2000'8000         Data  Gb  <internal module>
+STACK_memory_end {Abs}  0x2000'7fff         Data  Gb  <internal module>
+STACK_memory_start {Abs}
+                        0x2000'7c00         Data  Gb  <internal module>
+STACK_region_end        0x2000'8000         Data  Gb  <internal module>
+STACK_region_start      0x2000'7c00         Data  Gb  <internal module>
+STACK_start             0x2000'7c00         Data  Gb  <internal module>
+SVC_Handler                0x1'7c79    0x8  Code  Wk  vector_table_copy.o [7]
+SYS_Init                   0x1'1509   0x1e  Code  Gb  sys_mgr.o [5]
+SYS_StartSelfCheck         0x1'1527    0xe  Code  Gb  sys_mgr.o [5]
+SYS_Task                   0x1'1539   0x3e  Code  Gb  sys_mgr.o [5]
+SYS_Task::s_blink_last_ms
+                        0x2000'1144    0x4  Data  Lc  sys_mgr.o [5]
+SYS_UpdateTick             0x1'1535    0x4  Code  Gb  sys_mgr.o [5]
+Scheduler_Init             0x1'7825   0x1e  Code  Gb  scheduler.o [4]
+Scheduler_RunOnce          0x1'7843   0x56  Code  Gb  scheduler.o [4]
+SharedSegment$$Base     0x2000'7bf8          --   Gb  - Linker created -
+SharedSegment$$Limit    0x2000'7c00          --   Gb  - Linker created -
+SharedSegment_block$$Base
+                        0x2000'7bf8          --   Gb  - Linker created -
+SharedSegment_block$$Limit
+                        0x2000'7c00          --   Gb  - Linker created -
+SharedSegment_end       0x2000'7c00         Data  Gb  <internal module>
+SharedSegment_memory_end {Abs}
+                        0x2000'7bff         Data  Gb  <internal module>
+SharedSegment_memory_start {Abs}
+                        0x2000'7bf8         Data  Gb  <internal module>
+SharedSegment_ram_end   0x2000'7c00         Data  Gb  <internal module>
+SharedSegment_ram_start
+                        0x2000'7bf8         Data  Gb  <internal module>
+SharedSegment_region_end
+                        0x2000'7c00         Data  Gb  <internal module>
+SharedSegment_region_start
+                        0x2000'7bf8         Data  Gb  <internal module>
+SharedSegment_rom$$Base
+                           0x1'8250          --   Gb  - Linker created -
+SharedSegment_rom$$Limit
+                           0x1'8258          --   Gb  - Linker created -
+SharedSegment_rom_block$$Base
+                           0x1'8250          --   Gb  - Linker created -
+SharedSegment_rom_block$$Limit
+                           0x1'8258          --   Gb  - Linker created -
+SharedSegment_rom_end      0x1'8258         Data  Gb  <internal module>
+SharedSegment_rom_start
+                           0x1'8250         Data  Gb  <internal module>
+SharedSegment_start     0x2000'7bf8         Data  Gb  <internal module>
+SysTick_Handler              0xe871    0x8  Code  Gb  osif_baremetal.o [27]
+SystemCoreClock         0x2000'0818    0x4  Data  Gb  system_YTM32B1MC0.o [12]
+SystemInit                 0x1'00a7   0x2e  Code  Gb  system_YTM32B1MC0.o [12]
+SystemSoftwareReset        0x1'00d5    0x8  Code  Gb  system_YTM32B1MC0.o [12]
+TEXT_block$$Base             0x8470          --   Gb  - Linker created -
+TEXT_block$$Limit          0x1'7e10          --   Gb  - Linker created -
+TEXT_end                   0x1'7e10         Data  Gb  <internal module>
+TEXT_memory_end {Abs}      0x3'ffff         Data  Gb  <internal module>
+TEXT_memory_start {Abs}
+                             0x8400         Data  Gb  <internal module>
+TEXT_start                   0x8470         Data  Gb  <internal module>
+TPMS_Init                  0x1'76e9   0x22  Code  Gb  tpms_data.o [2]
+TPMS_RawToKpa              0x1'770b   0x30  Code  Gb  tpms_data.o [2]
+TPMS_Task                  0x1'773b   0xe8  Code  Gb  tpms_data.o [2]
+TRNG_IRQHandler            0x1'7e01    0x8  Code  Wk  vector_table_copy.o [7]
+UART0_IRQHandler           0x1'7ca9    0x8  Code  Wk  vector_table_copy.o [7]
+UART0_IrqHandler           0x1'7c33    0xa  Code  Gb  uart_irq.o [26]
+UART1_IRQHandler           0x1'7cb1    0x8  Code  Wk  vector_table_copy.o [7]
+UART1_IrqHandler           0x1'7c3d    0xa  Code  Gb  uart_irq.o [26]
+UART2_IRQHandler           0x1'7cb9    0x8  Code  Wk  vector_table_copy.o [7]
+UART2_IrqHandler           0x1'7c47    0xa  Code  Gb  uart_irq.o [26]
+UART_ClearStatusFlag       0x1'5213    0xc  Code  Gb  uart_hw_access.o [26]
+UART_DRV_AbortReceivingData
+                           0x1'23c9   0x2c  Code  Gb  uart_driver.o [26]
+UART_DRV_AbortSendingData
+                           0x1'232d   0x3c  Code  Gb  uart_driver.o [26]
+UART_DRV_ClearErrorFlags
+                           0x1'20ab   0x10  Code  Lc  uart_driver.o [26]
+UART_DRV_CompleteReceiveDataUsingInt
+                           0x1'2afd   0x54  Code  Lc  uart_driver.o [26]
+UART_DRV_CompleteSendDataUsingInt
+                           0x1'2929   0x4c  Code  Lc  uart_driver.o [26]
+UART_DRV_Deinit            0x1'2251   0x6c  Code  Gb  uart_driver.o [26]
+UART_DRV_ErrIrqHandler     0x1'26db  0x14c  Code  Lc  uart_driver.o [26]
+UART_DRV_GetData           0x1'2c41   0x66  Code  Lc  uart_driver.o [26]
+UART_DRV_GetReceiveStatus
+                           0x1'238f   0x3a  Code  Gb  uart_driver.o [26]
+UART_DRV_GetTransmitStatus
+                           0x1'22f3   0x3a  Code  Gb  uart_driver.o [26]
+UART_DRV_IRQHandler        0x1'2515   0x6e  Code  Gb  uart_driver.o [26]
+UART_DRV_Init              0x1'215f   0xf2  Code  Gb  uart_driver.o [26]
+UART_DRV_InstallRxCallback
+                           0x1'22bd   0x10  Code  Gb  uart_driver.o [26]
+UART_DRV_PutData           0x1'2bf5   0x48  Code  Lc  uart_driver.o [26]
+UART_DRV_ReceiveData       0x1'2369   0x26  Code  Gb  uart_driver.o [26]
+UART_DRV_RxDmaCallback     0x1'2b61   0x94  Code  Lc  uart_driver.o [26]
+UART_DRV_RxIrqHandler      0x1'2583   0x7e  Code  Lc  uart_driver.o [26]
+UART_DRV_SendData          0x1'22cd   0x26  Code  Gb  uart_driver.o [26]
+UART_DRV_SetBaudRate       0x1'23f5   0xec  Code  Gb  uart_driver.o [26]
+UART_DRV_SetErrorInterrupts
+                           0x1'2d51   0x3a  Code  Lc  uart_driver.o [26]
+UART_DRV_SetLineIdleDetect
+                           0x1'24f1   0x24  Code  Gb  uart_driver.o [26]
+UART_DRV_SetRxBuffer       0x1'24e1   0x10  Code  Gb  uart_driver.o [26]
+UART_DRV_StartReceiveDataUsingDma
+                           0x1'2a55   0xa2  Code  Lc  uart_driver.o [26]
+UART_DRV_StartReceiveDataUsingInt
+                           0x1'29e9   0x66  Code  Lc  uart_driver.o [26]
+UART_DRV_StartSendDataUsingDma
+                           0x1'2889   0xa0  Code  Lc  uart_driver.o [26]
+UART_DRV_StartSendDataUsingInt
+                           0x1'2827   0x5c  Code  Lc  uart_driver.o [26]
+UART_DRV_StopRxDma         0x1'2cf7   0x5a  Code  Lc  uart_driver.o [26]
+UART_DRV_StopTxDma         0x1'2ca7   0x50  Code  Lc  uart_driver.o [26]
+UART_DRV_TxCompleteIrqHandler
+                           0x1'26a7   0x34  Code  Lc  uart_driver.o [26]
+UART_DRV_TxDmaCallback     0x1'2975   0x74  Code  Lc  uart_driver.o [26]
+UART_DRV_TxEmptyIrqHandler
+                           0x1'2601   0xa6  Code  Lc  uart_driver.o [26]
+UART_EnableBothEdgeSamplingCmd
+                           0x1'2033    0xa  Code  Lc  uart_driver.o [26]
+UART_EnableRxFifo          0x1'210d   0x1a  Code  Lc  uart_driver.o [26]
+UART_EnableTxFifo          0x1'20f3   0x1a  Code  Lc  uart_driver.o [26]
+UART_GetIntMode            0x1'51ef   0x12  Code  Gb  uart_hw_access.o [26]
+UART_GetStatusFlag         0x1'5201   0x12  Code  Gb  uart_hw_access.o [26]
+UART_GetTxFifoSize         0x1'20d3   0x10  Code  Lc  uart_driver.o [26]
+UART_GetWordCountInRxFifo
+                           0x1'212f    0x8  Code  Lc  uart_driver.o [26]
+UART_GetWordCountInTxFifo
+                           0x1'2127    0x8  Code  Lc  uart_driver.o [26]
+UART_Getchar10             0x1'51b9    0xa  Code  Gb  uart_hw_access.o [26]
+UART_Getchar7              0x1'519f    0xa  Code  Gb  uart_hw_access.o [26]
+UART_Getchar8              0x1'51a9    0x6  Code  Gb  uart_hw_access.o [26]
+UART_Getchar9              0x1'51af    0xa  Code  Gb  uart_hw_access.o [26]
+UART_Init                  0x1'5139   0x1c  Code  Gb  uart_hw_access.o [26]
+UART_Putchar               0x1'20a5    0x6  Code  Lc  uart_driver.o [26]
+UART_Putchar10             0x1'5199    0x6  Code  Gb  uart_hw_access.o [26]
+UART_Putchar9              0x1'5193    0x6  Code  Gb  uart_hw_access.o [26]
+UART_ResetRxFifo           0x1'20eb    0x8  Code  Lc  uart_driver.o [26]
+UART_ResetTxFifo           0x1'20e3    0x8  Code  Lc  uart_driver.o [26]
+UART_SetBaudRateDivisor
+                           0x1'2011   0x10  Code  Lc  uart_driver.o [26]
+UART_SetBitCountPerChar
+                           0x1'5159   0x1c  Code  Gb  uart_hw_access.o [26]
+UART_SetErrorInterrupts
+                           0x1'521f   0x38  Code  Gb  uart_hw_access.o [26]
+UART_SetIntMode            0x1'51c3   0x2c  Code  Gb  uart_hw_access.o [26]
+UART_SetLineIdleSize       0x1'20bb   0x18  Code  Lc  uart_driver.o [26]
+UART_SetOversamplingRatio
+                           0x1'2021   0x12  Code  Lc  uart_driver.o [26]
+UART_SetParityMode         0x1'5175   0x1e  Code  Gb  uart_hw_access.o [26]
+UART_SetReceiverCmd        0x1'1fdb   0x36  Code  Lc  uart_driver.o [26]
+UART_SetRxDmaCmd           0x1'2079   0x2c  Code  Lc  uart_driver.o [26]
+UART_SetRxFifoWatermark
+                           0x1'214b   0x14  Code  Lc  uart_driver.o [26]
+UART_SetStopBitCount       0x1'203d   0x10  Code  Lc  uart_driver.o [26]
+UART_SetTransmitterCmd     0x1'1fa1   0x3a  Code  Lc  uart_driver.o [26]
+UART_SetTxDmaCmd           0x1'204d   0x2c  Code  Lc  uart_driver.o [26]
+UART_SetTxFifoWatermark
+                           0x1'2137   0x14  Code  Lc  uart_driver.o [26]
+UDS_DID_Find                 0xfdf5   0x34  Code  Gb  uds_did.o [29]
+UDS_DID_Write                0xfe2d   0x26  Code  Gb  uds_did.o [29]
+UDS_Hook_ClearAllDtc         0xf9c5    0x4  Code  Gb  uds_svc.o [29]
+UDS_Init                     0xf8a9   0x50  Code  Gb  uds_svc.o [29]
+UDS_TP_Abort                 0xdc49    0xc  Code  Gb  uds_tp.o [29]
+UDS_TP_CanRxPush             0xdaf9   0x90  Code  Gb  uds_tp.o [29]
+UDS_TP_Init                  0xdadb   0x1e  Code  Gb  uds_tp.o [29]
+UDS_TP_RxIndication          0xf715  0x170  Code  Gb  uds_svc.o [29]
+UDS_TP_Send                  0xdb89   0xc0  Code  Gb  uds_tp.o [29]
+UDS_TP_Task                  0xdc55  0x134  Code  Gb  uds_tp.o [29]
+UDS_Task                     0xf901   0x6e  Code  Gb  uds_svc.o [29]
+UDS_TpTask                   0xf8f9    0x8  Code  Gb  uds_svc.o [29]
+UsageFault_Handler         0x1'7c71    0x8  Code  Wk  vector_table_copy.o [7]
+VOLT_GetMv                 0x1'0049    0x6  Code  Gb  voltage.o [3]
+VOLT_Init                    0xff15   0x3e  Code  Gb  voltage.o [3]
+VOLT_Task                    0xff53   0xe6  Code  Gb  voltage.o [3]
+VectorTableCopy            0x1'7aad   0x32  Code  Gb  vector_table_copy.o [7]
+WDG0_IRQHandler            0x1'7ca1    0x8  Code  Wk  vector_table_copy.o [7]
+ZeroLayout                   0x9060    0xc  Data  Gb  RamInit1.o [7]
+__NVIC_ClearPendingIRQ       0xa005   0x1c  Code  Lc  interrupt_manager.o [19]
+__NVIC_DisableIRQ            0x9fe1   0x24  Code  Lc  interrupt_manager.o [19]
+__NVIC_EnableIRQ             0x9fc5   0x1c  Code  Lc  interrupt_manager.o [19]
+__NVIC_SystemReset         0x1'008d   0x1a  Code  Lc  system_YTM32B1MC0.o [12]
+__aeabi_ldiv0              0x1'4f61         Code  Gb  I64DivZer.o [34]
+__aeabi_llsl               0x1'1b8d         Code  Gb  I64Shl.o [34]
+__aeabi_memclr4            0x1'5551         Code  Gb  ABImemclr4.o [34]
+__aeabi_memcpy               0xdde1         Code  Gb  ABImemcpy.o [34]
+__aeabi_memcpy4              0xde01         Code  Gb  ABImemcpy.o [34]
+__aeabi_memcpy8              0xde01         Code  Gb  ABImemcpy.o [34]
+__aeabi_memset               0xa3ad         Code  Gb  ABImemset.o [34]
+__aeabi_uldivmod           0x1'195d         Code  Gb  I64DivMod.o [34]
+__iar_Memset                 0xa3ad         Code  Gb  ABImemset.o [34]
+__iar_Memset4_word         0x1'58b5         Code  Gb  ABImemset48.o [34]
+__iar_Memset8_word         0x1'58b5         Code  Gb  ABImemset48.o [34]
+__iar_Memset_word            0xa3b5         Code  Gb  ABImemset.o [34]
+abs_dif                    0x1'534b    0xc  Code  Lc  spi_hw_access.o [25]
+adcLoopTransferConfig   0x2000'0604   0x10  Data  Gb  hal_adc.o [9]
+adc_config0                  0x8470   0x28  Data  Gb  adc_config.o [7]
+adc_dma_callback             0xa1f5   0x30  Code  Lc  hal_adc.o [9]
+adc_dma_setup                0xa225   0x64  Code  Lc  hal_adc.o [9]
+bcd2bin                    0x1'4dd3   0x18  Code  Lc  hal_rtc_ds1307.o [9]
+bin2bcd                    0x1'4deb   0x20  Code  Lc  hal_rtc_ds1307.o [9]
+bss$$Base               0x2000'0840          --   Gb  - Linker created -
+bss$$Limit              0x2000'1748          --   Gb  - Linker created -
+bss_region_end          0x2000'1748         Data  Gb  <internal module>
+bss_region_start        0x2000'0840         Data  Gb  <internal module>
+buzzer_half_period_ms        0xb1cb   0x1c  Code  Lc  buzzer.o [6]
+buzzer_ign_reset             0xb155   0x14  Code  Lc  buzzer.o [6]
+buzzer_run_gas_leak          0xb269   0x5c  Code  Lc  buzzer.o [6]
+buzzer_run_seatbelt          0xb2c5   0x98  Code  Lc  buzzer.o [6]
+buzzer_seatbelt_cond         0xb1e7   0x20  Code  Lc  buzzer.o [6]
+buzzer_seatbelt_stop         0xb215   0x22  Code  Lc  buzzer.o [6]
+buzzer_update_ign            0xb169   0x36  Code  Lc  buzzer.o [6]
+can_rx_arm                   0xbeeb   0x12  Code  Lc  hal_can.o [9]
+can_rx_arm_mb                0xbebd   0x2e  Code  Lc  hal_can.o [9]
+char_to_7seg               0x1'0471   0xb4  Code  Lc  meter_display.o [2]
+check_sensor                 0xecab   0x72  Code  Lc  fuel.o [2]
+clockNameMappings            0x856c   0x58  Data  Gb  clock_YTM32B1Mx.o [14]
+clock_config0ClockManager
+                        0x2000'05ec   0x10  Data  Gb  clock_config.o [7]
+clock_config0CmuConfig       0x855c   0x10  Data  Gb  clock_config.o [7]
+clock_config0PeripheralClockConfig
+                        0x2000'05c4   0x28  Data  Gb  clock_config.o [7]
+clock_config0ScuConfig       0x8544   0x18  Data  Gb  clock_config.o [7]
+code_ram$$Base          0x2000'0400          --   Gb  - Linker created -
+code_ram$$Limit         0x2000'05c4          --   Gb  - Linker created -
+code_ram_region_end     0x2000'05c4         Data  Gb  <internal module>
+code_ram_region_start   0x2000'0400         Data  Gb  <internal module>
+code_ram_rom$$Base         0x1'7e10          --   Gb  - Linker created -
+code_ram_rom$$Limit        0x1'7fd4          --   Gb  - Linker created -
+crc32_calc                 0x1'1585   0x3c  Code  Lc  odo_log.o [31]
+data$$Base              0x2000'05c4          --   Gb  - Linker created -
+data$$Limit             0x2000'0840          --   Gb  - Linker created -
+data_region_end         0x2000'0840         Data  Gb  <internal module>
+data_region_start       0x2000'05c4         Data  Gb  <internal module>
+data_rom$$Base             0x1'7fd4          --   Gb  - Linker created -
+data_rom$$Limit            0x1'8250          --   Gb  - Linker created -
+dmaChnConfigArray            0x8604    0xc  Data  Gb  dma_config.o [7]
+dmaChnState                  0x8610    0xc  Data  Gb  dma_config.o [7]
+dmaController_InitConfig
+                             0x9207    0x1  Data  Gb  dma_config.o [7]
+dmaState                0x2000'0ad4   0x10  Data  Gb  dma_config.o [7]
+dma_config0                  0x85e0    0xc  Data  Gb  dma_config.o [7]
+dma_config0_State       0x2000'0aa4   0x10  Data  Gb  dma_config.o [7]
+dma_config1                  0x85f8    0xc  Data  Gb  dma_config.o [7]
+dma_config1_State       0x2000'0ac4   0x10  Data  Gb  dma_config.o [7]
+dma_config2                  0x85ec    0xc  Data  Gb  dma_config.o [7]
+dma_config2_State       0x2000'0ab4   0x10  Data  Gb  dma_config.o [7]
+ds1307_read_regs           0x1'4d8f   0x44  Code  Lc  hal_rtc_ds1307.o [9]
+ds1307_write_regs          0x1'4d39   0x56  Code  Lc  hal_rtc_ds1307.o [9]
+eTMR0_Ch0_Ch1_IRQHandler
+                           0x1'7d21    0x8  Code  Wk  vector_table_copy.o [7]
+eTMR0_Ch2_Ch3_IRQHandler
+                           0x1'7d29    0x8  Code  Wk  vector_table_copy.o [7]
+eTMR0_Ch4_Ch5_IRQHandler
+                           0x1'7d31    0x8  Code  Wk  vector_table_copy.o [7]
+eTMR0_Ch6_Ch7_IRQHandler
+                           0x1'7d39    0x8  Code  Wk  vector_table_copy.o [7]
+eTMR0_Fault_IRQHandler     0x1'7d41    0x8  Code  Wk  vector_table_copy.o [7]
+eTMR0_Ovf_IRQHandler       0x1'7d49    0x8  Code  Wk  vector_table_copy.o [7]
+eTMR1_Ch0_Ch1_IRQHandler
+                           0x1'7d51    0x8  Code  Wk  vector_table_copy.o [7]
+eTMR1_Ch2_Ch3_IRQHandler
+                           0x1'7d59    0x8  Code  Wk  vector_table_copy.o [7]
+eTMR1_Ch4_Ch5_IRQHandler
+                           0x1'7d61    0x8  Code  Wk  vector_table_copy.o [7]
+eTMR1_Ch6_Ch7_IRQHandler
+                           0x1'7d69    0x8  Code  Wk  vector_table_copy.o [7]
+eTMR1_Fault_IRQHandler     0x1'7d71    0x8  Code  Wk  vector_table_copy.o [7]
+eTMR1_Ovf_IRQHandler       0x1'7d79    0x8  Code  Wk  vector_table_copy.o [7]
+efm_launch              0x2000'0515   0xb0  Code  Lc  odo_log.o [31]
+feed_byte                  0x1'11af   0xf4  Code  Lc  radio_input.o [30]
+flash_ecc_fault_config0
+                             0x91f4    0x8  Data  Gb  utility_flash_ecc_fault_config.o [7]
+flash_ecc_fault_config0_State
+                        0x2000'16e4    0x8  Data  Gb  utility_flash_ecc_fault_config.o [7]
+flash_erase                0x1'15c3   0x42  Code  Lc  odo_log.o [31]
+flash_program              0x1'164f   0x2a  Code  Lc  odo_log.o [31]
+flash_program_unit         0x1'1605   0x4a  Code  Lc  odo_log.o [31]
+flash_ptr                  0x1'15c1    0x2  Code  Lc  odo_log.o [31]
+flexcanInitConfig0           0x850c   0x38  Data  Gb  can_config.o [7]
+flexcanInitConfig0_State
+                        0x2000'086c  0x218  Data  Gb  can_config.o [7]
+gPowerManagerState      0x2000'1008   0x10  Data  Gb  power_manager_YTM32B1Mx.o [24]
+g_appInfo                    0x8400   0x70  Data  Gb  app_info.o [29]
+g_bootShared            0x2000'7bf8    0x8  Data  Gb  boot_shared.o [29]
+g_can_rx_overflow       0x2000'0d28    0x4  Data  Gb  hal_can.o [9]
+g_can_rx_pending        0x2000'1711    0x1  Data  Gb  hal_can.o [9]
+g_can_rx_rearm_err      0x2000'0d2c    0x4  Data  Gb  hal_can.o [9]
+g_can_rx_recover        0x2000'0d30    0x4  Data  Gb  hal_can.o [9]
+g_clockManCallbacksArr  0x2000'0a84    0x4  Data  Gb  clock_config.o [7]
+g_clockManConfigsArr    0x2000'05fc    0x4  Data  Gb  clock_config.o [7]
+g_clockState            0x2000'0a88   0x10  Data  Lc  clock_YTM32B1Mx.o [14]
+g_digit_seg_table            0x8a18  0x1a4  Data  Lc  meter_display.o [2]
+g_flexcanBase                0x862c    0x8  Data  Lc  flexcan_driver.o [17]
+g_flexcanBusOffIrqId         0x863c    0x4  Data  Lc  flexcan_driver.o [17]
+g_flexcanErrorIrqId          0x8638    0x4  Data  Lc  flexcan_driver.o [17]
+g_flexcanOredMessageBufferIrqId
+                             0x8640   0x10  Data  Lc  flexcan_driver.o [17]
+g_flexcanStatePtr       0x2000'0af4    0x8  Data  Lc  flexcan_driver.o [17]
+g_flexcanWakeUpIrqId         0x8634    0x4  Data  Lc  flexcan_driver.o [17]
+g_fxoscClkFreq          0x2000'0a98    0x4  Data  Lc  clock_YTM32B1Mx.o [14]
+g_i2cBase                    0x8938    0x8  Data  Lc  i2c_driver.o [18]
+g_i2cClock                   0x9204    0x2  Data  Lc  i2c_driver.o [18]
+g_i2cDMASrc                  0x8940    0x4  Data  Lc  i2c_driver.o [18]
+g_i2cMasterIrqId             0x8944    0x4  Data  Lc  i2c_driver.o [18]
+g_i2cMasterStatePtr     0x2000'0e60    0x8  Data  Lc  i2c_driver.o [18]
+g_i2cSlaveStatePtr      0x2000'0e68    0x8  Data  Lc  i2c_driver.o [18]
+g_interruptDisableCount
+                        0x2000'0e70    0x4  Data  Lc  interrupt_manager.o [19]
+g_lptmrBase                  0x8978    0x4  Data  Lc  lptmr_driver.o [20]
+g_meter_icon_table           0x897c   0x9c  Data  Lc  meter_display.o [2]
+g_mpwmBase              0x2000'0620    0x4  Data  Gb  mpwm_common.o [21]
+g_mpwmChnIrqId          0x2000'0624   0x10  Data  Gb  mpwm_common.o [21]
+g_mpwmClk               0x2000'0837    0x1  Data  Lc  mpwm_common.o [21]
+g_mpwmIpcClkId          0x2000'0836    0x1  Data  Lc  mpwm_common.o [21]
+g_mpwmOvfIrqId          0x2000'0634   0x10  Data  Gb  mpwm_common.o [21]
+g_mpwmState             0x2000'0f80    0x4  Data  Gb  mpwm_common.o [21]
+g_pin_mux_InitConfigArr0
+                             0x8c08  0x428  Data  Gb  pin_mux.o [7]
+g_spiBase               0x2000'0804    0xc  Data  Gb  spi_shared_function.o [25]
+g_spiIrqId              0x2000'0810    0x8  Data  Gb  spi_shared_function.o [25]
+g_spiStatePtr           0x2000'1138    0xc  Data  Gb  spi_shared_function.o [25]
+g_sys                   0x2000'0e94   0xec  Data  Lc  main.o [1]
+g_uartIsr               0x2000'081c    0xc  Data  Gb  uart_irq.o [26]
+get_filter_tau               0xed71   0x12  Code  Lc  fuel.o [2]
+iir_filter                   0xea2f   0xa0  Code  Lc  fuel.o [2]
+is_long_frame              0x1'0f25   0x18  Code  Lc  radio_input.o [30]
+is_refueling                 0xed1d   0x54  Code  Lc  fuel.o [2]
+isr_vector$$Base             0x8000          --   Gb  - Linker created -
+isr_vector$$Limit            0x82b8          --   Gb  - Linker created -
+isr_vector_region_end        0x82b8         Data  Gb  <internal module>
+isr_vector_region_start
+                             0x8000         Data  Gb  <internal module>
+k_gate_idx                   0x8904   0x14  Data  Lc  hal_lowpower.o [9]
+k_pct_tbl                    0x86c8   0xec  Data  Lc  fuel.o [2]
+k_thr                        0x86a4   0x24  Data  Lc  fuel.o [2]
+k_wake_pins                  0x88d4   0x30  Data  Lc  hal_lowpower.o [9]
+legacy_load                0x1'16db   0x74  Code  Lc  odo_log.o [31]
+legacy_load::cand            0x8bfc    0xc  Data  Lc  odo_log.o [31]
+lpTMR0_IRQHandler            0xf9c9   0x12  Code  Gb  hal_tick.o [9]
+lpTMR_ClearCompareFlag     0x1'0113    0xa  Code  Lc  lptmr_driver.o [20]
+lpTMR_DRV_ClearCompareFlag
+                           0x1'03f9    0xe  Code  Gb  lptmr_driver.o [20]
+lpTMR_DRV_Init             0x1'02df   0x1c  Code  Gb  lptmr_driver.o [20]
+lpTMR_DRV_SetConfig        0x1'02fb   0xfe  Code  Gb  lptmr_driver.o [20]
+lpTMR_DRV_StartCounter     0x1'0407    0xe  Code  Gb  lptmr_driver.o [20]
+lpTMR_DRV_StopCounter      0x1'0415    0xe  Code  Gb  lptmr_driver.o [20]
+lpTMR_Disable              0x1'01a1    0xa  Code  Lc  lptmr_driver.o [20]
+lpTMR_Enable               0x1'0193    0xe  Code  Lc  lptmr_driver.o [20]
+lpTMR_Init                 0x1'1baf   0x1e  Code  Gb  lptmr_hw_access.o [20]
+lpTMR_SetBypass            0x1'01d1   0x1e  Code  Lc  lptmr_driver.o [20]
+lpTMR_SetClockSource       0x1'01bf   0x12  Code  Lc  lptmr_driver.o [20]
+lpTMR_SetCompareValue      0x1'01ef    0xe  Code  Lc  lptmr_driver.o [20]
+lpTMR_SetDmaRequest        0x1'00f5   0x1e  Code  Lc  lptmr_driver.o [20]
+lpTMR_SetFreeRunning       0x1'0161   0x1e  Code  Lc  lptmr_driver.o [20]
+lpTMR_SetInterrupt         0x1'011d   0x1c  Code  Lc  lptmr_driver.o [20]
+lpTMR_SetPinPolarity       0x1'014d   0x14  Code  Lc  lptmr_driver.o [20]
+lpTMR_SetPinSelect         0x1'0139   0x14  Code  Lc  lptmr_driver.o [20]
+lpTMR_SetPrescaler         0x1'01ab   0x14  Code  Lc  lptmr_driver.o [20]
+lpTMR_SetWorkMode          0x1'017f   0x14  Code  Lc  lptmr_driver.o [20]
+lp_can_transceiver_standby
+                           0x1'07bd   0x1c  Code  Lc  hal_lowpower.o [9]
+lp_clock_gate              0x1'09a7   0x5e  Code  Lc  hal_lowpower.o [9]
+lp_enter_core              0x1'0a05   0x1e  Code  Lc  hal_lowpower.o [9]
+lp_lcd_park                0x1'0841   0x62  Code  Lc  hal_lowpower.o [9]
+lp_lcd_sleep               0x1'07d9   0x20  Code  Lc  hal_lowpower.o [9]
+lp_loads_off               0x1'08a3   0x7c  Code  Lc  hal_lowpower.o [9]
+lp_periph_off              0x1'091f   0x3c  Code  Lc  hal_lowpower.o [9]
+lp_periph_on               0x1'095b   0x4c  Code  Lc  hal_lowpower.o [9]
+lp_soc_uart_park           0x1'07f9   0x48  Code  Lc  hal_lowpower.o [9]
+lp_wake_irq_arm            0x1'06f1   0x70  Code  Lc  hal_lowpower.o [9]
+lp_wake_irq_disarm         0x1'0761   0x5c  Code  Lc  hal_lowpower.o [9]
+lptmr_ChooseClkConfig      0x1'0271   0x6e  Code  Lc  lptmr_driver.o [20]
+lptmr_compute_nticks       0x1'0219   0x26  Code  Lc  lptmr_driver.o [20]
+lptmr_us2nn                0x1'01fd   0x1c  Code  Lc  lptmr_driver.o [20]
+main                       0x1'7445   0x1a  Code  Gb  main.o [1]
+memset                     0x1'58a1   0x14  Code  Gb  memset.o [34]
+nticks2compare_ticks       0x1'023f   0x32  Code  Lc  lptmr_driver.o [20]
+ohms_to_pct                  0xec27   0x84  Code  Lc  fuel.o [2]
+ohms_to_pct_raw              0xebb7   0x70  Code  Lc  fuel.o [2]
+ohms_to_seg                  0xeb1d   0x9a  Code  Lc  fuel.o [2]
+osif_DisableIrqGlobal        0xe8c9    0x8  Code  Lc  osif_baremetal.o [27]
+osif_EnableIrqGlobal         0xe8d1    0x8  Code  Lc  osif_baremetal.o [27]
+osif_GetCurrentTickCount
+                             0xe86b    0x6  Code  Lc  osif_baremetal.o [27]
+osif_Tick                    0xe861    0xa  Code  Lc  osif_baremetal.o [27]
+osif_UpdateTickConfig        0xe879   0x3c  Code  Lc  osif_baremetal.o [27]
+osif_UpdateTickConfig::first_init
+                        0x2000'0838    0x1  Data  Lc  osif_baremetal.o [27]
+pTMR0_Ch0_IRQHandler       0x1'7ce1    0x8  Code  Wk  vector_table_copy.o [7]
+pTMR0_Ch1_IRQHandler       0x1'7ce9    0x8  Code  Wk  vector_table_copy.o [7]
+pTMR0_Ch2_IRQHandler       0x1'7cf1    0x8  Code  Wk  vector_table_copy.o [7]
+pTMR0_Ch3_IRQHandler       0x1'7cf9    0x8  Code  Wk  vector_table_copy.o [7]
+parser_reset               0x1'0fcd    0xa  Code  Lc  radio_input.o [30]
+pin_table                    0x87cc  0x108  Data  Lc  hal_gpio.o [9]
+powerConfigsArr         0x2000'0674   0x10  Data  Gb  power_config.o [7]
+process_frame              0x1'0fd7  0x1d8  Code  Lc  radio_input.o [30]
+pwrMan_InitConfigDeepSleep
+                        0x2000'082c    0x2  Data  Gb  power_config.o [7]
+pwrMan_InitConfigRun    0x2000'16f6    0x2  Data  Gb  power_config.o [7]
+pwrMan_InitConfigSleep  0x2000'082a    0x2  Data  Gb  power_config.o [7]
+pwrMan_InitConfigStandBy
+                        0x2000'082e    0x2  Data  Gb  power_config.o [7]
+ring_pop                   0x1'0ef7   0x2e  Code  Lc  radio_input.o [30]
+ring_push                  0x1'0ecd   0x2a  Code  Lc  radio_input.o [30]
+rodata$$Base                 0x8470          --   Gb  - Linker created -
+rodata$$Limit                0x9208          --   Gb  - Linker created -
+rodata_region_end            0x9208         Data  Gb  <internal module>
+rodata_region_start          0x8470         Data  Gb  <internal module>
+rtc_update_from_hw         0x1'1405   0x6e  Code  Lc  rtc_input.o [30]
+rx_arm                     0x1'0f63   0x10  Code  Lc  radio_input.o [30]
+rx_flush                   0x1'0f3d   0x26  Code  Lc  radio_input.o [30]
+s_FlashEccFaultStatePtr
+                        0x2000'0af0    0x4  Data  Lc  flash_ecc_fault.o [10]
+s_FlashStatePtr         0x2000'0ae8    0x4  Data  Lc  flash_driver.o [16]
+s_SyncCallBackFunction  0x2000'0aec    0x4  Data  Lc  flash_driver.o [16]
+s_acc_ms                0x2000'10c0    0x4  Data  Lc  rtc_input.o [30]
+s_accum_x10m            0x2000'0fec    0x4  Data  Lc  odo.o [2]
+s_adcBase                    0x8498    0x4  Data  Lc  adc_driver.o [13]
+s_adc_raw               0x2000'0b20    0x4  Data  Lc  hal_adc.o [9]
+s_ambient_temp_c        0x2000'0828    0x2  Data  Lc  ambient.o [2]
+s_ambient_update_timer_ms
+                        0x2000'0840    0x4  Data  Lc  ambient.o [2]
+s_ambient_valid         0x2000'1704    0x1  Data  Lc  ambient.o [2]
+s_amp_pending           0x2000'1725    0x1  Data  Lc  pwr_mgr.o [3]
+s_amp_start_ms          0x2000'1018    0x4  Data  Lc  pwr_mgr.o [3]
+s_armed                 0x2000'1716    0x1  Data  Lc  hal_lowpower.o [9]
+s_awake_start_ms        0x2000'0e80    0x4  Data  Lc  lowpower.o [3]
+s_baudratePrescaler          0x914c   0x20  Data  Lc  spi_hw_access.o [25]
+s_blink_1hz_visible     0x2000'0835    0x1  Data  Lc  lcd_ui.o [6]
+s_cand_ms               0x2000'16f0    0x4  Data  Lc  voltage.o [3]
+s_cand_state            0x2000'1744    0x1  Data  Lc  voltage.o [3]
+s_charger_latched       0x2000'1719    0x1  Data  Lc  led_ind.o [6]
+s_charger_start_ms      0x2000'0e74    0x4  Data  Lc  led_ind.o [6]
+s_charger_timing        0x2000'1718    0x1  Data  Lc  led_ind.o [6]
+s_cmd                   0x2000'172d    0x1  Data  Lc  radio_input.o [30]
+s_cng_detect_timer_ms   0x2000'0a9c    0x4  Data  Lc  cng.o [2]
+s_cng_mode_locked       0x2000'1708    0x1  Data  Lc  cng.o [2]
+s_cng_tbl                    0x85c4   0x1c  Data  Lc  cng.o [2]
+s_commEnabled           0x2000'083d    0x1  Data  Lc  uds_svc.o [29]
+s_crc_tab                    0x8bbc   0x40  Data  Lc  odo_log.o [31]
+s_data                  0x2000'10b4    0x8  Data  Lc  radio_input.o [30]
+s_data_cnt              0x2000'172f    0x1  Data  Lc  radio_input.o [30]
+s_didTable                   0x91a0   0x30  Data  Lc  uds_did.o [29]
+s_dirty                 0x2000'171e    0x1  Data  Lc  odo.o [2]
+s_display               0x2000'16f8    0x2  Data  Lc  rpm.o [2]
+s_display_kmh           0x2000'16fa    0x2  Data  Lc  speed.o [2]
+s_dmaBase                    0x861c    0x4  Data  Lc  dma_driver.o [15]
+s_dmaErrIrqId                0x9200    0x2  Data  Lc  dma_driver.o [15]
+s_dmaIrqId                   0x8620    0x8  Data  Lc  dma_driver.o [15]
+s_dma_rx_buf            0x2000'106c   0x40  Data  Lc  radio_input.o [30]
+s_door_last_ms          0x2000'0e88    0x4  Data  Lc  lowpower.o [3]
+s_dtcEnabled            0x2000'083e    0x1  Data  Lc  uds_svc.o [29]
+s_efmBase                    0x8628    0x4  Data  Lc  flash_driver.o [16]
+s_err_addr              0x2000'0ff4    0x4  Data  Lc  odo_log.o [31]
+s_err_cnt               0x2000'0ff8    0x4  Data  Lc  odo_log.o [31]
+s_err_op                0x2000'1721    0x1  Data  Lc  odo_log.o [31]
+s_err_sts               0x2000'0ff0    0x4  Data  Lc  odo_log.o [31]
+s_fail_cnt              0x2000'1733    0x1  Data  Lc  rtc_input.o [30]
+s_fault_ms              0x2000'0afc    0x4  Data  Lc  fuel.o [2]
+s_fb                    0x2000'10c4   0x28  Data  Lc  sc5037.o [8]
+s_fifo                  0x2000'0b28  0x200  Data  Lc  hal_can.o [9]
+s_fifo_head             0x2000'170f    0x1  Data  Lc  hal_can.o [9]
+s_fifo_tail             0x2000'1710    0x1  Data  Lc  hal_can.o [9]
+s_filt_init             0x2000'1743    0x1  Data  Lc  voltage.o [3]
+s_filt_mv               0x2000'16ec    0x4  Data  Lc  voltage.o [3]
+s_filter_init           0x2000'170b    0x1  Data  Lc  fuel.o [2]
+s_filtered_x10k         0x2000'0600    0x4  Data  Lc  fuel.o [2]
+s_has_data              0x2000'1722    0x1  Data  Lc  odo_log.o [31]
+s_hour                  0x2000'1731    0x1  Data  Lc  rtc_input.o [30]
+s_idle_start_ms         0x2000'0e7c    0x4  Data  Lc  lowpower.o [3]
+s_ign_debounced         0x2000'1726    0x1  Data  Lc  pwr_mgr.o [3]
+s_ign_off_ms            0x2000'1020    0x4  Data  Lc  pwr_mgr.o [3]
+s_ign_off_timing        0x2000'1728    0x1  Data  Lc  pwr_mgr.o [3]
+s_ign_on                0x2000'1705    0x1  Data  Lc  buzzer.o [6]
+s_ign_raw_last          0x2000'1706    0x1  Data  Lc  buzzer.o [6]
+s_ign_raw_last          0x2000'1727    0x1  Data  Lc  pwr_mgr.o [3]
+s_ign_raw_ms            0x2000'0844    0x4  Data  Lc  buzzer.o [6]
+s_ign_raw_ms            0x2000'101c    0x4  Data  Lc  pwr_mgr.o [3]
+s_last_turn_data        0x2000'083b    0x1  Data  Lc  soc_uart.o [32]
+s_len                   0x2000'172e    0x1  Data  Lc  radio_input.o [30]
+s_lost_start_ms         0x2000'0aa0    0x4  Data  Lc  coolant.o [2]
+s_lost_timing           0x2000'1709    0x1  Data  Lc  coolant.o [2]
+s_low_bat               0x2000'171c    0x1  Data  Lc  lowpower.o [3]
+s_lptmrClkFreq          0x2000'0e90    0x4  Data  Lc  lptmr_driver.o [20]
+s_minute                0x2000'1732    0x1  Data  Lc  rtc_input.o [30]
+s_nvm_accum_ms          0x2000'0fe8    0x4  Data  Lc  odo.o [2]
+s_odo_clear_req         0x2000'171f    0x1  Data  Lc  odo.o [2]
+s_odo_cnt               0x2000'172a    0x1  Data  Lc  radio_input.o [30]
+s_odo_done_ms           0x2000'10b0    0x4  Data  Lc  radio_input.o [30]
+s_odo_done_valid        0x2000'172b    0x1  Data  Lc  radio_input.o [30]
+s_odo_first_ms          0x2000'10ac    0x4  Data  Lc  radio_input.o [30]
+s_odo_km                0x2000'1000    0x4  Data  Lc  odo_log.o [31]
+s_oil_start_ms          0x2000'0e78    0x4  Data  Lc  led_ind.o [6]
+s_oil_timing            0x2000'171a    0x1  Data  Lc  led_ind.o [6]
+s_osif_tick_cnt         0x2000'1004    0x4  Data  Lc  osif_baremetal.o [27]
+s_pct_accum_ms          0x2000'0b08    0x4  Data  Lc  fuel.o [2]
+s_pending               0x2000'1738    0x1  Data  Lc  uds_svc.o [29]
+s_pendingTimer          0x2000'11d0    0x4  Data  Lc  uds_svc.o [29]
+s_percent               0x2000'0831    0x1  Data  Lc  fuel.o [2]
+s_pre_done              0x2000'171b    0x1  Data  Lc  lowpower.o [3]
+s_pre_start_ms          0x2000'0e84    0x4  Data  Lc  lowpower.o [3]
+s_prepared              0x2000'1717    0x1  Data  Lc  hal_lowpower.o [9]
+s_rail_volt_cand        0x2000'083a    0x1  Data  Lc  pwr_mgr.o [3]
+s_rail_volt_ms          0x2000'1024    0x4  Data  Lc  pwr_mgr.o [3]
+s_rail_volt_ok          0x2000'0839    0x1  Data  Lc  pwr_mgr.o [3]
+s_rails_on              0x2000'1729    0x1  Data  Lc  pwr_mgr.o [3]
+s_ready                 0x2000'170d    0x1  Data  Lc  hal_adc.o [9]
+s_ready                 0x2000'1720    0x1  Data  Lc  odo_log.o [31]
+s_recover_start_ms      0x2000'0848   0x18  Data  Lc  can_app.o [28]
+s_recovering            0x2000'0860    0x8  Data  Lc  can_app.o [28]
+s_refuel_idx            0x2000'170c    0x1  Data  Lc  fuel.o [2]
+s_refuel_ring           0x2000'0b0c   0x10  Data  Lc  fuel.o [2]
+s_refuel_tick           0x2000'0b1c    0x4  Data  Lc  fuel.o [2]
+s_resp                  0x2000'11d4  0x100  Data  Lc  uds_svc.o [29]
+s_result                0x2000'0b24    0x4  Data  Lc  hal_adc.o [9]
+s_ring                  0x2000'1028   0x44  Data  Lc  radio_input.o [30]
+s_ring                  0x2000'12d4  0x200  Data  Lc  uds_tp.o [29]
+s_ring_head             0x2000'1739    0x1  Data  Lc  uds_tp.o [29]
+s_ring_lost             0x2000'14d4    0x4  Data  Lc  uds_tp.o [29]
+s_ring_tail             0x2000'173a    0x1  Data  Lc  uds_tp.o [29]
+s_rx_addr               0x2000'173d    0x1  Data  Lc  uds_tp.o [29]
+s_rx_armed              0x2000'1712    0x1  Data  Lc  hal_can.o [9]
+s_rx_armed_uds_func     0x2000'1714    0x1  Data  Lc  hal_can.o [9]
+s_rx_armed_uds_phys     0x2000'1713    0x1  Data  Lc  hal_can.o [9]
+s_rx_buf                0x2000'14d8  0x100  Data  Lc  uds_tp.o [29]
+s_rx_info                    0x87c0    0xc  Data  Lc  hal_can.o [9]
+s_rx_last_frame_ms      0x2000'0868    0x4  Data  Lc  can_app.o [28]
+s_rx_len                0x2000'16fc    0x2  Data  Lc  uds_tp.o [29]
+s_rx_mb                 0x2000'0d34   0x4c  Data  Lc  hal_can.o [9]
+s_rx_mb_uds_func        0x2000'0dcc   0x4c  Data  Lc  hal_can.o [9]
+s_rx_mb_uds_phys        0x2000'0d80   0x4c  Data  Lc  hal_can.o [9]
+s_rx_pos                0x2000'16fe    0x2  Data  Lc  uds_tp.o [29]
+s_rx_sn                 0x2000'173c    0x1  Data  Lc  uds_tp.o [29]
+s_rx_state              0x2000'173b    0x1  Data  Lc  uds_tp.o [29]
+s_rx_timer              0x2000'15d8    0x4  Data  Lc  uds_tp.o [29]
+s_rx_wdg_started        0x2000'1707    0x1  Data  Lc  can_app.o [28]
+s_s3_timer              0x2000'11c0    0x4  Data  Lc  uds_svc.o [29]
+s_sec_errCnt            0x2000'1736    0x1  Data  Lc  uds_svc.o [29]
+s_sec_lockTimer         0x2000'11c8    0x4  Data  Lc  uds_svc.o [29]
+s_sec_locked            0x2000'1737    0x1  Data  Lc  uds_svc.o [29]
+s_sec_rand              0x2000'11cc    0x4  Data  Lc  uds_svc.o [29]
+s_sec_seed              0x2000'11c4    0x4  Data  Lc  uds_svc.o [29]
+s_sec_seedValid         0x2000'1735    0x1  Data  Lc  uds_svc.o [29]
+s_sec_unlocked          0x2000'1734    0x1  Data  Lc  uds_svc.o [29]
+s_sector                0x2000'1723    0x1  Data  Lc  odo_log.o [31]
+s_seg_cand_ms           0x2000'0b00    0x4  Data  Lc  fuel.o [2]
+s_seg_hold_ms           0x2000'0b04    0x4  Data  Lc  fuel.o [2]
+s_seg_target            0x2000'0832    0x1  Data  Lc  fuel.o [2]
+s_seg_target_cand       0x2000'0833    0x1  Data  Lc  fuel.o [2]
+s_segments              0x2000'0830    0x1  Data  Lc  fuel.o [2]
+s_seq                   0x2000'0ffc    0x4  Data  Lc  odo_log.o [31]
+s_session               0x2000'083c    0x1  Data  Lc  uds_svc.o [29]
+s_slot                  0x2000'1724    0x1  Data  Lc  odo_log.o [31]
+s_spiClkNames                0x916c    0x4  Data  Gb  spi_shared_function.o [25]
+s_state                 0x2000'170a    0x1  Data  Lc  fuel.o [2]
+s_state                 0x2000'172c    0x1  Data  Lc  radio_input.o [30]
+s_sub_km_cnt            0x2000'171d    0x1  Data  Lc  odo.o [2]
+s_svcCfg                     0x91d4   0x20  Data  Lc  uds_svc.o [29]
+s_sys                   0x2000'11bc    0x4  Data  Lc  uds_svc.o [29]
+s_tasks                 0x2000'0684  0x180  Data  Lc  scheduler.o [4]
+s_tick_ms               0x2000'0e18    0x4  Data  Lc  hal_tick.o [9]
+s_timeout_cnt           0x2000'10bc    0x4  Data  Lc  rpm.o [2]
+s_timeout_cnt           0x2000'1100    0x4  Data  Lc  speed.o [2]
+s_trip_clear_ms         0x2000'0fe4    0x4  Data  Lc  odo.o [2]
+s_trip_dm               0x2000'16f4    0x2  Data  Lc  odo_log.o [31]
+s_turn_last_ms          0x2000'0e8c    0x4  Data  Lc  lowpower.o [3]
+s_tx_bs                 0x2000'1740    0x1  Data  Lc  uds_tp.o [29]
+s_tx_bs_cnt             0x2000'1741    0x1  Data  Lc  uds_tp.o [29]
+s_tx_buf                0x2000'10f8    0x8  Data  Lc  soc_uart.o [32]
+s_tx_buf                0x2000'15dc  0x100  Data  Lc  uds_tp.o [29]
+s_tx_info                    0x87b4    0xc  Data  Lc  hal_can.o [9]
+s_tx_last               0x2000'16e0    0x4  Data  Lc  uds_tp.o [29]
+s_tx_len                0x2000'1700    0x2  Data  Lc  uds_tp.o [29]
+s_tx_pos                0x2000'1702    0x2  Data  Lc  uds_tp.o [29]
+s_tx_sn                 0x2000'173f    0x1  Data  Lc  uds_tp.o [29]
+s_tx_state              0x2000'173e    0x1  Data  Lc  uds_tp.o [29]
+s_tx_stmin              0x2000'1742    0x1  Data  Lc  uds_tp.o [29]
+s_tx_timer              0x2000'16dc    0x4  Data  Lc  uds_tp.o [29]
+s_uartBase                   0x9188    0xc  Data  Lc  uart_driver.o [26]
+s_uartClkNames               0x919c    0x4  Data  Lc  uart_driver.o [26]
+s_uartRxTxIrqId              0x9194    0x8  Data  Lc  uart_driver.o [26]
+s_uartStatePtr          0x2000'11b0    0xc  Data  Lc  uart_driver.o [26]
+s_vectors                    0x91fc    0x4  Data  Lc  vector_table_copy.o [7]
+s_virtEdmaState         0x2000'0ae4    0x4  Data  Lc  dma_driver.o [15]
+s_wait_start_set        0x2000'170e    0x1  Data  Lc  hal_adc.o [9]
+s_wake_src              0x2000'1715    0x1  Data  Lc  hal_lowpower.o [9]
+s_xor_acc               0x2000'1730    0x1  Data  Lc  radio_input.o [30]
+seg_hysteretic_target        0xeacf   0x4e  Code  Lc  fuel.o [2]
+slot_addr                  0x1'1679   0x16  Code  Lc  odo_log.o [31]
+slot_load                  0x1'168f   0x4c  Code  Lc  odo_log.o [31]
+soc_send_frame             0x1'136d   0x38  Code  Lc  soc_uart.o [32]
+spi_MasterConfig0            0x9130   0x1c  Data  Gb  spi_config.o [7]
+spi_MasterConfig0_State
+                        0x2000'1104   0x34  Data  Gb  spi_config.o [7]
+svc_10_session               0xf07b   0xb0  Code  Lc  uds_svc.o [29]
+svc_11_reset                 0xf12b   0x66  Code  Lc  uds_svc.o [29]
+svc_14_clear_dtc             0xf191   0x62  Code  Lc  uds_svc.o [29]
+svc_22_read_did              0xf1f3   0xf0  Code  Lc  uds_svc.o [29]
+svc_27_security              0xf2e3  0x17e  Code  Lc  uds_svc.o [29]
+svc_28_comm_ctrl             0xf461   0x66  Code  Lc  uds_svc.o [29]
+svc_2e_write_did             0xf4c7   0xa2  Code  Lc  uds_svc.o [29]
+svc_31_routine               0xf5af   0x84  Code  Lc  uds_svc.o [29]
+svc_3e_tester_present        0xf633   0x4c  Code  Lc  uds_svc.o [29]
+svc_85_dtc_setting           0xf67f   0x60  Code  Lc  uds_svc.o [29]
+text$$Base                   0x9208          --   Gb  - Linker created -
+text$$Limit                0x1'7e10          --   Gb  - Linker created -
+text_region_end            0x1'7e10         Data  Gb  <internal module>
+text_region_start            0x9208         Data  Gb  <internal module>
+tp_decode_stmin              0xd7ad   0x1c  Code  Lc  uds_tp.o [29]
+tp_handle_cf                 0xd8f7   0xa8  Code  Lc  uds_tp.o [29]
+tp_handle_fc                 0xd99f   0x62  Code  Lc  uds_tp.o [29]
+tp_handle_ff                 0xd875   0x82  Code  Lc  uds_tp.o [29]
+tp_handle_sf                 0xd825   0x50  Code  Lc  uds_tp.o [29]
+tp_rx_reset                  0xd7c9   0x22  Code  Lc  uds_tp.o [29]
+tp_send_fc                   0xd789   0x24  Code  Lc  uds_tp.o [29]
+tp_send_frame                0xd74d   0x3c  Code  Lc  uds_tp.o [29]
+tp_tx_advance                0xda01   0xda  Code  Lc  uds_tp.o [29]
+tp_tx_reset                  0xd7eb   0x3a  Code  Lc  uds_tp.o [29]
+uart2_rx_callback          0x1'0f73   0x5a  Code  Lc  radio_input.o [30]
+uart_config0                 0x917c    0xc  Data  Gb  uart_config.o [7]
+uart_config0_State      0x2000'117c   0x34  Data  Gb  uart_config.o [7]
+uart_config2                 0x9170    0xc  Data  Gb  uart_config.o [7]
+uart_config2_State      0x2000'1148   0x34  Data  Gb  uart_config.o [7]
+uds_calc_key                 0xefa1   0x78  Code  Lc  uds_svc.o [29]
+uds_find_svc                 0xf6df   0x36  Code  Lc  uds_svc.o [29]
+uds_gen_seed                 0xf019   0x62  Code  Lc  uds_svc.o [29]
+uds_jump_to_boot             0xf885   0x24  Code  Lc  uds_svc.o [29]
+uds_pre_prog_check           0xf569   0x46  Code  Lc  uds_svc.o [29]
+uds_send_neg                 0xeef5   0x4a  Code  Lc  uds_svc.o [29]
+uds_send_pos                 0xeee5   0x10  Code  Lc  uds_svc.o [29]
+uds_set_session              0xef3f   0x62  Code  Lc  uds_svc.o [29]
+volt_classify_fresh          0xfe55   0x32  Code  Lc  voltage.o [3]
+volt_next_state              0xfe87   0x8e  Code  Lc  voltage.o [3]
+
+
+[1] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app
+[2] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\gauges
+[3] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\power
+[4] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\sheduler
+[5] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\system
+[6] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\app\ui
+[7] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board
+[8] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\board\sc5037
+[9] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\hal
+[10] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\middleware\utility_flash_ecc_fault
+[11] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\middleware\utility_print\printf
+[12] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\devices\YTM32B1MC0\startup
+[13] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\adc
+[14] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\clock\YTM32B1Mx
+[15] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\dma
+[16] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\flash
+[17] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\flexcan
+[18] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\i2c
+[19] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\interrupt
+[20] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\lptmr
+[21] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\mpwm
+[22] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\pins
+[23] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\power
+[24] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\power\YTM32B1Mx
+[25] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\spi
+[26] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\platform\drivers\src\uart
+[27] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\rtos\osif
+[28] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\can
+[29] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\diag
+[30] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\input
+[31] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\nvm
+[32] = D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Obj\serve\soc
+[33] = m7M_tl.a
+[34] = rt7M_tl.a
+
+  61'120 bytes of readonly  code memory
+     452 bytes of readwrite code memory
+   4'576 bytes of readonly  data memory (+ 112 absolute)
+   6'536 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

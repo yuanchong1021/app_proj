@@ -1,0 +1,21 @@
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\BrowseInfo\platform\devices\YTM32B1MC0\startup\system_YTM32B1MC0.pbi: \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\platform\devices\YTM32B1MC0\startup\system_YTM32B1MC0.c \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\platform\devices\device_registers.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\platform\devices\YTM32B1MC0\include\YTM32B1MC0.h \
+  D:\soft\IAR\arm\inc\c\stdint.h D:\soft\IAR\arm\inc\c\ycheck.h \
+  D:\soft\IAR\arm\inc\c\yvals.h D:\soft\IAR\arm\inc\c\DLib_Defaults.h \
+  D:\soft\IAR\arm\inc\c\DLib_Config_Normal.h \
+  D:\soft\IAR\arm\inc\c\DLib_Product.h D:\soft\IAR\arm\inc\c\stdbool.h \
+  D:\soft\IAR\arm\inc\c\stddef.h D:\soft\IAR\arm\inc\c\ysizet.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\CMSIS\Core\Include\core_cm33.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\CMSIS\Core\Include\cmsis_version.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\CMSIS\Core\Include\cmsis_compiler.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\CMSIS\Core\Include\cmsis_iccarm.h \
+  D:\soft\IAR\arm\inc\c\aarch32\iccarm_builtin.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\CMSIS\Core\Include\mpu_armv8.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\platform\devices\common\core_common.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\platform\devices\YTM32B1MC0\startup\system_YTM32B1MC0.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\platform\devices\YTM32B1MC0\include\YTM32B1MC0_features.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\platform\devices\YTM32B1MC0\startup\system_YTM32B1MC0.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\platform\devices\devassert.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\platform\devices\YTM32B1MC0\startup\system_YTM32B1MC0.h

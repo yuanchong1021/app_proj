@@ -1,0 +1,9 @@
+刷写文件   : D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Exe\app.bin
+起始地址   : 0x00008000
+长度       : 66136 字节 (0x10258)
+CRC32      : 0x1A5D7F57
+剩余空间   : 163240 字节
+
+诊断仪参数：
+  步骤 19  34 00 44 00 00 80 00 00 01 02 58
+  步骤 22  31 01 DF FF 1A 5D 7F 57

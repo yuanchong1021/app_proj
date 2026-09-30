@@ -1,0 +1,48 @@
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\BrowseInfo\app\sheduler\scheduler.pbi: \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\app\scheduler\scheduler.c \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\app\scheduler\scheduler.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\app\scheduler\..\common\cluster_context.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\common\types.h \
+  D:\soft\IAR\arm\inc\c\stdint.h D:\soft\IAR\arm\inc\c\ycheck.h \
+  D:\soft\IAR\arm\inc\c\yvals.h D:\soft\IAR\arm\inc\c\DLib_Defaults.h \
+  D:\soft\IAR\arm\inc\c\DLib_Config_Normal.h \
+  D:\soft\IAR\arm\inc\c\DLib_Product.h D:\soft\IAR\arm\inc\c\stdbool.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\common\config\cfg_power.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\common\config\cfg_can.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\common\config\cfg_gauges.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\common\config\cfg_buzzer.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\common\config\cfg_selfcheck.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\common\config\cfg_lcd_addr.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\common\config\cfg_lowpower.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\serve\input\hw_input.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\app\scheduler\..\common\cluster_context.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\serve\can\can_app.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\common\cluster_context.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\system\sys_mgr.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\power\pwr_mgr.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\power\..\common\cluster_context.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\gauges\speed.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\gauges\rpm.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\gauges\..\common\cluster_context.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\gauges\coolant.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\gauges\fuel.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\gauges\cng.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\gauges\ambient.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\common\config\..\..\common\cluster_context.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\gauges\odo.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\gauges\tpms_data.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\ui\led_ind.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\serve\soc\soc_uart.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\ui\lcd_ui.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\ui\backlight.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\ui\..\common\cluster_context.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\ui\buzzer.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\serve\input\radio_input.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\serve\input\..\..\app\common\cluster_context.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\serve\input\rtc_input.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\hal\hal_tick.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\common\types.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\power\voltage.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\power\lowpower.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\hal\hal_adc.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\serve\diag\uds_svc.h

@@ -1,0 +1,16 @@
+D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\BrowseInfo\app\gauges\cng.pbi: \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\app\gauges\cng.c \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\app\gauges\cng.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\app\gauges\..\common\cluster_context.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\common\types.h \
+  D:\soft\IAR\arm\inc\c\stdint.h D:\soft\IAR\arm\inc\c\ycheck.h \
+  D:\soft\IAR\arm\inc\c\yvals.h D:\soft\IAR\arm\inc\c\DLib_Defaults.h \
+  D:\soft\IAR\arm\inc\c\DLib_Config_Normal.h \
+  D:\soft\IAR\arm\inc\c\DLib_Product.h D:\soft\IAR\arm\inc\c\stdbool.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\common\config\cfg_power.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\common\config\cfg_can.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\common\config\cfg_gauges.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\common\config\cfg_buzzer.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\common\config\cfg_selfcheck.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\common\config\cfg_lcd_addr.h \
+  D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\..\app\common\config\cfg_lowpower.h

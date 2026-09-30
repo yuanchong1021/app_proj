@@ -1,0 +1,115 @@
+/*!
+@defgroup flash Flash Memory (Flash)
+@brief Flash Memory Module provides the general flash APIs
+@details
+Flash memory is ideal for single-supply applications, permitting in-the-field erase and
+reprogramming operations without the need for any external high voltage power sources.
+The flash module includes a memory controller that executes commands to modify flash
+memory contents. An erased bit reads '1' and a programmed bit reads '0'. The
+programming operation is unidirectional; it can only move bits from the '1' state (erased)
+to the '0' state (programmed). Only the erase operation restores bits from '0' to '1'; bits
+cannot be programmed from a '0' to a '1'.
+
+@note User should get flash memory information from user manual, as flash controller not support
+ read while write operation. User need to disable global interrupt before flash write and erase
+ operation in one flash block. SDK won't check if global interrupt is disabled or not.
+
+ For chips have separate data flash blocks, user can read/write/erase data flash when application
+ running in main flash arrays.
+
+## EFM Flash Driver
+The EFM flash module includes the following accessible memory regions.
+1. Program flash memory for vector space and code store.
+2. Data flash memory for application data storage.
+3. Customer Non-volatile Region(NVR) for customer data storage.
+
+Some platforms may be designed to have only program flash memory or all of them.
+
+ For chips support HCU, Flash driver will support HCU hardware key storage. User can use related
+ APIs to program HCU key, and HCU key not support read access.
+
+ For chips support flash block swap feature, Flash driver support flash swap commands, user can call
+ flash swap APIs to swap flash block. The boot swap will be valid on next boot.
+
+The driver includes general APIs to handle specific operations on EFM Flash module.
+The user can use those APIs directly in the application.
+
+ EEPROM and EEPROM emulation are not supported in flash SDK.
+
+## Integration guideline ##
+ 
+### Compilation units ###
+
+The following files need to be compiled in the project:
+\verbatim
+${SDK_PATH}\platform\drivers\src\flash\flash_driver.c
+\endverbatim
+
+### Include path ###
+
+The following paths need to be added to the include path of the toolchain:
+\verbatim
+${SDK_PATH}\platform\drivers\inc\
+\endverbatim
+
+### Compile symbols ###
+
+No special symbols are required for this component
+
+### Dependencies ###
+
+### Interrupts ###
+The flash module can generate interrupts, if enabled on corresponding flash APIs, but these interrupts
+are not handled by the driver. The application should handle these interrupts.
+
+\ref clock_manager
+
+## Important Note
+
+1. If using callback in the application, any code reachable from this function
+must not be placed in a Flash block targeted for a program/erase operation to avoid the RWW error.
+Functions can be placed in RAM section by using the START/END_FUNCTION_DEFINITION/DECLARATION_RAMSECTION macros.
+2. EFM module depends on the clock manager, so the clock manager must be initialized before EFM module, and the
+clock manager should update EFM_CTRL_RWS field and EFM clock setting correctly before any flash operation.
+3. If the flash block is swapped, the flash driver will not check the swap status, and the application can get boot
+information form flash register.
+
+## Example code ##
+1. To initialize the Flash module, call FLASH_DRV_Init() function and pass
+   the user configuration data structure to it.
+    This is example code to configure the Flash driver:
+~~~~~{.c}
+   #define FLASH_INST  (0) /* FLASH instance */
+
+    /* Configuration structure FlashInitConfig */
+   flash_user_config_t FlashInitConfig = {
+       .async = false,          /* Sync mode, wait erase/program done */
+       .disGlobalInt = true,    /* Disable global interrupt during flash operation for sync mode */
+       .readVerify = true,      /* Enable read verify after erase or program by the hardware automatically */
+       .callback = NULL,
+   };
+
+   flash_state_t FlashState;
+
+   /* Initializes the Flash */
+   FLASH_DRV_Init(FLASH_INST, &FlashInitConfig, &FlashState);
+~~~~~
+
+2. To erase a flash sector, call FLASH_DRV_EraseSector() function and pass
+   the address and size of the sector to be erased.
+    This is example code to erase a flash sector:
+~~~~~{.c}
+   /* Erase a flash sector */
+   FLASH_DRV_EraseSector(FLASH_INST, 0xC8000, 0x1000);
+~~~~~
+
+3. To program a flash sector, call FLASH_DRV_Program() function and pass
+   the address and size of the sector to be programmed.
+    This is example code to program a flash sector:
+~~~~~{.c}
+   /* Program a flash sector */
+   FLASH_DRV_Program(FLASH_INST, 0xC8000, 0x1000, data);
+~~~~~
+
+
+*/

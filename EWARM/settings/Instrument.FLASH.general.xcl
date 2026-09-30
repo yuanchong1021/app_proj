@@ -1,0 +1,15 @@
+"D:\soft\IAR\arm\bin\armPROC.dll" 
+
+"D:\soft\IAR\arm\bin\armJLINK.dll" 
+
+"D:\project\YTM32B1MC0_Q64\demo\app_fee\instrument_app_uds\app_proj\EWARM\FLASH\Exe\Instrument.out" 
+
+--plugin="D:\soft\IAR\arm\bin\armbat.dll" 
+
+--device_macro="D:\soft\IAR\arm/config/debugger/YTMicro/YTM32B1MC03.dmac" 
+
+--flash_loader="D:\soft\IAR\arm/config/flashloader/YTMicro/FlashYTM32B1MC03.board" 
+
+
+
+

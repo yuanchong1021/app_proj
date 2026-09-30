@@ -1,0 +1,449 @@
+/*
+ * Copyright 2020-2025 Yuntu Microelectronics Co., Ltd.
+ * All rights reserved.
+ *
+ * SPDX-License-Identifier: BSD-3-Clause
+ * 
+ * @file yt_linker.icf
+ * @brief 
+ * 
+ */
+
+
+define memory mem with size = 4G;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define exported symbol IVT_memory_start = 0x8000;
+define exported symbol IVT_memory_end = 0x83ff;
+define region IVT = mem:[from IVT_memory_start to IVT_memory_end]; /*1024*/
+
+define exported symbol TEXT_memory_start = 0x8400;
+define exported symbol TEXT_memory_end = 0x3ffff;
+define region TEXT = mem:[from TEXT_memory_start to TEXT_memory_end]; /*0x37C00*/
+
+define exported symbol IVT_RAM_memory_start = 0x20000000;
+define exported symbol IVT_RAM_memory_end = 0x200003ff;
+define region IVT_RAM = mem:[from IVT_RAM_memory_start to IVT_RAM_memory_end]; /*0x400*/
+
+define exported symbol RAM_memory_start = 0x20000400;
+define exported symbol RAM_memory_end = 0x20007bf7;
+define region RAM = mem:[from RAM_memory_start to RAM_memory_end]; /*0x77f8*/
+
+define exported symbol SharedSegment_memory_start = 0x20007bf8;
+define exported symbol SharedSegment_memory_end = 0x20007bff;
+define region SharedSegment = mem:[from SharedSegment_memory_start to SharedSegment_memory_end]; /*8*/
+
+define exported symbol STACK_memory_start = 0x20007c00;
+define exported symbol STACK_memory_end = 0x20007fff;
+define region STACK = mem:[from STACK_memory_start to STACK_memory_end]; /*1024*/
+
+
+
+
+define root section IVT_start_section
+{
+    public IVT_start:
+};
+define root section IVT_end_section
+{
+    public IVT_end:
+};
+define root section isr_vector_region_start_section with alignment = 4
+{
+    public isr_vector_region_start:
+};
+define root section isr_vector_region_end_section
+{
+    public isr_vector_region_end:
+};
+define block IVT_block with fixed order, alignment = 4
+{
+    section IVT_start_section, 
+    section isr_vector_region_start_section,
+    block isr_vector with alignment = 4  {  section .isr_vector },
+    section isr_vector_region_end_section,
+    section IVT_end_section
+};
+"IVT_IVT": place in IVT
+{
+    block IVT_block
+};
+
+
+keep
+{
+    section .isr_vector,
+};
+define root section TEXT_start_section
+{
+    public TEXT_start:
+};
+define root section TEXT_end_section
+{
+    public TEXT_end:
+};
+define root section rodata_region_start_section
+{
+    public rodata_region_start:
+};
+define root section rodata_region_end_section
+{
+    public rodata_region_end:
+};
+define root section text_region_start_section
+{
+    public text_region_start:
+};
+define root section text_region_end_section
+{
+    public text_region_end:
+};
+define block TEXT_block with fixed order, end alignment = 4
+{
+    section TEXT_start_section, 
+    section rodata_region_start_section,
+    block rodata  {  section .rodata ,section .rodata* },
+    section rodata_region_end_section,
+    section text_region_start_section,
+    block text with end alignment = 4  {  section .text ,section .text* },
+    section text_region_end_section,
+    section TEXT_end_section
+};
+"TEXT_TEXT": place in TEXT
+{
+    block TEXT_block
+};
+
+
+define root section ARM_start_section
+{
+    public ARM_start:
+};
+define root section ARM_end_section
+{
+    public ARM_end:
+};
+define root section ARM.exidx_region_start_section
+{
+    public ARM.exidx_region_start:
+};
+define root section ARM.exidx_region_end_section
+{
+    public ARM.exidx_region_end:
+};
+define block ARM_block with fixed order, end alignment = 4
+{
+    section ARM_start_section, 
+    section ARM.exidx_region_start_section,
+    block ARM.exidx with end alignment = 4  {  section .ARM.exidx ,section .ARM.exidx* },
+    section ARM.exidx_region_end_section,
+    section ARM_end_section
+};
+"TEXT_ARM": place in TEXT
+{
+    block ARM_block
+};
+
+
+
+define root section CODE_RAM_rom_start_section
+{
+    public CODE_RAM_rom_start:
+};
+define root section CODE_RAM_rom_end_section
+{
+    public CODE_RAM_rom_end:
+};
+define block CODE_RAM_rom_block with fixed order, alignment = 4, end alignment = 4
+{
+    section CODE_RAM_rom_start_section,
+    block code_ram_rom with end alignment = 4  {  section .code_ram_init },
+    section CODE_RAM_rom_end_section
+};
+
+"TEXT_CODE_RAM_rom": place in TEXT
+{
+    block CODE_RAM_rom_block
+};
+
+
+define root section DATA_RAM_rom_start_section
+{
+    public DATA_RAM_rom_start:
+};
+define root section DATA_RAM_rom_end_section
+{
+    public DATA_RAM_rom_end:
+};
+define block DATA_RAM_rom_block with fixed order, alignment = 4, end alignment = 4
+{
+    section DATA_RAM_rom_start_section,
+    block data_rom with end alignment = 4  {  section .data_init ,section .data_init* },
+    section DATA_RAM_rom_end_section
+};
+
+"TEXT_DATA_RAM_rom": place in TEXT
+{
+    block DATA_RAM_rom_block
+};
+
+
+define root section SharedSegment_rom_start_section
+{
+    public SharedSegment_rom_start:
+};
+define root section SharedSegment_rom_end_section
+{
+    public SharedSegment_rom_end:
+};
+define block SharedSegment_rom_block with fixed order
+{
+    section SharedSegment_rom_start_section,
+    block SharedSegment_rom  {  section .SharedSegment_init },
+    section SharedSegment_rom_end_section
+};
+
+"TEXT_SharedSegment_rom": place in TEXT
+{
+    block SharedSegment_rom_block
+};
+
+define root section IVT_RAM_start_section
+{
+    public IVT_RAM_start:
+};
+define root section IVT_RAM_end_section
+{
+    public IVT_RAM_end:
+};
+define root section IVT_RAM_region_start_section
+{
+    public IVT_RAM_region_start:
+};
+define root section IVT_RAM_region_end_section
+{
+    public IVT_RAM_region_end:
+};
+define block IVT_RAM_block with fixed order, alignment = 1024
+{
+    section IVT_RAM_start_section, 
+    section IVT_RAM_region_start_section,
+    block IVT_RAM_empty_block with size = 0X400 {},
+    section IVT_RAM_region_end_section,
+    section IVT_RAM_end_section
+};
+"IVT_RAM_IVT_RAM": place in IVT_RAM
+{
+    block IVT_RAM_block
+};
+
+
+keep
+{
+    block IVT_RAM_empty_block
+};
+define root section CODE_RAM_start_section
+{
+    public CODE_RAM_ram_start:
+    public CODE_RAM_start:
+};
+define root section CODE_RAM_end_section
+{
+    public CODE_RAM_ram_end:
+    public CODE_RAM_end:
+};
+define root section code_ram_region_start_section
+{
+    public code_ram_region_start:
+};
+define root section code_ram_region_end_section
+{
+    public code_ram_region_end:
+};
+define block CODE_RAM_block with fixed order, alignment = 4, end alignment = 4
+{
+    section CODE_RAM_start_section, 
+    section code_ram_region_start_section,
+    block code_ram with end alignment = 4  {  section .code_ram },
+    section code_ram_region_end_section,
+    section CODE_RAM_end_section
+};
+"RAM_CODE_RAM": place in RAM
+{
+    block CODE_RAM_block
+};
+
+check that size(block CODE_RAM_block) == size(block CODE_RAM_rom_block);
+
+define root section DATA_RAM_start_section
+{
+    public DATA_RAM_ram_start:
+    public DATA_RAM_start:
+};
+define root section DATA_RAM_end_section
+{
+    public DATA_RAM_ram_end:
+    public DATA_RAM_end:
+};
+define root section data_region_start_section
+{
+    public data_region_start:
+};
+define root section data_region_end_section
+{
+    public data_region_end:
+};
+define block DATA_RAM_block with fixed order, alignment = 4, end alignment = 4
+{
+    section DATA_RAM_start_section, 
+    section data_region_start_section,
+    block data with end alignment = 4  {  section .data ,section .data* },
+    section data_region_end_section,
+    section DATA_RAM_end_section
+};
+"RAM_DATA_RAM": place in RAM
+{
+    block DATA_RAM_block
+};
+
+check that size(block DATA_RAM_block) == size(block DATA_RAM_rom_block);
+
+define root section BSS_start_section
+{
+    public BSS_start:
+};
+define root section BSS_end_section
+{
+    public BSS_end:
+};
+define root section bss_region_start_section
+{
+    public bss_region_start:
+};
+define root section bss_region_end_section
+{
+    public bss_region_end:
+};
+define block BSS_block with fixed order, end alignment = 4
+{
+    section BSS_start_section, 
+    section bss_region_start_section,
+    block bss with end alignment = 4  {  section .bss ,section .bss* },
+    section bss_region_end_section,
+    section BSS_end_section
+};
+"RAM_BSS": place in RAM
+{
+    block BSS_block
+};
+
+
+define root section SharedSegment_start_section
+{
+    public SharedSegment_ram_start:
+    public SharedSegment_start:
+};
+define root section SharedSegment_end_section
+{
+    public SharedSegment_ram_end:
+    public SharedSegment_end:
+};
+define root section SharedSegment_region_start_section
+{
+    public SharedSegment_region_start:
+};
+define root section SharedSegment_region_end_section
+{
+    public SharedSegment_region_end:
+};
+define block SharedSegment_block with fixed order
+{
+    section SharedSegment_start_section, 
+    section SharedSegment_region_start_section,
+    block SharedSegment  {  section .SharedSegment },
+    section SharedSegment_region_end_section,
+    section SharedSegment_end_section
+};
+"SharedSegment_SharedSegment": place in SharedSegment
+{
+    block SharedSegment_block
+};
+
+check that size(block SharedSegment_block) == size(block SharedSegment_rom_block);
+
+keep
+{
+    section .SharedSegment,
+};
+define root section STACK_start_section
+{
+    public STACK_start:
+};
+define root section STACK_end_section
+{
+    public STACK_end:
+};
+define root section STACK_region_start_section
+{
+    public STACK_region_start:
+};
+define root section STACK_region_end_section
+{
+    public STACK_region_end:
+};
+define block STACK_block with fixed order, alignment = 8
+{
+    section STACK_start_section, 
+    section STACK_region_start_section,
+    block STACK_empty_block with size = 1024 {},
+    section STACK_region_end_section,
+    section STACK_end_section
+};
+"STACK_STACK": place in STACK
+{
+    block STACK_block
+};
+
+
+keep
+{
+    block STACK_empty_block
+};
+
+initialize manually {
+    section .code_ram,
+    section .data,
+    section .data*,
+    section .SharedSegment,
+};
+
+
+do not initialize {
+    section .isr_vector,
+    section .rodata,
+    section .rodata*,
+    section .text,
+    section .text*,
+    section .ARM.exidx,
+    section .ARM.exidx*,
+    section .code_ram,
+    section .data,
+    section .data*,
+    section .SharedSegment,
+    section .bss,
+    section .bss*,
+};

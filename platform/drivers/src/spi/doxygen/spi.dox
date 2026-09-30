@@ -1,0 +1,124 @@
+/*!
+@defgroup spi Serial Peripheral Interface (SPI)
+@brief Serial Peripheral Interface (SPI) Peripheral Driver
+@details The SPI driver allows communication on an SPI bus using the SPI module.
+
+## Features ##
+- Interrupt based
+- Master or slave operation
+- Provides blocking and non-blocking transmit and receive functions
+- RX and TX hardware buffers (4 words)
+- 4 configurable chip select
+- Configurable baud rate
+
+
+## How to integrate SPI in your application ##
+
+In order to use the SPI driver it must be first initialized in either master or slave mode,using functions SPI_DRV_MasterInit() or SPI_DRV_SlaveInit(). Once initialized, it cannot be initialized again for the same SPI module instance until it is de-initialized, using SPI_DRV_MasterDeinit() or SPI_DRV_SlaveDeinit(). Different SPI module instances can function
+independently of each other.
+
+In each mode (master/slave) are available two types of transfers: blocking and non-blocking.The functions which initiate blocking transfers will configure the time out for transmission. If time expires SPI_MasterTransferBlocking/SPI_SlaveTransferBlocking will return error and the
+transmission will be aborted.
+ 
+Depending on frame size receive and transmit buffers must be aligned as is presented in the next table:
+|Bits/frame|  less or equal with 8  |between 9 and 16 | more than 16 |
+|:---------:|:----------------------:|:---------------:|:------------:|
+| Alignment |         1 byte         |     2 bytes     |    4 bytes   |
+	 
+This alignment requirements should be taken into consideration when "transferByteCount" is configured. For a better understanding these are some examples of how to calculate the right value to "transferByteCount":
+|Bits/frame|  number of frames | bytes per frame | transferByteCount |
+|:--------:|:------------------:|:---------------:|:-----------------:|
+|   8     |         10        |     1           |    10             |
+|10    |         10        |     2           |    20             |
+|24    |         10        |     4           |    40             |
+|32    |         10        |     4           |    40             |
+|40    |         10        |     8           |    80             |
+|64    |         10        |     8           |    80             |
+
+If frame size is bigger than 32 bits MSB/LSB option is applicable for each uint32_t, not for the entire frame. The application should enssure the uint32_t order in buffers, depending on MSB/LSB configuration.
+
+## Important Notes ##
+
+- The driver enables the interrupts for the corresponding SPI module,\n
+  but any interrupt priority setting must be done by the application.
+- The watermarks will be set by the application.
+- The driver will configure SCK to PCS delay, PCS to SCK delay, delay between transfers with default values. If your application needs other values for this parameters SPI_DRV_MasterSetDelay function can be used.
+- The driver cannot be used in the case SPI transfer in slave mode over DMA with invalid address of tx buffer, the driver will never finish the transfer.
+- The driver cannot be used with a configuration with bit/frame greater than 32 bits and MSB endianness in either slave or master mode.
+If you need a frame larger than 32 bits with MSB the application must handle the data positioning.
+
+## Example code ##
+
+```c
+    const spi_master_config_t Send_MasterConfig0 = {
+        .bitsPerSec = 50000U,
+        .whichPcs = SPI_PCS0,
+        .pcsPolarity = SPI_ACTIVE_HIGH,
+        .isPcsContinuous = false,
+        .bitcount = 8U,
+        .spiSrcClk = 8000000U,
+        .clkPhase = SPI_CLOCK_PHASE_1ST_EDGE,
+        .clkPolarity = SPI_SCK_ACTIVE_HIGH,
+        .lsbFirst = false,
+        .transferType = SPI_USING_INTERRUPTS,
+    };
+    const spi_slave_config_t Receive_SlaveConfig0 = {
+        .pcsPolarity = SPI_ACTIVE_HIGH,
+        .bitcount = 8U,
+        .clkPhase = SPI_CLOCK_PHASE_1ST_EDGE,
+        .whichPcs = SPI_PCS0,
+        .clkPolarity = SPI_SCK_ACTIVE_HIGH,
+        .lsbFirst = false,
+        .transferType = SPI_USING_INTERRUPTS,
+    };
+    /* Initialize clock and pins */
+    SPI_DRV_MasterInit(0U, &masterState, &Send_MasterConfig0);
+    /* Set delay between transfer, PCStoSCK and SCKtoPCS to 10 microseconds. */
+    SPI_DRV_MasterSetDelay(0U, 10U, 10U, 10u);
+    /* Initialize SPI1 (Slave)*/
+    SPI_DRV_SlaveInit(1U, &slaveState, &Receive_SlaveConfig0);
+    /* Allocate memory */
+    masterDataSend = (uint8_t*)calloc(100, sizeof(uint8_t));
+    masterDataReceive = (uint8_t*)calloc(100, sizeof(uint8_t));
+    slaveDataSend = (uint8_t*)calloc(100, sizeof(uint8_t));
+    slaveDataReceive = (uint8_t*)calloc(100, sizeof(uint8_t));
+    bufferSize = 100U;
+    testStatus[0] = true;
+    SPI_DRV_SlaveTransfer(0U, slaveDataSend,
+                  slaveDataReceive, bufferSize);
+    SPI_DRV_MasterTransferBlocking(1U, &Send_MasterConfig0, masterDataSend,
+                  masterDataReceive, bufferSize, TIMEOUT);
+
+```
+ 
+## Integration guideline ##
+
+The following files need to be compiled in the project:
+```sh
+${SDK_PATH}\platform\drivers\src\spi\spi_irq.c
+${SDK_PATH}\platform\drivers\src\spi\spi_master_driver.c
+${SDK_PATH}\platform\drivers\src\spi\spi_shared_function.c
+${SDK_PATH}\platform\drivers\src\spi\spi_slave_driver.c
+${SDK_PATH}\platform\drivers\src\spi\spi_hw_access.c
+```
+
+### Include path ###
+
+The following paths need to be added to the include path of the toolchain:
+```sh
+${SDK_PATH}\platform\drivers\inc
+${SDK_PATH}\platform\drivers\src\spi
+```
+
+### Compile symbols ###
+
+No special symbols are required for this component
+
+### Dependencies ###
+
+- \ref clock_manager
+- \ref osif
+- \ref interrupt_manager
+- \ref dma_driver
+
+*/

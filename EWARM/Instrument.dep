@@ -1,0 +1,1844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>2519968222</fileChecksum>
+    <configuration>
+        <name>FLASH</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\app\gauges\fuel.h</file>
+            <file>$PROJ_DIR$\..\app\gauges\fuel.c</file>
+            <file>$PROJ_DIR$\..\app\gauges\coolant.c</file>
+            <file>$PROJ_DIR$\..\app\gauges\cng.h</file>
+            <file>$PROJ_DIR$\..\app\gauges\coolant.h</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\vector_table_copy.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\app\gauges\fuel.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\hal\hal_can.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\pins\pins_port_hw_access.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\serve\diag\app_info.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\hal\hal_rtc_ds1307.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\dma\dma_hw_access.o</file>
+            <file>$PROJ_DIR$\FLASH\List\Instrument.map</file>
+            <file>$PROJ_DIR$\..\app\common\config\cfg_lowpower.h</file>
+            <file>$PROJ_DIR$\FLASH\Exe\Instrument.hex</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\i2c\i2c_irq.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\app\sheduler\scheduler.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\mpwm\mpwm_common.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\uart_config.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\mpwm_config.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\adc\adc_driver.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\clock\YTM32B1Mx\clock_YTM32B1Mx.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\pins\pins_driver.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\app\system\sys_mgr.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\lptmr\lptmr_hw_access.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\spi_config.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\utility_print_config.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\app\power\pwr_mgr.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\float.h</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\flexcan\flexcan_hw_access.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\app\gauges\odo.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\spi\spi_hw_access.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\spi\spi_slave_driver.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\app\gauges\rpm.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\rtos\osif\osif_baremetal.o</file>
+            <file>$PROJ_DIR$\FLASH\Exe\Instrument.out</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\FLASH\Obj\app\ui\lcd_ui.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\hal\hal_buzzer.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\hal\hal_adc.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\clock_config.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\i2c_config.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\uart\uart_irq.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\middleware\utility_flash_ecc_fault\flash_ecc_fault.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\serve\nvm\nvm_storage.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\RamInit1.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\app\ui\led_ind.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\hal\hal_backlight.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\hal\hal_lcd.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\middleware\utility_print\printf\printf.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\RamInit2.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\serve\nvm\odo_log.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\serve\can\can_rx_parse.o</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\FLASH\Obj\serve\diag\uds_did.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\app\ui\backlight.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\serve\diag\boot_shared.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\sc5037\sc5037.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\serve\input\rtc_input.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\app\main.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\app\gauges\tpms_data.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\adc_config.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\app\power\lowpower.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\serve\diag\uds_svc.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\serve\can\can_app.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\power\YTM32B1Mx\power_manager_YTM32B1Mx.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\hal\hal_eeprom_bl24c08f.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\app\ui\buzzer.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\can_config.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$PROJ_DIR$\FLASH\Obj\app\gauges\speed.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\i2c\i2c_driver.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\app\power\voltage.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\app\gauges\meter_display.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\uart\uart_hw_access.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\flash_config.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\power\power_manager.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\utility_flash_ecc_fault_config.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\dma\dma_driver.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\FLASH\Obj\app\gauges\coolant.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\FLASH\Obj\app\gauges\cng.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\flexcan\flexcan_driver.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\spi\spi_shared_function.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\interrupt\interrupt_manager.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\flash\flash_driver.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\aarch32\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\FLASH\Obj\hal\hal_tick.o</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\flexcan\flexcan_irq.o</file>
+            <file>$PROJ_DIR$\..\app\gauges\speed.c</file>
+            <file>$PROJ_DIR$\..\app\system\sys_mgr.c</file>
+            <file>$PROJ_DIR$\..\app\power\pwr_mgr.c</file>
+            <file>$PROJ_DIR$\..\app\system\sys_mgr.h</file>
+            <file>$PROJ_DIR$\..\app\gauges\rpm.h</file>
+            <file>$PROJ_DIR$\..\app\ui\backlight.c</file>
+            <file>$PROJ_DIR$\..\app\scheduler\scheduler.c</file>
+            <file>$PROJ_DIR$\..\app\ui\buzzer.c</file>
+            <file>$PROJ_DIR$\..\app\ui\buzzer.h</file>
+            <file>$PROJ_DIR$\..\app\ui\led_ind.h</file>
+            <file>$PROJ_DIR$\..\app\scheduler\scheduler.h</file>
+            <file>$PROJ_DIR$\..\app\gauges\odo.c</file>
+            <file>$PROJ_DIR$\..\app\power\pwr_mgr.h</file>
+            <file>$PROJ_DIR$\..\app\main.c</file>
+            <file>$PROJ_DIR$\..\board\adc_config.c</file>
+            <file>$PROJ_DIR$\..\app\ui\lcd_ui.c</file>
+            <file>$PROJ_DIR$\..\app\power\voltage.h</file>
+            <file>$PROJ_DIR$\..\app\gauges\tpms_data.h</file>
+            <file>$PROJ_DIR$\..\app\gauges\odo.h</file>
+            <file>$PROJ_DIR$\..\board\sc5037\sc5037.c</file>
+            <file>$PROJ_DIR$\..\app\ui\led_ind.c</file>
+            <file>$PROJ_DIR$\..\board\adc_config.h</file>
+            <file>$PROJ_DIR$\..\board\can_config.h</file>
+            <file>$PROJ_DIR$\..\board\clock_config.h</file>
+            <file>$PROJ_DIR$\..\app\gauges\speed.h</file>
+            <file>$PROJ_DIR$\..\board\dma_config.h</file>
+            <file>$PROJ_DIR$\..\board\flash_config.c</file>
+            <file>$PROJ_DIR$\..\app\ui\lcd_ui.h</file>
+            <file>$PROJ_DIR$\..\app\ui\backlight.h</file>
+            <file>$PROJ_DIR$\..\board\i2c_config.h</file>
+            <file>$PROJ_DIR$\..\app\power\lowpower.c</file>
+            <file>$PROJ_DIR$\..\board\interrupt_config.c</file>
+            <file>$PROJ_DIR$\..\board\sc5037\sc5037_hal_stm32.c</file>
+            <file>$PROJ_DIR$\..\app\power\lowpower.h</file>
+            <file>$PROJ_DIR$\..\board\can_config.c</file>
+            <file>$PROJ_DIR$\..\app\gauges\meter_display.c</file>
+            <file>$PROJ_DIR$\..\board\i2c_config.c</file>
+            <file>$PROJ_DIR$\..\app\gauges\meter_display.h</file>
+            <file>$PROJ_DIR$\..\app\gauges\tpms_data.c</file>
+            <file>$PROJ_DIR$\..\board\sc5037\sc5037.h</file>
+            <file>$PROJ_DIR$\..\app\gauges\rpm.c</file>
+            <file>$PROJ_DIR$\..\board\clock_config.c</file>
+            <file>$PROJ_DIR$\..\board\dma_config.c</file>
+            <file>$PROJ_DIR$\..\board\flash_config.h</file>
+            <file>$PROJ_DIR$\..\app\power\voltage.c</file>
+            <file>$PROJ_DIR$\..\board\power_config.h</file>
+            <file>$PROJ_DIR$\..\board\startup.S</file>
+            <file>$PROJ_DIR$\..\board\pin_mux.h</file>
+            <file>$PROJ_DIR$\..\board\yt_linker.icf</file>
+            <file>$PROJ_DIR$\..\board\mpwm_config.c</file>
+            <file>$PROJ_DIR$\..\board\spi_config.c</file>
+            <file>$PROJ_DIR$\..\board\utility_print_config.h</file>
+            <file>$PROJ_DIR$\..\CMSIS\Core\Include\cmsis_iccarm.h</file>
+            <file>$PROJ_DIR$\..\board\utility_flash_ecc_fault_config.c</file>
+            <file>$PROJ_DIR$\..\CMSIS\Core\Include\core_cm33.h</file>
+            <file>$PROJ_DIR$\..\board\lptmr_config.h</file>
+            <file>$PROJ_DIR$\..\CMSIS\Core\Include\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\..\CMSIS\Core\Include\cmsis_version.h</file>
+            <file>$PROJ_DIR$\..\board\RamInit0.S</file>
+            <file>$PROJ_DIR$\..\board\mpwm_config.h</file>
+            <file>$PROJ_DIR$\..\board\interrupt_config.h</file>
+            <file>$PROJ_DIR$\..\board\pin_mux.c</file>
+            <file>$PROJ_DIR$\..\board\power_config.c</file>
+            <file>$PROJ_DIR$\..\board\RamInit1.c</file>
+            <file>$PROJ_DIR$\..\board\vector_table_copy.c</file>
+            <file>$PROJ_DIR$\..\board\uart_config.c</file>
+            <file>$PROJ_DIR$\..\board\utility_flash_ecc_fault_config.h</file>
+            <file>$PROJ_DIR$\..\board\RamInit2.c</file>
+            <file>$PROJ_DIR$\..\board\utility_print_config.c</file>
+            <file>$PROJ_DIR$\..\board\spi_config.h</file>
+            <file>$PROJ_DIR$\..\board\uart_config.h</file>
+            <file>$PROJ_DIR$\..\board\vector.S</file>
+            <file>$PROJ_DIR$\..\board\lptmr_config.c</file>
+            <file>$PROJ_DIR$\..\board\sdk_project_config.h</file>
+            <file>$PROJ_DIR$\..\platform\devices\YTM32B1MC0\include\YTM32B1MC0_features.h</file>
+            <file>$PROJ_DIR$\..\hal\hal_gpio.h</file>
+            <file>$PROJ_DIR$\..\hal\hal_lcd.c</file>
+            <file>$PROJ_DIR$\..\middleware\utility_flash_ecc_fault\flash_ecc_fault.h</file>
+            <file>$PROJ_DIR$\..\platform\devices\device_registers.h</file>
+            <file>$PROJ_DIR$\..\hal\hal_lowpower.h</file>
+            <file>$PROJ_DIR$\..\middleware\utility_flash_ecc_fault\flash_ecc_fault.c</file>
+            <file>$PROJ_DIR$\..\hal\hal_backlight.c</file>
+            <file>$PROJ_DIR$\..\platform\devices\callbacks.h</file>
+            <file>$PROJ_DIR$\..\hal\hal_can.c</file>
+            <file>$PROJ_DIR$\..\hal\hal_nvm.c</file>
+            <file>$PROJ_DIR$\..\hal\hal_tick.c</file>
+            <file>$PROJ_DIR$\..\platform\devices\YTM32B1MC0\include\YTM32B1MC0.h</file>
+            <file>$PROJ_DIR$\..\platform\devices\YTM32B1MC0\startup\system_YTM32B1MC0.c</file>
+            <file>$PROJ_DIR$\..\platform\devices\common\core_common.h</file>
+            <file>$PROJ_DIR$\..\platform\devices\status.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\adc_driver.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\clock.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\clock_manager.h</file>
+            <file>$PROJ_DIR$\..\hal\hal_tick.h</file>
+            <file>$PROJ_DIR$\..\CMSIS\Core\Include\mpu_armv8.h</file>
+            <file>$PROJ_DIR$\..\hal\hal_backlight.h</file>
+            <file>$PROJ_DIR$\..\hal\hal_buzzer.c</file>
+            <file>$PROJ_DIR$\..\hal\hal_buzzer.h</file>
+            <file>$PROJ_DIR$\..\hal\hal_eeprom_bl24c08f.h</file>
+            <file>$PROJ_DIR$\..\hal\hal_gpio.c</file>
+            <file>$PROJ_DIR$\..\hal\hal_adc.h</file>
+            <file>$PROJ_DIR$\..\hal\hal_can.h</file>
+            <file>$PROJ_DIR$\..\hal\hal_lcd.h</file>
+            <file>$PROJ_DIR$\..\hal\hal_rtc_ds1307.c</file>
+            <file>$PROJ_DIR$\..\hal\hal_rtc_ds1307.h</file>
+            <file>$PROJ_DIR$\..\middleware\utility_print\printf\printf.c</file>
+            <file>$PROJ_DIR$\..\middleware\utility_print\printf\printf.h</file>
+            <file>$PROJ_DIR$\..\hal\hal_adc.c</file>
+            <file>$PROJ_DIR$\..\hal\hal_lowpower.c</file>
+            <file>$PROJ_DIR$\..\platform\devices\YTM32B1MC0\startup\system_YTM32B1MC0.h</file>
+            <file>$PROJ_DIR$\..\hal\hal_eeprom_bl24c08f.c</file>
+            <file>$PROJ_DIR$\..\platform\devices\devassert.h</file>
+            <file>$PROJ_DIR$\..\hal\hal_nvm.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\mpwm_pwm_driver.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\i2c\i2c_driver.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\flexcan\flexcan_driver.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\adc\adc_hw_access.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\flexcan\flexcan_irq.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\i2c\i2c_irq.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\i2c\i2c_irq.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\clock\YTM32B1Mx\ipc_hw_access.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\uart_driver.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\dma\dma_hw_access.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\mpwm_common.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\dma\dma_hw_access.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\i2c_driver.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\adc\adc_driver.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\flash\flash_driver.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\spi_slave_driver.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\clock\YTM32B1Mx\clock_YTM32B1Mx.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\flash\flash_hw_access.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\pins_driver.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\dma\dma_irq.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\lptmr_driver.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\power_manager.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\interrupt_manager.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\flexcan\flexcan_hw_access.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\flexcan_driver.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\flexcan\flexcan_hw_access.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\flexcan\flexcan_irq.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\flash_driver.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\clock\YTM32B1Mx\scu_hw_access.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\spi_master_driver.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\spi_shared_function.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\clock\YTM32B1Mx\clock_YTM32B1Mx.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\dma\dma_irq.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\i2c\i2c_hw_access.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\inc\dma_driver.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\dma\dma_driver.c</file>
+            <file>$PROJ_DIR$\..\serve\diag\uds_svc.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\spi\spi_hw_access.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\uart\uart_driver.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\pins\pins_port_hw_access.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\uart\uart_irq.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\uart\uart_irq.h</file>
+            <file>$PROJ_DIR$\..\serve\diag\uds_did.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\spi\spi_irq.c</file>
+            <file>$PROJ_DIR$\..\serve\diag\uds_svc.h</file>
+            <file>$PROJ_DIR$\..\serve\diag\uds_tp.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\pins\pins_driver.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\power\YTM32B1Mx\power_manager_YTM32B1Mx.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\spi\spi_hw_access.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\uart\uart_hw_access.h</file>
+            <file>$PROJ_DIR$\..\rtos\osif\osif_baremetal.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\lptmr\lptmr_driver.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\power\power_manager.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\spi\spi_slave_driver.c</file>
+            <file>$PROJ_DIR$\..\rtos\osif\osif.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\pins\pins_gpio_hw_access.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\lptmr\lptmr_hw_access.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\lptmr\lptmr_hw_access.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\mpwm\mpwm_common.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\mpwm\mpwm_hw_access.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\power\YTM32B1Mx\power_manager_YTM32B1Mx.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\spi\spi_master_driver.c</file>
+            <file>$PROJ_DIR$\..\serve\can\can_rx_parse.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\uart\uart_hw_access.c</file>
+            <file>$PROJ_DIR$\..\serve\can\can_app.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\spi\spi_shared_function.c</file>
+            <file>$PROJ_DIR$\..\serve\can\can_rx_parse.h</file>
+            <file>$PROJ_DIR$\..\serve\can\can_tx_build.h</file>
+            <file>$PROJ_DIR$\..\serve\diag\app_info.c</file>
+            <file>$PROJ_DIR$\..\serve\diag\boot_app_if.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\interrupt\interrupt_manager.c</file>
+            <file>$PROJ_DIR$\..\serve\diag\boot_shared.c</file>
+            <file>$PROJ_DIR$\..\serve\diag\uds_cfg.h</file>
+            <file>$PROJ_DIR$\..\serve\diag\uds_did.c</file>
+            <file>$PROJ_DIR$\..\serve\can\can_app.h</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\mpwm\mpwm_pwm_driver.c</file>
+            <file>$PROJ_DIR$\..\platform\drivers\src\pins\pins_port_hw_access.h</file>
+            <file>$PROJ_DIR$\..\serve\can\can_tx_build.c</file>
+            <file>$PROJ_DIR$\..\serve\input\hw_input.c</file>
+            <file>$PROJ_DIR$\..\serve\nvm\nvm_storage.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$PROJ_DIR$\..\serve\input\rtc_input.h</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\startup.o</file>
+            <file>$PROJ_DIR$\..\serve\soc\soc_uart.c</file>
+            <file>$PROJ_DIR$\..\serve\nvm\odo_log.c</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\RamInit0.o</file>
+            <file>$PROJ_DIR$\..\serve\soc\soc_uart.h</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\lptmr\lptmr_driver.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\serve\input\radio_input.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\spi\spi_master_driver.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\hal\hal_gpio.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\vector.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\dma\dma_irq.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\pin_mux.o</file>
+            <file>$PROJ_DIR$\..\serve\input\radio_input.c</file>
+            <file>$PROJ_DIR$\..\serve\input\hw_input.h</file>
+            <file>$PROJ_DIR$\..\serve\input\rtc_input.c</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\mpwm\mpwm_pwm_driver.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\..\serve\nvm\odo_log.h</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\power_config.o</file>
+            <file>$PROJ_DIR$\..\serve\input\radio_input.h</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\dma_config.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\serve\can\can_tx_build.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\lptmr_config.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\uart\uart_driver.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\devices\YTM32B1MC0\startup\system_YTM32B1MC0.o</file>
+            <file>$PROJ_DIR$\..\serve\nvm\nvm_storage.h</file>
+            <file>$PROJ_DIR$\..\serve\diag\uds_tp.h</file>
+            <file>$PROJ_DIR$\FLASH\Obj\hal\hal_lowpower.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\serve\input\hw_input.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\serve\diag\uds_tp.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\sc5037\sc5037_hal_stm32.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$PROJ_DIR$\FLASH\Obj\hal\hal_nvm.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\board\interrupt_config.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$PROJ_DIR$\FLASH\Obj\serve\soc\soc_uart.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\platform\drivers\src\spi\spi_irq.o</file>
+            <file>$PROJ_DIR$\FLASH\Obj\app\gauges\ambient.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\..\app\common\config\cfg_power.h</file>
+            <file>$PROJ_DIR$\..\app\common\config\cfg_can.h</file>
+            <file>$PROJ_DIR$\..\app\common\config\cfg_meter_map.h</file>
+            <file>$PROJ_DIR$\..\app\common\types.h</file>
+            <file>$PROJ_DIR$\..\app\common\config\cfg_lcd_addr.h</file>
+            <file>$PROJ_DIR$\..\app\gauges\cng.c</file>
+            <file>$PROJ_DIR$\..\app\common\config\cfg_buzzer.h</file>
+            <file>$PROJ_DIR$\..\app\common\config\cfg_selfcheck.h</file>
+            <file>$PROJ_DIR$\..\app\gauges\ambient.c</file>
+            <file>$PROJ_DIR$\..\app\gauges\ambient.h</file>
+            <file>$PROJ_DIR$\..\app\common\config\cfg_gauges.h</file>
+            <file>$PROJ_DIR$\..\app\common\cluster_context.h</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\..\app\gauges\fuel.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 6</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 0 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\gauges\coolant.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 83</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 4 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 37 13</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\FLASH\Exe\Instrument.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 13</file>
+                </tool>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 15</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 143 63 22 328 10 57 58 69 66 70 54 311 42 23 85 83 310 81 12 300 78 90 45 86 31 94 6 41 49 40 7 68 298 50 317 322 11 92 318 43 74 17 323 88 39 48 64 312 295 26 61 76 19 21 305 46 32 53 36 301 24 9 308 79 67 51 29 296 293 47 52 35 60 59 320 18 326 73 27 33 327 297 87 34 290 25 314 62 20 313 77 44 56 65 319 80 28 299 5 75 16 72 93 55</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\gauges\speed.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 73</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 119 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\system\sys_mgr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 25</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 98 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\power\pwr_mgr.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 107 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14 98 111 190 226 321 329 173 181 149 152 151 147 91 189 183 204 169 206 184 208 218 187 186 239 230 267 315 134</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\ui\backlight.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 57</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 123 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14 190 226 321 329 173 181 149 152 151 147 91 189 183 204 169 206 184 208 218 187 186 239 230 267</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\scheduler\scheduler.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 18</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 105 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14 303 282 98 107 119 99 4 0 3 339 113 112 104 294 122 123 103 309 289 188 111 128 195 252</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\ui\buzzer.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 69</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 103 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14 192 208 218 184 173 181 321 329 149 152 151 147 91 189 183 204 169 206 187 186 239 230 267</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\gauges\odo.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 32</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 113 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14 315</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 61</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 168 118 186 173 181 324 306 71 38 84 82 325 321 329 149 152 151 147 91 189 183 204 169 206 184 239 142 226 155 230 120 242 164 238 187 262 177 237 223 117 232 124 220 150 228 154 218 267 208 116 185 140 229 268 138 235 165 216 161 172 146 201 89 341 333 330 331 340 336 337 334 14 105 98 107 128 119 99 4 0 3 339 113 112 104 294 122 123 103 111 282 303 309 289 315 196 188 195 134 252 288 8</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\adc_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 63</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 116 185 324 306 71 38 84 82 325 173 181 321 329 149 152 151 147 91 189 183 204 169 206</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\ui\lcd_ui.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 39</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 122 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14 132 332 168 118 186 173 181 321 329 149 152 151 147 91 189 183 204 169 206 184 239 142 226 155 230 120 242 164 238 187 262 177 237 223 117 232 124 220 150 228 154 218 267 208 116 185 140 229 268 138 235 165 216 161 172 146 201 89</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\sc5037\sc5037.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 59</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 134 324 306 71 38 84 82 325 288 329 8</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\ui\led_ind.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 48</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 104 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14 294 132 332 103 170 181 321 329 149 152 151 147 91 189 183 204</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\flash_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 78</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 321 306 71 38 84 82 329 138 235 325 184 173 181 324 149 152 151 147 91 189 183 204 169 206</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\power\lowpower.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 64</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 128 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14 107 98 315 132 111 309 294 289 282 174 190 226 321 329 173 181 149 152 151 147 91 189 183 204 169 206 184 208 218 187 186 239 230 267</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\interrupt_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 323</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 321 306 71 38 84 82 329 155 230 173 181 324 325 149 152 151 147 91 189 183 204 169 206</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\sc5037\sc5037_hal_stm32.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 320</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 134 324 306 71 38 84 82 325 263 226 321 329 173 181 149 152 151 147 91 189 183 204 169 206 184 237 238 187 186 239 262 177 242 188 333</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\can_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 70</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 117 232 173 181 324 306 71 38 84 82 325 321 329 149 152 151 147 91 189 183 204 169 206 262 184 242</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\gauges\meter_display.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 76</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 132 324 306 71 38 84 82 325 134 321 329</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\i2c_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 43</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 321 306 71 38 84 82 329 124 220 325 173 181 324 149 152 151 147 91 189 183 204 169 206 184 242 262 177</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\gauges\tpms_data.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 62</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 112 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\gauges\rpm.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 35</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 99 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\clock_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 42</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 321 306 71 38 84 82 329 118 186 173 181 324 325 149 152 151 147 91 189 183 204 169 206 184 239</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\dma_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 310</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 321 306 71 38 84 82 329 120 242 173 181 324 325 149 152 151 147 91 189 183 204 169 206 184</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\power\voltage.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 111 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14 195</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\startup.S</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 290</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\mpwm_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 21</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 321 306 71 38 84 82 329 154 218 184 173 181 324 325 149 152 151 147 91 189 183 204 169 206 187 186 239 230 267 208</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\spi_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 27</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 321 306 71 38 84 82 329 164 238 325 187 186 173 181 324 149 152 151 147 91 189 183 204 169 206 184 239 262 177 242 237 223</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\utility_flash_ecc_fault_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 80</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 321 306 71 38 84 82 329 161 172 325 184 173 181 324 149 152 151 147 91 189 183 204 169 206</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\RamInit0.S</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 293</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\pin_mux.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 301</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 142 226 321 306 71 38 84 82 329 173 181 324 325 149 152 151 147 91 189 183 204 169 206 184</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\power_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 308</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 321 306 71 38 84 82 329 140 229 173 181 324 325 149 152 151 147 91 189 183 204 169 206 184 268</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\RamInit1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 47</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 324 306 71 38 84 82 325 173 181 321 329 149 152 151 147 91 189 183 204 169 206</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\vector_table_copy.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 5</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 324 306 71 38 84 82 173 181 325 321 329 149 152 151 147 91 189 183 204 169 206</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\uart_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 20</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 165 216 321 306 71 38 84 82 329 173 181 324 325 149 152 151 147 91 189 183 204 169 206 184 230 262 242 177</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\RamInit2.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 52</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\utility_print_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 28</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 146 184 201 89 321 306 71 38 84 82 329 165 216 173 181 324 325 149 152 151 147 91 189 183 204 169 206 230 262 242 177</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\vector.S</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 299</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\board\lptmr_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 312</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 150 228 324 306 71 38 84 82 325 184 173 181 321 329 149 152 151 147 91 189 183 204 169 206</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\hal\hal_lcd.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 50</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 197 333 324 306 71 38 84 82 325 334 226 321 329 173 181 149 152 151 147 91 189 183 204 169 206 184 134</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\middleware\utility_flash_ecc_fault\flash_ecc_fault.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 45</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 172 325 321 306 71 38 84 82 329 184 173 181 324 149 152 151 147 91 189 183 204 169 206 230</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\hal\hal_backlight.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 49</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 190 333 324 306 71 38 84 82 325 226 321 329 173 181 149 152 151 147 91 189 183 204 169 206 184 208 218 187 186 239 230 267</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\hal\hal_can.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 7</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 196 333 324 306 71 38 84 82 325 168 118 186 173 181 321 329 149 152 151 147 91 189 183 204 169 206 184 239 142 226 155 230 120 242 164 238 187 262 177 237 223 117 232 124 220 150 228 154 218 267 208 116 185 140 229 268 138 235 165 216 161 172 146 201 89 316 280 277 288 8</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\hal\hal_nvm.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 322</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 207 333 324 306 71 38 84 82 325 277 181 321 329 149 152 151 147 91 189 183 204 169 288 8 193</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\hal\hal_tick.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 92</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 188 333 324 306 71 38 84 82 325 228 184 173 181 321 329 149 152 151 147 91 189 183 204 169 206 230</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\devices\YTM32B1MC0\startup\system_YTM32B1MC0.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 314</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 173 181 324 306 71 38 84 82 325 321 329 149 152 151 147 91 189 183 204 169 206</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\hal\hal_buzzer.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 40</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 192 208 218 184 173 181 324 306 71 38 84 82 325 321 329 149 152 151 147 91 189 183 204 169 206 187 186 239 230 267 226</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\hal\hal_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 298</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 170 333 324 306 71 38 84 82 325 181 321 329 149 152 151 147 91 189 183 204 226 173 169 206 184</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\hal\hal_rtc_ds1307.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 11</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 199 333 324 306 71 38 84 82 325 220 321 329 173 181 149 152 151 147 91 189 183 204 169 206 184 242 262 177</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\middleware\utility_print\printf\printf.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 51</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 325 324 306 71 38 84 82 201 89 321 329 146 184 30</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\hal\hal_adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 41</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 195 333 324 306 71 38 84 82 325 330 120 242 173 181 321 329 149 152 151 147 91 189 183 204 169 206 184 185 116 230 188 288 8</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\hal\hal_lowpower.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 317</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 174 333 324 306 71 38 84 82 325 14 188 190 226 321 329 173 181 149 152 151 147 91 189 183 204 169 206 184 208 218 187 186 239 230 267 192 195 196 168 118 142 155 120 242 164 238 262 177 237 223 117 232 124 220 150 228 154 116 185 140 229 268 138 235 165 216 161 172 146 201 89 134</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\hal\hal_eeprom_bl24c08f.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 68</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 193 333 324 306 71 38 84 82 325 220 321 329 173 181 149 152 151 147 91 189 183 204 169 206 184 242 262 177</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\i2c\i2c_driver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 74</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 220 321 306 71 38 84 82 329 325 173 181 324 149 152 151 147 91 189 183 204 169 206 184 242 262 177 230 241 187 186 239</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\flexcan\flexcan_driver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 86</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 231 324 306 71 38 84 82 325 321 329 232 173 181 149 152 151 147 91 189 183 204 169 206 262 184 242 212 230 187 186 239</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\i2c\i2c_irq.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 17</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 173 181 324 306 71 38 84 82 325 321 329 149 152 151 147 91 189 183 204 169 206 220 184 242 262 177 214</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\dma\dma_hw_access.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 219 324 306 71 38 84 82 325 242 173 181 321 329 149 152 151 147 91 189 183 204 169 206 184 230</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\adc\adc_driver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 22</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 321 306 71 38 84 82 329 185 324 325 173 181 149 152 151 147 91 189 183 204 169 206 211 187 186 184 239</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\flash\flash_driver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 90</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 235 325 321 306 71 38 84 82 329 184 173 181 324 149 152 151 147 91 189 183 204 169 206 225 230 187 186 239</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\clock\YTM32B1Mx\clock_YTM32B1Mx.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 23</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 173 181 324 306 71 38 84 82 325 321 329 149 152 151 147 91 189 183 204 169 206 215 236 186 184 239 230</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\dma\dma_irq.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 300</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 240 219 324 306 71 38 84 82 325 242 173 181 321 329 149 152 151 147 91 189 183 204 169 206 184</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\flexcan\flexcan_hw_access.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 31</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 231 324 306 71 38 84 82 325 321 329 232 173 181 149 152 151 147 91 189 183 204 169 206 262 184 242 230</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\flexcan\flexcan_irq.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 94</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 212 173 181 324 306 71 38 84 82 325 321 329 149 152 151 147 91 189 183 204 169 206 231 232 262 184 242</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\dma\dma_driver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 81</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 240 219 324 306 71 38 84 82 325 242 173 181 321 329 149 152 151 147 91 189 183 204 169 206 184 187 186 239 230</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\serve\diag\uds_svc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 65</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 252 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14 280 277 316 250 188 315 111 128 168 118 186 173 181 321 329 149 152 151 147 91 189 183 204 169 206 184 239 142 226 155 230 120 242 164 238 187 262 177 237 223 117 232 124 220 150 228 154 218 267 208 116 185 140 229 268 138 235 165 216 161 172 146 201 89 288 8</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\uart\uart_driver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 313</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 321 306 71 38 84 82 329 325 257 216 173 181 324 149 152 151 147 91 189 183 204 169 206 184 230 262 242 177 249 187 186 239</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\pins\pins_port_hw_access.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 9</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 284 226 321 306 71 38 84 82 329 173 181 324 325 149 152 151 147 91 189 183 204 169 206 184 263</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\uart\uart_irq.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 44</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 249 173 181 324 306 71 38 84 82 325 321 329 149 152 151 147 91 189 183 204 169 206 230</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\spi\spi_irq.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 327</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 173 181 324 306 71 38 84 82 325 321 329 149 152 151 147 91 189 183 204 169 206 238 187 186 184 239 262 177 242</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\serve\diag\uds_tp.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 319</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 316 333 324 306 71 38 84 82 325 280 277 196 168 118 186 173 181 321 329 149 152 151 147 91 189 183 204 169 206 184 239 142 226 155 230 120 242 164 238 187 262 177 237 223 117 232 124 220 150 228 154 218 267 208 116 185 140 229 268 138 235 165 216 161 172 146 201 89 188 288 8</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\pins\pins_driver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 24</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 173 181 324 306 71 38 84 82 325 321 329 149 152 151 147 91 189 183 204 169 206 263 226 184 284</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\power\YTM32B1Mx\power_manager_YTM32B1Mx.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 67</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 229 173 181 324 306 71 38 84 82 325 321 329 149 152 151 147 91 189 183 204 169 206 184 268 187 186 239</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\spi\spi_hw_access.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 33</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 245 324 306 71 38 84 82 325 321 329 184 173 181 149 152 151 147 91 189 183 204 169 206 238 187 186 239 262 177 242</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\rtos\osif\osif_baremetal.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 36</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 262 324 306 71 38 84 82 184 321 329 173 181 325 149 152 151 147 91 189 183 204 169 206 230 187 186 239</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\lptmr\lptmr_driver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 295</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 228 324 306 71 38 84 82 325 184 173 181 321 329 149 152 151 147 91 189 183 204 169 206 264 187 186 239</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\power\power_manager.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 79</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 321 306 71 38 84 82 329 229 173 181 324 325 149 152 151 147 91 189 183 204 169 206 184 268</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\spi\spi_slave_driver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 34</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 223 238 325 187 186 173 181 324 306 71 38 84 82 321 329 149 152 151 147 91 189 183 204 169 206 184 239 262 177 242 230 245</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\lptmr\lptmr_hw_access.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 26</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 264 324 306 71 38 84 82 325 321 329 173 181 149 152 151 147 91 189 183 204 169 206 228 184</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\mpwm\mpwm_common.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 19</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 218 184 173 181 324 306 71 38 84 82 325 321 329 149 152 151 147 91 189 183 204 169 206 187 186 239 230 267</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\spi\spi_master_driver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 297</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 237 238 325 187 186 173 181 324 306 71 38 84 82 321 329 149 152 151 147 91 189 183 204 169 206 184 239 262 177 242 230 245</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\serve\can\can_rx_parse.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 54</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 274 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\uart\uart_hw_access.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 77</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 257 216 321 306 71 38 84 82 329 173 181 324 325 149 152 151 147 91 189 183 204 169 206 184 230 262 242 177</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\serve\can\can_app.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 66</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 282 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14 274 275 196 168 118 186 173 181 321 329 149 152 151 147 91 189 183 204 169 206 184 239 142 226 155 230 120 242 164 238 187 262 177 237 223 117 232 124 220 150 228 154 218 267 208 116 185 140 229 268 138 235 165 216 161 172 146 201 89</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\spi\spi_shared_function.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 87</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 245 324 306 71 38 84 82 325 321 329 184 173 181 149 152 151 147 91 189 183 204 169 206 238 187 186 239 262 177 242</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\serve\diag\app_info.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 10</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 277 324 306 71 38 84 82</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\interrupt\interrupt_manager.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 88</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 230 173 181 324 306 71 38 84 82 325 321 329 149 152 151 147 91 189 183 204 169 206</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\serve\diag\boot_shared.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 58</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 277 324 306 71 38 84 82</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\serve\diag\uds_did.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 56</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 250 333 324 306 71 38 84 82 325 280 277 288 329 8</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\platform\drivers\src\mpwm\mpwm_pwm_driver.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 305</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 208 218 184 173 181 324 306 71 38 84 82 325 321 329 149 152 151 147 91 189 183 204 169 206 187 186 239 230 267</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\serve\can\can_tx_build.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 311</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 275 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14 0</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\serve\input\hw_input.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 318</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 303 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14 170 181 321 329 149 152 151 147 91 189 183 204 195</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\serve\nvm\nvm_storage.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 46</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 315 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14 307</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\serve\soc\soc_uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 326</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 294 324 306 71 38 84 82 325 216 321 329 173 181 149 152 151 147 91 189 183 204 169 206 184 230 262 242 177</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\serve\nvm\odo_log.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 53</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 307 333 324 306 71 38 84 82 325 277 181 321 329 149 152 151 147 91 189 183 204 169 288 8</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\serve\input\radio_input.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 296</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 309 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14 289 216 321 329 173 181 149 152 151 147 91 189 183 204 169 206 184 230 262 242 177 113</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\serve\input\rtc_input.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 60</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 289 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14 199</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\gauges\cng.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 85</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 3 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\app\gauges\ambient.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 328</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 339 341 333 324 306 71 38 84 82 325 330 331 340 336 337 334 14 195</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+</project>
